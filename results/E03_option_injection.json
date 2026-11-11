@@ -1,0 +1,309 @@
+{
+  "experiment": "E03_option_injection",
+  "note": "Indice dei file per scope. Ogni file ha le sue righe in 'results'; questo non le duplica, serve a sapere quale file leggere. Rigenerato dai file su disco, quindi un run nuovo non cancella gli scope precedenti.",
+  "scopes": {
+    "clm-v0.1-8B-Q5_K_M__massive-en__pad0__append-prepend": {
+      "checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-en",
+      "backend": "clm-llama",
+      "n_rows": 4,
+      "k_values": [
+        4,
+        16
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append",
+        "prepend"
+      ],
+      "head_budget_walls": []
+    },
+    "clm-v0.1-8B-Q5_K_M__massive-it__pad0__append-prepend": {
+      "checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-it",
+      "backend": "clm-llama",
+      "n_rows": 4,
+      "k_values": [
+        4,
+        16
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append",
+        "prepend"
+      ],
+      "head_budget_walls": []
+    },
+    "clm-v0.1-8B__massive-en__pad0__append-prepend": {
+      "checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-en",
+      "backend": "clm-llama",
+      "n_rows": 4,
+      "k_values": [
+        4,
+        16
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append",
+        "prepend"
+      ],
+      "head_budget_walls": []
+    },
+    "clm-v0.1-8B__massive-it__pad0__append-prepend": {
+      "checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "backend": "clm-llama",
+      "n_rows": 12,
+      "k_values": [
+        4,
+        8,
+        16,
+        24,
+        32,
+        40
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append",
+        "prepend"
+      ],
+      "head_budget_walls": []
+    },
+    "laya-multilingual__massive-it": {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "backend": null,
+      "n_rows": 2,
+      "k_values": [
+        4,
+        16
+      ],
+      "pad_tokens": 400,
+      "templates": [
+        "append"
+      ],
+      "head_budget_walls": []
+    },
+    "laya-multilingual__massive-it__pad0__append-prepend": {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "backend": null,
+      "n_rows": 12,
+      "k_values": [
+        4,
+        8,
+        16,
+        24,
+        32,
+        40
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append",
+        "prepend"
+      ],
+      "head_budget_walls": []
+    },
+    "laya-typed-decisions__massive-en": {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "backend": null,
+      "n_rows": 12,
+      "k_values": [
+        4,
+        8,
+        16,
+        24,
+        32,
+        40
+      ],
+      "pad_tokens": null,
+      "templates": [
+        "append",
+        "prepend"
+      ],
+      "head_budget_walls": []
+    },
+    "laya-typed-decisions__massive-en__pad0__append-prepend": {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "backend": null,
+      "n_rows": 12,
+      "k_values": [
+        4,
+        8,
+        16,
+        24,
+        32,
+        40
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append",
+        "prepend"
+      ],
+      "head_budget_walls": []
+    },
+    "laya-typed-decisions__massive-it": {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "backend": null,
+      "n_rows": 1,
+      "k_values": [
+        40
+      ],
+      "pad_tokens": 390,
+      "templates": [
+        "append"
+      ],
+      "head_budget_walls": []
+    },
+    "laya-typed-decisions__massive-it__pad0__append-prepend__9a640a91b57048c9": {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "backend": "laya",
+      "n_rows": 12,
+      "k_values": [
+        4,
+        8,
+        16,
+        24,
+        32,
+        40
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append",
+        "prepend"
+      ],
+      "head_budget_walls": []
+    },
+    "laya-typed-decisions__massive-it__pad0__append-prepend__f94e44db3f6854f8": {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "backend": "laya",
+      "n_rows": 4,
+      "k_values": [
+        16
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append",
+        "prepend"
+      ],
+      "head_budget_walls": []
+    },
+    "laya-typed-decisions__massive-it__pad0__append__0e0ee20d769e518e": {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "backend": "laya",
+      "n_rows": 1,
+      "k_values": [
+        16
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append"
+      ],
+      "head_budget_walls": []
+    },
+    "laya-typed-decisions__massive-it__pad0__append__0f13212ce6c6dcb9": {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "backend": "laya",
+      "n_rows": 1,
+      "k_values": [
+        16
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append"
+      ],
+      "head_budget_walls": []
+    },
+    "laya-typed-decisions__massive-it__pad0__append__3cf90c851f4967c9": {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "backend": "laya",
+      "n_rows": 1,
+      "k_values": [
+        16
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append"
+      ],
+      "head_budget_walls": []
+    },
+    "laya__massive-it": {
+      "checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "backend": null,
+      "n_rows": 8,
+      "k_values": [
+        4,
+        8,
+        16,
+        24,
+        32,
+        40
+      ],
+      "pad_tokens": null,
+      "templates": [
+        "append",
+        "prepend"
+      ],
+      "head_budget_walls": [
+        32
+      ]
+    },
+    "laya__massive-it__pad0__append-prepend": {
+      "checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "backend": null,
+      "n_rows": 8,
+      "k_values": [
+        4,
+        8,
+        16,
+        24,
+        32,
+        40
+      ],
+      "pad_tokens": 0,
+      "templates": [
+        "append",
+        "prepend"
+      ],
+      "head_budget_walls": [
+        32
+      ]
+    }
+  },
+  "files": [
+    "E03_option_injection__clm-v0.1-8B-Q5_K_M__massive-en__pad0__append-prepend.json",
+    "E03_option_injection__clm-v0.1-8B-Q5_K_M__massive-it__pad0__append-prepend.json",
+    "E03_option_injection__clm-v0.1-8B__massive-en__pad0__append-prepend.json",
+    "E03_option_injection__clm-v0.1-8B__massive-it__pad0__append-prepend.json",
+    "E03_option_injection__laya-multilingual__massive-it.json",
+    "E03_option_injection__laya-multilingual__massive-it__pad0__append-prepend.json",
+    "E03_option_injection__laya-typed-decisions__massive-en.json",
+    "E03_option_injection__laya-typed-decisions__massive-en__pad0__append-prepend.json",
+    "E03_option_injection__laya-typed-decisions__massive-it.json",
+    "E03_option_injection__laya-typed-decisions__massive-it__pad0__append-prepend__9a640a91b57048c9.json",
+    "E03_option_injection__laya-typed-decisions__massive-it__pad0__append-prepend__f94e44db3f6854f8.json",
+    "E03_option_injection__laya-typed-decisions__massive-it__pad0__append__0e0ee20d769e518e.json",
+    "E03_option_injection__laya-typed-decisions__massive-it__pad0__append__0f13212ce6c6dcb9.json",
+    "E03_option_injection__laya-typed-decisions__massive-it__pad0__append__3cf90c851f4967c9.json",
+    "E03_option_injection__laya__massive-it.json",
+    "E03_option_injection__laya__massive-it__pad0__append-prepend.json"
+  ],
+  "n_rows": 98,
+  "excluded": [
+    {
+      "file": "E03_option_injection__laya-typed-decisions__massive-it__pad0__append-prepend.json",
+      "reason": "backend clm-llama incompatibile con il checkpoint Laya"
+    }
+  ]
+}

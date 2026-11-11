@@ -1,0 +1,14 @@
+{
+  "checkpoint": "convaiinnovations/laya-multilingual",
+  "n_cases": 400,
+  "n_decisions": 2000,
+  "acc_clean_no_guard": 0.3505,
+  "acc_clean_guard": 0.3505,
+  "acc_adv_guard": 0.3255,
+  "acc_adv_no_guard": 0.3255,
+  "fp_rate_clean": 0.5575,
+  "detection_rate": 0.325,
+  "asr_no_guard": 0.3223965763195435,
+  "flips_blocked": 86,
+  "asr_residual": 0.19971469329529243
+}

@@ -1,0 +1,72 @@
+{
+  "experiment": "E18_nomination_detector",
+  "question": "un detector sulla nominazione esplicita dell'opzione chiude il residuo che la calibrazione non chiude?",
+  "study_valid": true,
+  "axes": {
+    "dataset": "massive-en",
+    "checkpoint": "convaiinnovations/laya-multilingual",
+    "k": 4,
+    "n_cases": 2974,
+    "templates": [
+      "prepend",
+      "append"
+    ],
+    "variants": [
+      "strict",
+      "loose"
+    ]
+  },
+  "detector": {
+    "strict": {
+      "variant": "strict",
+      "clean_states": 2974,
+      "adv_states": 2974,
+      "false_block_rate": 0.004707464694014795,
+      "detection_rate": 1.0,
+      "names_injected_rate": 1.0,
+      "precision_when_firing": 1.0,
+      "blind_blocks_on_attack": 0.0
+    },
+    "loose": {
+      "variant": "loose",
+      "clean_states": 2974,
+      "adv_states": 2974,
+      "false_block_rate": 0.03295225285810356,
+      "detection_rate": 1.0,
+      "names_injected_rate": 1.0,
+      "precision_when_firing": 1.0,
+      "blind_blocks_on_attack": 0.0
+    }
+  },
+  "gate": {
+    "strict": {
+      "flips": 2263,
+      "blocked_by_gate": 2263,
+      "asr_before": 1.0,
+      "asr_after": 0.0
+    },
+    "loose": {
+      "flips": 2263,
+      "blocked_by_gate": 2263,
+      "asr_before": 1.0,
+      "asr_after": 0.0
+    }
+  },
+  "env": {
+    "engine_identity": {
+      "backend": "laya",
+      "compiled": false,
+      "fast": false,
+      "temperature_applied": null,
+      "temperature_shipped": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "quantization": "none",
+      "encoder_linear_converted": null,
+      "device": "cuda"
+    }
+  },
+  "note": "Il detector non e' un modello: conta se lo stato nomina letteralmente un'opzione della domanda. E14 aveva chiesto al modello se lo stato fosse 'malevolo' (giudizio soggettivo) e aveva 55.8% di falsi positivi; qui la domanda e' meccanica e il costo sul traffico pulito e' quello che si vede nella colonna false_block_rate."
+}

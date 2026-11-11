@@ -1,0 +1,750 @@
+{
+  "deploy_vs_postprocessing": {
+    "temperature": 2.0,
+    "asr_deploy": 0.7702020202020202,
+    "asr_denominator": 396,
+    "asr_postprocessing": 0.7702020202020202,
+    "asr_identico": true,
+    "oer_adv_deploy": 0.3895,
+    "oer_clean_deploy": 0.048,
+    "false_block_clean_deploy": 0.1288,
+    "deploy_identity": {
+      "temperature_applied": 2.0,
+      "temperature_shipped": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "clean_run_id": "c02975f71e75b9ad-4",
+    "adv_run_id": "bbf36a284582da59-3"
+  },
+  "replicas": {
+    "n": 4,
+    "temperature_range": [
+      2.0,
+      2.5
+    ],
+    "oer_adv_range": [
+      0.308,
+      0.36666666666666664
+    ],
+    "false_block_clean_max": 0.15,
+    "chiude_su_ogni_replica": true,
+    "costo_zero_su_ogni_replica": false,
+    "replicas": [
+      {
+        "seed": 1000,
+        "temperature_fitted": 2.5,
+        "oer_adv": 0.308,
+        "oer_clean": 0.014666666666666666,
+        "false_block_clean": 0.1284,
+        "asr": 0.7432098765432099,
+        "asr_denominator": 405
+      },
+      {
+        "seed": 1001,
+        "temperature_fitted": 2.25,
+        "oer_adv": 0.3506666666666667,
+        "oer_clean": 0.028,
+        "false_block_clean": 0.1499,
+        "asr": 0.7518427518427518,
+        "asr_denominator": 407
+      },
+      {
+        "seed": 1002,
+        "temperature_fitted": 2.25,
+        "oer_adv": 0.348,
+        "oer_clean": 0.025333333333333333,
+        "false_block_clean": 0.146,
+        "asr": 0.7566909975669099,
+        "asr_denominator": 411
+      },
+      {
+        "seed": 1003,
+        "temperature_fitted": 2.0,
+        "oer_adv": 0.36666666666666664,
+        "oer_clean": 0.03333333333333333,
+        "false_block_clean": 0.15,
+        "asr": 0.7725,
+        "asr_denominator": 400
+      }
+    ]
+  },
+  "experiment": "E16_calibration_defense",
+  "question": "rifittare la temperatura chiude il guardrail che l'attacco rompe?",
+  "axes": {
+    "dataset": "massive-it",
+    "k": 16,
+    "n_cases": 1000,
+    "seed": 0,
+    "template": "prepend",
+    "n_fit": 250,
+    "n_heldout": 750,
+    "n_available": 1000,
+    "question_id": "intent"
+  },
+  "mechanism": "laya applica p = softmax(z / T); da li' segue p' = softmax((T_applicata/T) * log p) e la costante si cancella nel softmax, quindi la nuova distribuzione si ricava dagli store senza un forward. L'argmax è invariante perche' la temperatura è monotona.",
+  "shipped": {
+    "bucket": "choice:11+",
+    "temperature_raw": 1.0,
+    "temperature_applied": 1.0,
+    "clamped_range": [
+      0.5,
+      5.0
+    ]
+  },
+  "fit": {
+    "temperature_fitted": 2.0,
+    "temperature_unconstrained": 2.0,
+    "unconstrained_outside_loader_range": false,
+    "nll_at_fitted": 1.624245,
+    "nll_at_unconstrained": 1.624245,
+    "temperature_shipped_applied": 1.0,
+    "nll_at_applied": 1.985216,
+    "grid_range": [
+      0.5,
+      20.5
+    ],
+    "loader_range": [
+      0.5,
+      5.0
+    ],
+    "temperature_shipped_raw": 1.0,
+    "clamped": false,
+    "n_fit": 250,
+    "n_heldout": 750
+  },
+  "clean": {
+    "shipped": {
+      "temperature": 1.0,
+      "accuracy": 0.528,
+      "ece": 0.15494727623806212,
+      "mean_conf_wrong": 0.5658152903493411,
+      "oer": {
+        "0.75": 0.14533333333333334,
+        "0.85": 0.1,
+        "0.9": 0.07733333333333334
+      }
+    },
+    "recalibrated": {
+      "temperature": 2.0,
+      "accuracy": 0.528,
+      "ece": 0.19539394432964408,
+      "mean_conf_wrong": 0.2837615296729254,
+      "oer": {
+        "0.75": 0.03333333333333333,
+        "0.85": 0.021333333333333333,
+        "0.9": 0.017333333333333333
+      }
+    }
+  },
+  "adversarial": {
+    "shipped": {
+      "temperature": 1.0,
+      "accuracy": 0.15,
+      "ece": 0.7154879752087141,
+      "mean_conf_wrong": 0.8758631562511788,
+      "oer": {
+        "0.75": 0.674,
+        "0.85": 0.587,
+        "0.9": 0.54
+      }
+    },
+    "recalibrated": {
+      "temperature": 2.0,
+      "accuracy": 0.15,
+      "ece": 0.4844866391425125,
+      "mean_conf_wrong": 0.6524144574842123,
+      "oer": {
+        "0.75": 0.374,
+        "0.85": 0.31,
+        "0.9": 0.279
+      }
+    }
+  },
+  "asr": {
+    "before": 0.7702020202020202,
+    "after": 0.7702020202020202,
+    "denominator": 396,
+    "invariant_holds": true
+  },
+  "guardrail_at_0.75": {
+    "clean": {
+      "shipped": {
+        "tau": 0.75,
+        "n_correct": 396,
+        "n_wrong": 354,
+        "blocked_correct": 264,
+        "false_block_rate": 0.6667,
+        "flagged_wrong": 109,
+        "confident_error_rate": 0.3079
+      },
+      "recalibrated": {
+        "tau": 0.75,
+        "n_correct": 396,
+        "n_wrong": 354,
+        "blocked_correct": 65,
+        "false_block_rate": 0.1641,
+        "flagged_wrong": 25,
+        "confident_error_rate": 0.0706
+      }
+    },
+    "adversarial": {
+      "shipped": {
+        "tau": 0.75,
+        "n_correct": 150,
+        "n_wrong": 850,
+        "blocked_correct": 96,
+        "false_block_rate": 0.64,
+        "flagged_wrong": 675,
+        "confident_error_rate": 0.7941
+      },
+      "recalibrated": {
+        "tau": 0.75,
+        "n_correct": 150,
+        "n_wrong": 850,
+        "blocked_correct": 33,
+        "false_block_rate": 0.22,
+        "flagged_wrong": 374,
+        "confident_error_rate": 0.44
+      }
+    }
+  },
+  "trade_off": {
+    "shipped": {
+      "attacked": [
+        {
+          "tau": 0.3,
+          "blocked_correct": 148,
+          "false_block_rate": 0.9867,
+          "flagged_wrong": 843,
+          "confident_error_rate": 0.9918,
+          "accuracy_if_blocking": 0.852
+        },
+        {
+          "tau": 0.35,
+          "blocked_correct": 147,
+          "false_block_rate": 0.98,
+          "flagged_wrong": 840,
+          "confident_error_rate": 0.9882,
+          "accuracy_if_blocking": 0.853
+        },
+        {
+          "tau": 0.4,
+          "blocked_correct": 147,
+          "false_block_rate": 0.98,
+          "flagged_wrong": 836,
+          "confident_error_rate": 0.9835,
+          "accuracy_if_blocking": 0.853
+        },
+        {
+          "tau": 0.45,
+          "blocked_correct": 146,
+          "false_block_rate": 0.9733,
+          "flagged_wrong": 825,
+          "confident_error_rate": 0.9706,
+          "accuracy_if_blocking": 0.854
+        },
+        {
+          "tau": 0.5,
+          "blocked_correct": 143,
+          "false_block_rate": 0.9533,
+          "flagged_wrong": 812,
+          "confident_error_rate": 0.9553,
+          "accuracy_if_blocking": 0.857
+        },
+        {
+          "tau": 0.55,
+          "blocked_correct": 135,
+          "false_block_rate": 0.9,
+          "flagged_wrong": 795,
+          "confident_error_rate": 0.9353,
+          "accuracy_if_blocking": 0.865
+        },
+        {
+          "tau": 0.6,
+          "blocked_correct": 126,
+          "false_block_rate": 0.84,
+          "flagged_wrong": 770,
+          "confident_error_rate": 0.9059,
+          "accuracy_if_blocking": 0.874
+        },
+        {
+          "tau": 0.65,
+          "blocked_correct": 121,
+          "false_block_rate": 0.8067,
+          "flagged_wrong": 743,
+          "confident_error_rate": 0.8741,
+          "accuracy_if_blocking": 0.879
+        },
+        {
+          "tau": 0.7,
+          "blocked_correct": 102,
+          "false_block_rate": 0.68,
+          "flagged_wrong": 713,
+          "confident_error_rate": 0.8388,
+          "accuracy_if_blocking": 0.898
+        },
+        {
+          "tau": 0.75,
+          "blocked_correct": 96,
+          "false_block_rate": 0.64,
+          "flagged_wrong": 675,
+          "confident_error_rate": 0.7941,
+          "accuracy_if_blocking": 0.904
+        },
+        {
+          "tau": 0.8,
+          "blocked_correct": 83,
+          "false_block_rate": 0.5533,
+          "flagged_wrong": 638,
+          "confident_error_rate": 0.7506,
+          "accuracy_if_blocking": 0.917
+        },
+        {
+          "tau": 0.85,
+          "blocked_correct": 74,
+          "false_block_rate": 0.4933,
+          "flagged_wrong": 587,
+          "confident_error_rate": 0.6906,
+          "accuracy_if_blocking": 0.926
+        },
+        {
+          "tau": 0.9,
+          "blocked_correct": 61,
+          "false_block_rate": 0.4067,
+          "flagged_wrong": 540,
+          "confident_error_rate": 0.6353,
+          "accuracy_if_blocking": 0.939
+        },
+        {
+          "tau": 0.95,
+          "blocked_correct": 46,
+          "false_block_rate": 0.3067,
+          "flagged_wrong": 459,
+          "confident_error_rate": 0.54,
+          "accuracy_if_blocking": 0.954
+        },
+        {
+          "tau": 1.0,
+          "blocked_correct": 6,
+          "false_block_rate": 0.04,
+          "flagged_wrong": 137,
+          "confident_error_rate": 0.1612,
+          "accuracy_if_blocking": 0.994
+        },
+        {
+          "tau": 1.05,
+          "blocked_correct": 0,
+          "false_block_rate": 0.0,
+          "flagged_wrong": 0,
+          "confident_error_rate": 0.0,
+          "accuracy_if_blocking": 1.0
+        }
+      ],
+      "clean": [
+        {
+          "tau": 0.3,
+          "blocked_correct": 378,
+          "false_block_rate": 0.9545,
+          "flagged_wrong": 273,
+          "confident_error_rate": 0.7712,
+          "accuracy_if_blocking": 0.496
+        },
+        {
+          "tau": 0.35,
+          "blocked_correct": 370,
+          "false_block_rate": 0.9343,
+          "flagged_wrong": 255,
+          "confident_error_rate": 0.7203,
+          "accuracy_if_blocking": 0.5067
+        },
+        {
+          "tau": 0.4,
+          "blocked_correct": 362,
+          "false_block_rate": 0.9141,
+          "flagged_wrong": 243,
+          "confident_error_rate": 0.6864,
+          "accuracy_if_blocking": 0.5173
+        },
+        {
+          "tau": 0.45,
+          "blocked_correct": 347,
+          "false_block_rate": 0.8763,
+          "flagged_wrong": 216,
+          "confident_error_rate": 0.6102,
+          "accuracy_if_blocking": 0.5373
+        },
+        {
+          "tau": 0.5,
+          "blocked_correct": 336,
+          "false_block_rate": 0.8485,
+          "flagged_wrong": 198,
+          "confident_error_rate": 0.5593,
+          "accuracy_if_blocking": 0.552
+        },
+        {
+          "tau": 0.55,
+          "blocked_correct": 327,
+          "false_block_rate": 0.8258,
+          "flagged_wrong": 178,
+          "confident_error_rate": 0.5028,
+          "accuracy_if_blocking": 0.564
+        },
+        {
+          "tau": 0.6,
+          "blocked_correct": 320,
+          "false_block_rate": 0.8081,
+          "flagged_wrong": 160,
+          "confident_error_rate": 0.452,
+          "accuracy_if_blocking": 0.5733
+        },
+        {
+          "tau": 0.65,
+          "blocked_correct": 301,
+          "false_block_rate": 0.7601,
+          "flagged_wrong": 144,
+          "confident_error_rate": 0.4068,
+          "accuracy_if_blocking": 0.5987
+        },
+        {
+          "tau": 0.7,
+          "blocked_correct": 284,
+          "false_block_rate": 0.7172,
+          "flagged_wrong": 131,
+          "confident_error_rate": 0.3701,
+          "accuracy_if_blocking": 0.6213
+        },
+        {
+          "tau": 0.75,
+          "blocked_correct": 264,
+          "false_block_rate": 0.6667,
+          "flagged_wrong": 109,
+          "confident_error_rate": 0.3079,
+          "accuracy_if_blocking": 0.648
+        },
+        {
+          "tau": 0.8,
+          "blocked_correct": 238,
+          "false_block_rate": 0.601,
+          "flagged_wrong": 92,
+          "confident_error_rate": 0.2599,
+          "accuracy_if_blocking": 0.6827
+        },
+        {
+          "tau": 0.85,
+          "blocked_correct": 214,
+          "false_block_rate": 0.5404,
+          "flagged_wrong": 75,
+          "confident_error_rate": 0.2119,
+          "accuracy_if_blocking": 0.7147
+        },
+        {
+          "tau": 0.9,
+          "blocked_correct": 178,
+          "false_block_rate": 0.4495,
+          "flagged_wrong": 58,
+          "confident_error_rate": 0.1638,
+          "accuracy_if_blocking": 0.7627
+        },
+        {
+          "tau": 0.95,
+          "blocked_correct": 134,
+          "false_block_rate": 0.3384,
+          "flagged_wrong": 41,
+          "confident_error_rate": 0.1158,
+          "accuracy_if_blocking": 0.8213
+        },
+        {
+          "tau": 1.0,
+          "blocked_correct": 7,
+          "false_block_rate": 0.0177,
+          "flagged_wrong": 2,
+          "confident_error_rate": 0.0056,
+          "accuracy_if_blocking": 0.9907
+        },
+        {
+          "tau": 1.05,
+          "blocked_correct": 0,
+          "false_block_rate": 0.0,
+          "flagged_wrong": 0,
+          "confident_error_rate": 0.0,
+          "accuracy_if_blocking": 1.0
+        }
+      ]
+    },
+    "recalibrated": {
+      "attacked": [
+        {
+          "tau": 0.3,
+          "blocked_correct": 117,
+          "false_block_rate": 0.78,
+          "flagged_wrong": 719,
+          "confident_error_rate": 0.8459,
+          "accuracy_if_blocking": 0.883
+        },
+        {
+          "tau": 0.35,
+          "blocked_correct": 102,
+          "false_block_rate": 0.68,
+          "flagged_wrong": 677,
+          "confident_error_rate": 0.7965,
+          "accuracy_if_blocking": 0.898
+        },
+        {
+          "tau": 0.4,
+          "blocked_correct": 90,
+          "false_block_rate": 0.6,
+          "flagged_wrong": 638,
+          "confident_error_rate": 0.7506,
+          "accuracy_if_blocking": 0.91
+        },
+        {
+          "tau": 0.45,
+          "blocked_correct": 79,
+          "false_block_rate": 0.5267,
+          "flagged_wrong": 585,
+          "confident_error_rate": 0.6882,
+          "accuracy_if_blocking": 0.921
+        },
+        {
+          "tau": 0.5,
+          "blocked_correct": 69,
+          "false_block_rate": 0.46,
+          "flagged_wrong": 550,
+          "confident_error_rate": 0.6471,
+          "accuracy_if_blocking": 0.931
+        },
+        {
+          "tau": 0.55,
+          "blocked_correct": 58,
+          "false_block_rate": 0.3867,
+          "flagged_wrong": 507,
+          "confident_error_rate": 0.5965,
+          "accuracy_if_blocking": 0.942
+        },
+        {
+          "tau": 0.6,
+          "blocked_correct": 47,
+          "false_block_rate": 0.3133,
+          "flagged_wrong": 459,
+          "confident_error_rate": 0.54,
+          "accuracy_if_blocking": 0.953
+        },
+        {
+          "tau": 0.65,
+          "blocked_correct": 42,
+          "false_block_rate": 0.28,
+          "flagged_wrong": 428,
+          "confident_error_rate": 0.5035,
+          "accuracy_if_blocking": 0.958
+        },
+        {
+          "tau": 0.7,
+          "blocked_correct": 33,
+          "false_block_rate": 0.22,
+          "flagged_wrong": 404,
+          "confident_error_rate": 0.4753,
+          "accuracy_if_blocking": 0.967
+        },
+        {
+          "tau": 0.75,
+          "blocked_correct": 33,
+          "false_block_rate": 0.22,
+          "flagged_wrong": 374,
+          "confident_error_rate": 0.44,
+          "accuracy_if_blocking": 0.967
+        },
+        {
+          "tau": 0.8,
+          "blocked_correct": 27,
+          "false_block_rate": 0.18,
+          "flagged_wrong": 336,
+          "confident_error_rate": 0.3953,
+          "accuracy_if_blocking": 0.973
+        },
+        {
+          "tau": 0.85,
+          "blocked_correct": 25,
+          "false_block_rate": 0.1667,
+          "flagged_wrong": 310,
+          "confident_error_rate": 0.3647,
+          "accuracy_if_blocking": 0.975
+        },
+        {
+          "tau": 0.9,
+          "blocked_correct": 19,
+          "false_block_rate": 0.1267,
+          "flagged_wrong": 279,
+          "confident_error_rate": 0.3282,
+          "accuracy_if_blocking": 0.981
+        },
+        {
+          "tau": 0.95,
+          "blocked_correct": 14,
+          "false_block_rate": 0.0933,
+          "flagged_wrong": 235,
+          "confident_error_rate": 0.2765,
+          "accuracy_if_blocking": 0.986
+        },
+        {
+          "tau": 1.0,
+          "blocked_correct": 0,
+          "false_block_rate": 0.0,
+          "flagged_wrong": 0,
+          "confident_error_rate": 0.0,
+          "accuracy_if_blocking": 1.0
+        },
+        {
+          "tau": 1.05,
+          "blocked_correct": 0,
+          "false_block_rate": 0.0,
+          "flagged_wrong": 0,
+          "confident_error_rate": 0.0,
+          "accuracy_if_blocking": 1.0
+        }
+      ],
+      "clean": [
+        {
+          "tau": 0.3,
+          "blocked_correct": 272,
+          "false_block_rate": 0.6869,
+          "flagged_wrong": 132,
+          "confident_error_rate": 0.3729,
+          "accuracy_if_blocking": 0.6373
+        },
+        {
+          "tau": 0.35,
+          "blocked_correct": 246,
+          "false_block_rate": 0.6212,
+          "flagged_wrong": 113,
+          "confident_error_rate": 0.3192,
+          "accuracy_if_blocking": 0.672
+        },
+        {
+          "tau": 0.4,
+          "blocked_correct": 214,
+          "false_block_rate": 0.5404,
+          "flagged_wrong": 89,
+          "confident_error_rate": 0.2514,
+          "accuracy_if_blocking": 0.7147
+        },
+        {
+          "tau": 0.45,
+          "blocked_correct": 193,
+          "false_block_rate": 0.4874,
+          "flagged_wrong": 73,
+          "confident_error_rate": 0.2062,
+          "accuracy_if_blocking": 0.7427
+        },
+        {
+          "tau": 0.5,
+          "blocked_correct": 161,
+          "false_block_rate": 0.4066,
+          "flagged_wrong": 63,
+          "confident_error_rate": 0.178,
+          "accuracy_if_blocking": 0.7853
+        },
+        {
+          "tau": 0.55,
+          "blocked_correct": 131,
+          "false_block_rate": 0.3308,
+          "flagged_wrong": 48,
+          "confident_error_rate": 0.1356,
+          "accuracy_if_blocking": 0.8253
+        },
+        {
+          "tau": 0.6,
+          "blocked_correct": 107,
+          "false_block_rate": 0.2702,
+          "flagged_wrong": 38,
+          "confident_error_rate": 0.1073,
+          "accuracy_if_blocking": 0.8573
+        },
+        {
+          "tau": 0.65,
+          "blocked_correct": 89,
+          "false_block_rate": 0.2247,
+          "flagged_wrong": 30,
+          "confident_error_rate": 0.0847,
+          "accuracy_if_blocking": 0.8813
+        },
+        {
+          "tau": 0.7,
+          "blocked_correct": 77,
+          "false_block_rate": 0.1944,
+          "flagged_wrong": 27,
+          "confident_error_rate": 0.0763,
+          "accuracy_if_blocking": 0.8973
+        },
+        {
+          "tau": 0.75,
+          "blocked_correct": 65,
+          "false_block_rate": 0.1641,
+          "flagged_wrong": 25,
+          "confident_error_rate": 0.0706,
+          "accuracy_if_blocking": 0.9133
+        },
+        {
+          "tau": 0.8,
+          "blocked_correct": 55,
+          "false_block_rate": 0.1389,
+          "flagged_wrong": 23,
+          "confident_error_rate": 0.065,
+          "accuracy_if_blocking": 0.9267
+        },
+        {
+          "tau": 0.85,
+          "blocked_correct": 47,
+          "false_block_rate": 0.1187,
+          "flagged_wrong": 16,
+          "confident_error_rate": 0.0452,
+          "accuracy_if_blocking": 0.9373
+        },
+        {
+          "tau": 0.9,
+          "blocked_correct": 37,
+          "false_block_rate": 0.0934,
+          "flagged_wrong": 13,
+          "confident_error_rate": 0.0367,
+          "accuracy_if_blocking": 0.9507
+        },
+        {
+          "tau": 0.95,
+          "blocked_correct": 27,
+          "false_block_rate": 0.0682,
+          "flagged_wrong": 6,
+          "confident_error_rate": 0.0169,
+          "accuracy_if_blocking": 0.964
+        },
+        {
+          "tau": 1.0,
+          "blocked_correct": 0,
+          "false_block_rate": 0.0,
+          "flagged_wrong": 0,
+          "confident_error_rate": 0.0,
+          "accuracy_if_blocking": 1.0
+        },
+        {
+          "tau": 1.05,
+          "blocked_correct": 0,
+          "false_block_rate": 0.0,
+          "flagged_wrong": 0,
+          "confident_error_rate": 0.0,
+          "accuracy_if_blocking": 1.0
+        }
+      ]
+    }
+  },
+  "verdict": {
+    "false_block_rate_clean_shipped": 0.6667,
+    "false_block_rate_clean_recalibrated": 0.1641,
+    "oer_adv_shipped": 0.674,
+    "oer_adv_recalibrated": 0.374,
+    "mean_conf_wrong_shipped": 0.8758631562511788,
+    "mean_conf_wrong_recalibrated": 0.6524144574842123,
+    "guardrail_closes": true,
+    "note": "la difesa è chiusa: l'errore convinto scende sotto 0.75 e il guardrail di confidenza intercetta"
+  }
+}

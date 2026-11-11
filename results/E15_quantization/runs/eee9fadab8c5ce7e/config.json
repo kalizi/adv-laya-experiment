@@ -1,0 +1,21 @@
+{
+  "experiment": "E15_quantization",
+  "config_name": "deberta-onnx/q4",
+  "checkpoint": "/home/kalizi/Scrivania/Projects/adversarial-laya/data/onnx/open-jev-deberta-v3-large",
+  "dataset": "banking77",
+  "dataset_sha256": "1a3b1ee8651f89076cdb64782eacae7732e8551faa3f68c6fecf2fcb73ea8793",
+  "subset_hash": "cb88c247513aefa5aa24be76cb5df285105ff4041dc4eda601082af9cf3f075f",
+  "k": 32,
+  "n_cases": 1000,
+  "seed": 0,
+  "batch_size": 16,
+  "chunk": 32,
+  "template": "prepend",
+  "weight_sha256": "5be15f8076cc2c16d76fb2e9c8703a0d7d355950422ce47e8dae072ce9ca3b8e",
+  "backend": "deberta-onnx",
+  "compiled": false,
+  "fast": false,
+  "variant": "q4",
+  "device": "onnx:CUDAExecutionProvider",
+  "kind": "adversarial"
+}

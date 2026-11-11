@@ -1,0 +1,10 @@
+{
+  "experiment": "E04_truncation",
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "filler_mult": 1.5,
+  "filler_tokens": 1443,
+  "n_cases": 400,
+  "dataset": "typed-decisions/test",
+  "batch_size": 16,
+  "chunk": 16
+}

@@ -1,0 +1,1027 @@
+{
+  "experiment": "E13_label_semantics",
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "dataset": "massive-it",
+  "n_cases": 1000,
+  "k_values": [
+    4,
+    8,
+    16
+  ],
+  "arms": [
+    "real",
+    "short",
+    "prefix"
+  ],
+  "seed": 0,
+  "study_valid": false,
+  "why_not": "le opzioni sono backend: rinominarle cambia la domanda, quindi questa è una misura diagnostica del canale, non una submission (vedi superficie-attacco.md)",
+  "results": [
+    {
+      "arm": "real",
+      "k": 4,
+      "chance": 0.25,
+      "delta_tokens": 0.0,
+      "temperature": {
+        "primitive": "choice",
+        "options": 4,
+        "bucket": "choice:3-5",
+        "temperature_raw": 1.7601518630981445,
+        "temperature_applied": 1.7601518630981445
+      },
+      "run_id": "d0dc08019d3f55df",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 49,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "head_audit_base_questions": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 49,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.495,
+      "accuracy_by_primitive": {
+        "choice": 0.495,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.4167476,
+      "brier": 0.6276819094,
+      "brier_by_primitive": {
+        "choice": 0.6276819094,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.04365524752475247,
+      "batching": {
+        "states": 1000,
+        "question_groups": 997,
+        "max_states_per_group": 2,
+        "batch_size_effective": 2,
+        "batch_size_requested": 16,
+        "batching_is_inert": false
+      },
+      "latency": {
+        "n": 32,
+        "p50_ms": 531.25,
+        "p95_ms": 585.86,
+        "mean_ms": 539.56,
+        "std_ms": 132.75,
+        "total_ms": 17265.88,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 17.2659,
+        "decisions_per_s": 57.92
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 17.32,
+        "batches_this_process": 32
+      }
+    },
+    {
+      "arm": "short",
+      "k": 4,
+      "chance": 0.25,
+      "delta_tokens": 0.0,
+      "temperature": {
+        "primitive": "choice",
+        "options": 4,
+        "bucket": "choice:3-5",
+        "temperature_raw": 1.7601518630981445,
+        "temperature_applied": 1.7601518630981445
+      },
+      "run_id": "b2174db4f9a87c2c",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 29,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "head_audit_base_questions": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 49,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.22,
+      "accuracy_by_primitive": {
+        "choice": 0.22,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.2147242,
+      "brier": 0.75886637251,
+      "brier_by_primitive": {
+        "choice": 0.75886637251,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.005378205128205128,
+      "batching": {
+        "states": 1000,
+        "question_groups": 997,
+        "max_states_per_group": 2,
+        "batch_size_effective": 2,
+        "batch_size_requested": 16,
+        "batching_is_inert": false
+      },
+      "latency": {
+        "n": 32,
+        "p50_ms": 543.27,
+        "p95_ms": 565.8,
+        "mean_ms": 530.18,
+        "std_ms": 72.71,
+        "total_ms": 16965.85,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 16.9658,
+        "decisions_per_s": 58.94
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 17.02,
+        "batches_this_process": 32
+      },
+      "drop_vs_real_pp": 27.5
+    },
+    {
+      "arm": "prefix",
+      "k": 4,
+      "chance": 0.25,
+      "delta_tokens": 0.0,
+      "temperature": {
+        "primitive": "choice",
+        "options": 4,
+        "bucket": "choice:3-5",
+        "temperature_raw": 1.7601518630981445,
+        "temperature_applied": 1.7601518630981445
+      },
+      "run_id": "575ea12deaba0a27",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 61,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "head_audit_base_questions": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 49,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.519,
+      "accuracy_by_primitive": {
+        "choice": 0.519,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.4644039,
+      "brier": 0.63505253591,
+      "brier_by_primitive": {
+        "choice": 0.63505253591,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.028056133056133054,
+      "batching": {
+        "states": 1000,
+        "question_groups": 997,
+        "max_states_per_group": 2,
+        "batch_size_effective": 2,
+        "batch_size_requested": 16,
+        "batching_is_inert": false
+      },
+      "latency": {
+        "n": 32,
+        "p50_ms": 547.91,
+        "p95_ms": 558.29,
+        "mean_ms": 534.52,
+        "std_ms": 72.86,
+        "total_ms": 17104.78,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 17.1048,
+        "decisions_per_s": 58.46
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 17.16,
+        "batches_this_process": 32
+      },
+      "drop_vs_real_pp": -2.4
+    },
+    {
+      "arm": "real",
+      "k": 8,
+      "chance": 0.125,
+      "delta_tokens": 0.0,
+      "temperature": {
+        "primitive": "choice",
+        "options": 8,
+        "bucket": "choice:6-10",
+        "temperature_raw": 1.0000158548355103,
+        "temperature_applied": 1.0000158548355103
+      },
+      "run_id": "3ad38d3793733de8",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 72,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "head_audit_base_questions": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 72,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.386,
+      "accuracy_by_primitive": {
+        "choice": 0.386,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.21304019999999999,
+      "brier": 0.73131269751,
+      "brier_by_primitive": {
+        "choice": 0.73131269751,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.002,
+        "0.85": 0.0
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.002,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.11439625407166124,
+      "batching": {
+        "states": 1000,
+        "question_groups": 1000,
+        "max_states_per_group": 1,
+        "batch_size_effective": 1,
+        "batch_size_requested": 16,
+        "batching_is_inert": true
+      },
+      "latency": {
+        "n": 32,
+        "p50_ms": 556.91,
+        "p95_ms": 576.89,
+        "mean_ms": 546.03,
+        "std_ms": 73.92,
+        "total_ms": 17473.07,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 17.4731,
+        "decisions_per_s": 57.23
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 17.53,
+        "batches_this_process": 32
+      }
+    },
+    {
+      "arm": "short",
+      "k": 8,
+      "chance": 0.125,
+      "delta_tokens": 0.0,
+      "temperature": {
+        "primitive": "choice",
+        "options": 8,
+        "bucket": "choice:6-10",
+        "temperature_raw": 1.0000158548355103,
+        "temperature_applied": 1.0000158548355103
+      },
+      "run_id": "e9bb82f411316934",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 41,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "head_audit_base_questions": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 72,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.095,
+      "accuracy_by_primitive": {
+        "choice": 0.095,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.08428219999999999,
+      "brier": 0.8846402965,
+      "brier_by_primitive": {
+        "choice": 0.8846402965,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.01100696132596685,
+      "batching": {
+        "states": 1000,
+        "question_groups": 1000,
+        "max_states_per_group": 1,
+        "batch_size_effective": 1,
+        "batch_size_requested": 16,
+        "batching_is_inert": true
+      },
+      "latency": {
+        "n": 32,
+        "p50_ms": 527.34,
+        "p95_ms": 562.49,
+        "mean_ms": 519.21,
+        "std_ms": 72.07,
+        "total_ms": 16614.66,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 16.6147,
+        "decisions_per_s": 60.19
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 16.79,
+        "batches_this_process": 32
+      },
+      "drop_vs_real_pp": 29.1
+    },
+    {
+      "arm": "prefix",
+      "k": 8,
+      "chance": 0.125,
+      "delta_tokens": 0.0,
+      "temperature": {
+        "primitive": "choice",
+        "options": 8,
+        "bucket": "choice:6-10",
+        "temperature_raw": 1.0000158548355103,
+        "temperature_applied": 1.0000158548355103
+      },
+      "run_id": "84853e492f3cba88",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 96,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "head_audit_base_questions": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 72,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.411,
+      "accuracy_by_primitive": {
+        "choice": 0.411,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.2846809,
+      "brier": 0.73258637236,
+      "brier_by_primitive": {
+        "choice": 0.73258637236,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.07908081494057725,
+      "batching": {
+        "states": 1000,
+        "question_groups": 1000,
+        "max_states_per_group": 1,
+        "batch_size_effective": 1,
+        "batch_size_requested": 16,
+        "batching_is_inert": true
+      },
+      "latency": {
+        "n": 32,
+        "p50_ms": 566.57,
+        "p95_ms": 594.86,
+        "mean_ms": 555.01,
+        "std_ms": 77.8,
+        "total_ms": 17760.34,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 17.7603,
+        "decisions_per_s": 56.31
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 17.82,
+        "batches_this_process": 32
+      },
+      "drop_vs_real_pp": -2.5
+    },
+    {
+      "arm": "real",
+      "k": 16,
+      "chance": 0.0625,
+      "delta_tokens": 0.0,
+      "temperature": {
+        "primitive": "choice",
+        "options": 16,
+        "bucket": "choice:11+",
+        "temperature_raw": 0.10058280825614929,
+        "temperature_applied": 0.5
+      },
+      "run_id": "8717a503bdb0d2b2",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 119,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "head_audit_base_questions": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 119,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.306,
+      "accuracy_by_primitive": {
+        "choice": 0.306,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.07530970000000001,
+      "brier": 0.8359999992199999,
+      "brier_by_primitive": {
+        "choice": 0.8359999992199999,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.023,
+        "0.85": 0.008
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.023,
+          "0.85": 0.008
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.029,
+        "0.85": 0.012
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.029,
+          "0.85": 0.012
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.30368040345821323,
+      "batching": {
+        "states": 1000,
+        "question_groups": 1000,
+        "max_states_per_group": 1,
+        "batch_size_effective": 1,
+        "batch_size_requested": 16,
+        "batching_is_inert": true
+      },
+      "latency": {
+        "n": 32,
+        "p50_ms": 565.0,
+        "p95_ms": 602.68,
+        "mean_ms": 554.67,
+        "std_ms": 76.78,
+        "total_ms": 17749.58,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 17.7496,
+        "decisions_per_s": 56.34
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 17.82,
+        "batches_this_process": 32
+      }
+    },
+    {
+      "arm": "short",
+      "k": 16,
+      "chance": 0.0625,
+      "delta_tokens": 0.0,
+      "temperature": {
+        "primitive": "choice",
+        "options": 16,
+        "bucket": "choice:11+",
+        "temperature_raw": 0.10058280825614929,
+        "temperature_applied": 0.5
+      },
+      "run_id": "755608a247cc6b49",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 65,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "head_audit_base_questions": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 119,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.038,
+      "accuracy_by_primitive": {
+        "choice": 0.038,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.009785800000000004,
+      "brier": 0.95704136827,
+      "brier_by_primitive": {
+        "choice": 0.95704136827,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.0,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.03748482328482328,
+      "batching": {
+        "states": 1000,
+        "question_groups": 1000,
+        "max_states_per_group": 1,
+        "batch_size_effective": 1,
+        "batch_size_requested": 16,
+        "batching_is_inert": true
+      },
+      "latency": {
+        "n": 32,
+        "p50_ms": 577.25,
+        "p95_ms": 601.84,
+        "mean_ms": 566.28,
+        "std_ms": 78.08,
+        "total_ms": 18120.85,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 18.1208,
+        "decisions_per_s": 55.19
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 18.19,
+        "batches_this_process": 32
+      },
+      "drop_vs_real_pp": 26.8
+    },
+    {
+      "arm": "prefix",
+      "k": 16,
+      "chance": 0.0625,
+      "delta_tokens": 0.0,
+      "temperature": {
+        "primitive": "choice",
+        "options": 16,
+        "bucket": "choice:11+",
+        "temperature_raw": 0.10058280825614929,
+        "temperature_applied": 0.5
+      },
+      "run_id": "f42f2a1e09eb0ff5",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 167,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "head_audit_base_questions": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 119,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.288,
+      "accuracy_by_primitive": {
+        "choice": 0.288,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.027634300000000014,
+      "brier": 0.8310178028699999,
+      "brier_by_primitive": {
+        "choice": 0.8310178028699999,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.004,
+        "0.85": 0.0
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.004,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.008,
+        "0.85": 0.002
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.008,
+          "0.85": 0.002
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.2171879213483146,
+      "batching": {
+        "states": 1000,
+        "question_groups": 1000,
+        "max_states_per_group": 1,
+        "batch_size_effective": 1,
+        "batch_size_requested": 16,
+        "batching_is_inert": true
+      },
+      "latency": {
+        "n": 32,
+        "p50_ms": 550.86,
+        "p95_ms": 582.88,
+        "mean_ms": 540.99,
+        "std_ms": 73.77,
+        "total_ms": 17311.69,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 17.3117,
+        "decisions_per_s": 57.76
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 17.38,
+        "batches_this_process": 32
+      },
+      "drop_vs_real_pp": 1.8
+    }
+  ],
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+  }
+}

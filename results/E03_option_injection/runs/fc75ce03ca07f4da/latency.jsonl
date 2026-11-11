@@ -1,0 +1,4 @@
+{"ms": 1000.549, "decisions": 32, "device": "llama.cpp:gpu(Q6_K) vram=8782MiB weights=6701MiB", "dtype": "gguf:Q6_K", "heads_device": "cpu"}
+{"ms": 956.527, "decisions": 32, "device": "llama.cpp:gpu(Q6_K) vram=8782MiB weights=6701MiB", "dtype": "gguf:Q6_K", "heads_device": "cpu"}
+{"ms": 1018.821, "decisions": 32, "device": "llama.cpp:gpu(Q6_K) vram=8782MiB weights=6701MiB", "dtype": "gguf:Q6_K", "heads_device": "cpu"}
+{"ms": 126.631, "decisions": 4, "device": "llama.cpp:gpu(Q6_K) vram=8782MiB weights=6701MiB", "dtype": "gguf:Q6_K", "heads_device": "cpu"}

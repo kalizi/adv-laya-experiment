@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "adversarial-laya"
+version = "0.1.0"
+description = "Adversarial inputs against Laya (System One model)"
+license = { file = "LICENSE" }
+requires-python = ">=3.11,<3.15"
+dependencies = [
+    "laya>=0.3",
+    "datasets>=3.0",
+    "huggingface-hub>=0.25",
+    "spacy>=3.8.16",
+    "it-core-news-md",
+    # E12: sinonimi rari + frequenza d'uso per l'operatore di mutazione.
+    # WordNet viene letto da ~/nltk_data (corpora wordnet), non dal pacchetto.
+    "nltk>=3.10",
+    # Backend laya-family via ONNX Runtime (laya-multilingual esportato): stessa
+    # testa a marker, gira su CPU, verificato 40/40 identico al PyTorch.
+    # POS e stopword in inglese (vedi tool.uv.sources): il dataset e' inglese.
+    # md e non sm: su testo tecnico il modello piccolo sbaglia il tagging.
+    "en-core-web-md>=3.8",
+    "bitsandbytes>=0.50.2",
+    "onnxruntime-gpu>=1.30",
+]
+
+[project.scripts]
+adv = "layaadv.cli:main"
+
+[dependency-groups]
+dev = [
+    "ipython>=8.0",
+    "pytest>=8.0",
+    "ruff>=0.6",
+    # tools/paper_figures.py: le figure del paper sono generate dagli store, non
+    # disegnate a mano, quindi i numeri nelle figure sono gli stessi dei risultati.
+    "matplotlib>=3.8",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/layaadv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 110
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.ruff.lint.per-file-ignores]
+# Registry dei dataset: note e licenze sono testo dichiarativo, non codice.
+"src/layaadv/datasets/download.py" = ["E501"]
+
+[tool.uv.sources]
+it-core-news-md = { url = "https://github.com/explosion/spacy-models/releases/download/it_core_news_md-3.8.0/it_core_news_md-3.8.0-py3-none-any.whl" }
+# E12: POS e stopword in inglese. Il dataset typed-decisions e' in inglese e il
+# modello IT sbaglia (misurato: 5 token su 14 restano X, quindi il filtro
+# "non connettivo / non articolo" non avrebbe scelto nulla). Su PyPI questo
+# modello non esiste, quindi serve l'URL della release.
+en-core-web-md = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl" }

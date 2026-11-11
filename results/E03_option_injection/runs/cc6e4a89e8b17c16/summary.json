@@ -1,0 +1,135 @@
+{
+  "experiment": "E03_option_injection",
+  "run_id": "cc6e4a89e8b17c16",
+  "config": {
+    "experiment": "E03_option_injection",
+    "kind": "clean",
+    "checkpoint": "clm-v0.1-8B",
+    "dataset": "massive-it",
+    "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+    "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+    "k": 32,
+    "n_cases": 2974,
+    "seed": 0,
+    "batch_size": 16,
+    "chunk": 32,
+    "backend": "clm-llama",
+    "compiled": false,
+    "fast": false,
+    "confidence_definition": "p1 - mean(p2..pk)  [CLM API definition]",
+    "quantization": "Q6_K",
+    "variant": null,
+    "logit_scale": 100.0,
+    "temperature_effective": 0.01,
+    "pooling": "last-token",
+    "embedding_normalisation": "l2, applied client-side by clm.Embedder",
+    "truncation": "head (first N tokens), matching the vLLM serving path",
+    "max_context_tokens": 2048,
+    "service_model": "clm-latest",
+    "encoder_runtime": "b11160-a3c12db9d",
+    "encoder_model": "Qwen3-8B-Q6_K.gguf",
+    "encoder_slots": 8,
+    "base_model": "Qwen/Qwen3-8B",
+    "device": "llama.cpp:gpu(Q6_K) vram=8782MiB weights=6701MiB",
+    "heads_device": "cpu",
+    "weight_sha256": "9801569e1482da021a30f5fe41da60f006c5a70ee98c561af4aeddac44a49181"
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "9801569e1482da021a30f5fe41da60f006c5a70ee98c561af4aeddac44a49181"
+  },
+  "finished_at": "2026-10-04T19:48:45.489039+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 2974,
+      "n_cases": 2974,
+      "accuracy": 0.10759919300605246,
+      "accuracy_by_primitive": {
+        "choice": 0.10759919300605246,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.17535017495345584,
+      "brier": 1.0143417840010003,
+      "brier_by_primitive": {
+        "choice": 1.0143417840010003,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.003698722259583053,
+        "0.85": 0.0006724949562878278
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.003698722259583053,
+          "0.85": 0.0006724949562878278
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.0023537323470073975,
+        "0.85": 0.0
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.0023537323470073975,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.2661690477523959,
+      "batching": {
+        "states": 2974,
+        "question_groups": 2974,
+        "max_states_per_group": 1,
+        "batch_size_effective": 8,
+        "batch_size_requested": 16,
+        "batching_is_inert": false,
+        "concurrency": 8,
+        "encoder_slots": 8,
+        "note": "CLM non fa un forward con padding: ogni caso e' una richiesta HTTP e il lever e' la concorrenza sui slot di llama-server."
+      },
+      "latency": {
+        "n": 93,
+        "p50_ms": 119.47,
+        "p95_ms": 137.5,
+        "mean_ms": 121.02,
+        "std_ms": 7.78,
+        "total_ms": 11254.82,
+        "devices": [
+          "llama.cpp:gpu(Q6_K) vram=8782MiB weights=6701MiB"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 3.7844,
+        "decisions_per_s": 264.24
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 11.81,
+        "batches_this_process": 93
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "experiment": "E03_option_injection",
+  "run_id": "ab2dc74b3f26c6c6",
+  "config": {
+    "experiment": "E03_option_injection",
+    "kind": "adversarial",
+    "template": "append",
+    "position": "tail",
+    "pad_tokens": 0,
+    "checkpoint": "convaiinnovations/laya-multilingual",
+    "dataset": "massive-it",
+    "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+    "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+    "k": 16,
+    "n_cases": 2974,
+    "seed": 0,
+    "batch_size": 16,
+    "chunk": 32,
+    "weight_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204"
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204"
+  },
+  "finished_at": "2026-10-01T16:05:38.453198+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 2974,
+      "n_cases": 2974,
+      "accuracy": 0.00605245460659045,
+      "accuracy_by_primitive": {
+        "choice": 0.00605245460659045,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.9826022864828513,
+      "brier": 1.9720630077807666,
+      "brier_by_primitive": {
+        "choice": 1.9720630077807666,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.9831876260928043,
+        "0.85": 0.9707464694014795
+      },
+      "mean_conf_wrong": 0.989306901217862,
+      "latency": {
+        "n": 93,
+        "p50_ms": 477.61,
+        "p95_ms": 515.81,
+        "mean_ms": 479.04,
+        "std_ms": 18.17,
+        "total_ms": 44550.41,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 14.98,
+        "decisions_per_s": 66.76
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 44.7,
+        "batches_this_process": 93
+      }
+    }
+  }
+}

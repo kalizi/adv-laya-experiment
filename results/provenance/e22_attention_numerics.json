@@ -1,0 +1,24 @@
+{
+  "experiment": "E22_attention_numerics",
+  "question": "il profilo eager appartiene alla decisione pubblicata?",
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "dataset": "massive-it",
+  "k": 16,
+  "seed": 0,
+  "counts": {
+    "n_cases": 300,
+    "plumbing_vs_stock": 0,
+    "eager_vs_stock": 9,
+    "eager_vs_plumbing": 9
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+  }
+}

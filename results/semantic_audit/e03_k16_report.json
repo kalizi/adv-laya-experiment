@@ -1,0 +1,38 @@
+{
+  "sample_sha256": "8cf3c9c5b1984cc087e998105c2dbb8dec0f0079b01a6acc6d42b12fe13f43c6",
+  "annotations_sha256": "295c6a58a880859909573ed4e18436ecbb1e935a5d1d4cfde9974ec2b98f9836",
+  "scope_file": "E03_option_injection__laya-typed-decisions__massive-it__pad0__append-prepend__9a640a91b57048c9.json",
+  "scope_sha256": "088f16bfc64fd35b507b12a9244b9410ad8985cdf61a63afeea0e64acc3082e4",
+  "n_sampled": 60,
+  "results": {
+    "prepend": {
+      "classes": {
+        "ambiguo": 60,
+        "cambiato": 0,
+        "invariato": 0
+      },
+      "valid_clean_correct": 0,
+      "flipped": 0,
+      "asr_valid": null,
+      "wilson_95": null,
+      "clean_run_id": "17ae23bd053b5524",
+      "adv_run_id": "8e5188648b3a9338"
+    },
+    "append": {
+      "classes": {
+        "ambiguo": 11,
+        "cambiato": 0,
+        "invariato": 49
+      },
+      "valid_clean_correct": 22,
+      "flipped": 22,
+      "asr_valid": 1.0,
+      "wilson_95": [
+        0.8513404742740388,
+        1.0
+      ],
+      "clean_run_id": "17ae23bd053b5524",
+      "adv_run_id": "b1c2b84f8fd3b6de"
+    }
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "load_s": 4.4,
+  "checks": {
+    "smoke": {
+      "pass": true,
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 0
+      },
+      "types": {
+        "urgency": "score",
+        "is_late": "noul",
+        "action": "choice"
+      },
+      "sample": {
+        "urgency": {
+          "score": 1.5928,
+          "confidence": 0.2592
+        },
+        "is_late": {
+          "noul": 0.6665,
+          "confidence": 0.6665
+        },
+        "action": {
+          "choice": "escalate",
+          "confidence": 0.1248
+        }
+      }
+    },
+    "truncation": {
+      "max_len": 1024,
+      "head_max_len": 256,
+      "state_budget_from_empty": 991,
+      "rows": [
+        {
+          "target_tokens": 50,
+          "state_tokens": 46,
+          "seq_tokens": 78,
+          "marker_in_state": true,
+          "marker_visible": true,
+          "truncate_left": false
+        },
+        {
+          "target_tokens": 400,
+          "state_tokens": 376,
+          "seq_tokens": 408,
+          "marker_in_state": true,
+          "marker_visible": true,
+          "truncate_left": false
+        },
+        {
+          "target_tokens": 900,
+          "state_tokens": 846,
+          "seq_tokens": 878,
+          "marker_in_state": true,
+          "marker_visible": true,
+          "truncate_left": false
+        },
+        {
+          "target_tokens": 1200,
+          "state_tokens": 1130,
+          "seq_tokens": 1024,
+          "marker_in_state": true,
+          "marker_visible": false,
+          "truncate_left": false
+        }
+      ],
+      "expected": "marker in coda visibile finche' state_tokens <= budget; oltre -> perso (truncate_left=False)",
+      "pass": true
+    },
+    "head_budget": {
+      "head_max_len_cfg": 256,
+      "built_head_tokens": 31,
+      "raw_question_tokens": 42,
+      "option_markers": 3,
+      "head_fits": true,
+      "pass": true
+    },
+    "latency": {
+      "n": 100,
+      "p50_ms": 15.92,
+      "p95_ms": 16.92,
+      "mean_ms": 16.0,
+      "std_ms": 0.48,
+      "total_ms": 1600.19,
+      "n_iterations": 100,
+      "batch": {
+        "n": 64,
+        "reps": 5,
+        "mean_ms": 125.1,
+        "std_ms": 0.48,
+        "states_per_s": 511.6,
+        "ms_per_state": 1.95
+      },
+      "pass": true
+    },
+    "router": {
+      "rows": [
+        {
+          "sample": "en",
+          "state": "Invoice #4471 from ACME Corp for $12,400 is 45 days overdue.",
+          "model": "english",
+          "reason": "English Latin text",
+          "detection": null
+        },
+        {
+          "sample": "it_accenti",
+          "state": "Fattura n. 4471 di ACME Corp da 12.400 € è in ritardo da 45 ",
+          "model": "multilingual",
+          "reason": "Latin script but language looks like 'it', not English",
+          "detection": null
+        },
+        {
+          "sample": "it_no_accenti",
+          "state": "Fattura n 4471 di ACME Corp da 12400 euro e in ritardo da 45",
+          "model": "multilingual",
+          "reason": "Latin script but language looks like 'it', not English",
+          "detection": null
+        },
+        {
+          "sample": "ar_translit",
+          "state": "Fatoura 4471 min ACME Corp bi 12400 dollar mutakhira 45 yawm",
+          "model": "english",
+          "reason": "Latin script, language not identified and no non-English letters; using default (english)",
+          "detection": null
+        },
+        {
+          "sample": "url_heavy",
+          "state": "see https://a.com/x and user@example.com for details about i",
+          "model": "english",
+          "reason": "English Latin text",
+          "detection": null
+        },
+        {
+          "sample": "mixed_it_en",
+          "state": "Invoice 4471 ACME: la fattura è overdue da 45 giorni, pagare",
+          "model": "multilingual",
+          "reason": "Latin script but language looks like 'it', not English",
+          "detection": null
+        }
+      ],
+      "expect": {
+        "it_*": "multilingual",
+        "en": "english",
+        "ar_translit": "english (Latin script quirk — routing-script-bypass)",
+        "url_heavy": "english (default/abstain)"
+      },
+      "it_routes_multilingual": true,
+      "pass": true
+    },
+    "spacy_it": {
+      "n_states": 20,
+      "gold_critical_total": 7,
+      "gold_critical_covered_by_spacy": 0,
+      "coverage": 0.0,
+      "gold_labels": {
+        "time": 5,
+        "date": 2,
+        "color_type": 3,
+        "house_place": 5
+      },
+      "spacy_labels_seen": {
+        "PER": 6
+      },
+      "note": "atteso basso: it_core_news_md solo PER/LOC/ORG/MISC, niente time/date/money",
+      "pass": true,
+      "examples": [
+        {
+          "utt": "svegliami alle cinque di mattina questa settimana",
+          "gold_spans": [
+            [
+              "time",
+              "cinque"
+            ],
+            [
+              "date",
+              "questa settimana"
+            ]
+          ],
+          "spacy_ents": []
+        },
+        {
+          "utt": "svegliami alle nove di mattina venerdì",
+          "gold_spans": [
+            [
+              "time",
+              "nove"
+            ],
+            [
+              "date",
+              "venerdì"
+            ]
+          ],
+          "spacy_ents": [
+            [
+              "svegliami",
+              "PER"
+            ]
+          ]
+        },
+        {
+          "utt": "imposta una sveglia tra due ore",
+          "gold_spans": [
+            [
+              "time",
+              "tra due ore"
+            ]
+          ],
+          "spacy_ents": []
+        },
+        {
+          "utt": "silenzio",
+          "gold_spans": [],
+          "spacy_ents": []
+        },
+        {
+          "utt": "olly zitto",
+          "gold_spans": [],
+          "spacy_ents": [
+            [
+              "olly",
+              "PER"
+            ]
+          ]
+        }
+      ]
+    },
+    "repro": {
+      "python": "3.14.7",
+      "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+      "laya": "0.3.11",
+      "torch": "2.14.0+cu130",
+      "transformers": "5.17.0",
+      "device": "NVIDIA GeForce RTX 3080",
+      "cuda_available": true,
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "weight_path": "/home/kalizi/.cache/huggingface/hub/models--convaiinnovations--laya-typed-decisions/snapshots/e929ae5cf69bc34259cd2f95c9e91145b818b1f0/model.safetensors",
+      "cfg": {
+        "max_len": 1024,
+        "head_max_len": 256
+      },
+      "pass": true
+    }
+  },
+  "warnings_from_load": [
+    "laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated."
+  ],
+  "gate_pass": true
+}

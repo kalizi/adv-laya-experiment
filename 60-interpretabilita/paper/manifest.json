@@ -1,0 +1,255 @@
+{
+  "paper": {
+    "jain-wallace-attention-not-explanation": {
+      "arxiv": "1902.10186",
+      "url": "https://arxiv.org/pdf/1902.10186",
+      "titolo": "Attention is not Explanation",
+      "autori": "Jain, Wallace",
+      "venue": "NAACL-HLT 2019",
+      "famiglia": "attenzione-come-spiegazione",
+      "ext": "pdf",
+      "sha256": "ffc666e7e27ddf832b209027d9b35c5a8525d0bd2b114099d0bec252135fd322",
+      "bytes": 1259036
+    },
+    "wiegreffe-pinter-attention-not-not-explanation": {
+      "arxiv": "1908.04626",
+      "url": "https://arxiv.org/pdf/1908.04626",
+      "titolo": "Attention is not not Explanation",
+      "autori": "Wiegreffe, Pinter",
+      "venue": "EMNLP-IJCNLP 2019",
+      "famiglia": "attenzione-come-spiegazione",
+      "ext": "pdf",
+      "sha256": "d9e507dfa544d04e2738b069352cad8849246e58650a1f6c19f6ba7091260a47",
+      "bytes": 4984859
+    },
+    "serrano-smith-is-attention-interpretable": {
+      "arxiv": "1906.03731",
+      "url": "https://arxiv.org/pdf/1906.03731",
+      "titolo": "Is Attention Interpretable?",
+      "autori": "Serrano, Smith",
+      "venue": "ACL 2019",
+      "famiglia": "attenzione-come-spiegazione",
+      "ext": "pdf",
+      "sha256": "21109d86207cc6fc8f547c35fc233e14f015ec5140cf95cc47f3988ef6a9e380",
+      "bytes": 1941517
+    },
+    "abnar-zuidema-attention-flow": {
+      "arxiv": "2005.00928",
+      "url": "https://arxiv.org/pdf/2005.00928",
+      "titolo": "Quantifying Attention Flow in Transformers",
+      "autori": "Abnar, Zuidema",
+      "venue": "ACL 2020",
+      "famiglia": "attenzione-come-spiegazione",
+      "ext": "pdf",
+      "sha256": "7af1bfaabb468d3e6e7883cda36a613d7478008b05121b5c3cface8157ab74e2",
+      "bytes": 3973255
+    },
+    "michel-levy-neubig-sixteen-heads": {
+      "arxiv": "1905.10650",
+      "url": "https://arxiv.org/pdf/1905.10650",
+      "titolo": "Are Sixteen Heads Really Better than One?",
+      "autori": "Michel, Levy, Neubig",
+      "venue": "NeurIPS 2019",
+      "famiglia": "teste-e-struttura",
+      "ext": "pdf",
+      "sha256": "f47955ececb443ded32e995d82a9e3fd936f7e85815e7831d4dfcb0cae46d10c",
+      "bytes": 576411
+    },
+    "voita-analyzing-multihead-self-attention": {
+      "arxiv": "1905.09418",
+      "url": "https://arxiv.org/pdf/1905.09418",
+      "titolo": "Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned",
+      "autori": "Voita, Talbot, Moiseev, Sennrich, Titov",
+      "venue": "ACL 2019",
+      "famiglia": "teste-e-struttura",
+      "ext": "pdf",
+      "sha256": "69cbfbee828ba42f0a88b6ebbd7efc794d2385f1399de186ef9338540826e6c6",
+      "bytes": 3285256
+    },
+    "clark-khandelwal-what-does-bert-look-at": {
+      "arxiv": "1906.04341",
+      "url": "https://arxiv.org/pdf/1906.04341",
+      "titolo": "What Does BERT Look At? An Analysis of BERT's Attention",
+      "autori": "Clark, Khandelwal, Levy, Manning",
+      "venue": "BlackboxNLP@ACL 2019",
+      "famiglia": "bertology-encoder-mascherati",
+      "ext": "pdf",
+      "sha256": "cf01528475b67c122e4d7d7371dea64c8004ee972be286577a09ca5e7df1098a",
+      "bytes": 1333775
+    },
+    "tenney-das-bert-rediscovers-pipeline": {
+      "arxiv": "1905.05950",
+      "url": "https://arxiv.org/pdf/1905.05950",
+      "titolo": "BERT Rediscovers the Classical NLP Pipeline",
+      "autori": "Tenney, Das, Pavlick",
+      "venue": "ACL 2019",
+      "famiglia": "bertology-encoder-mascherati",
+      "ext": "pdf",
+      "sha256": "3e5214dacf51eeeef5490a4699fa79b2c162145e673d98e817101412b91e5d5e",
+      "bytes": 1511448
+    },
+    "rogers-kovaleva-bertology-primer": {
+      "arxiv": "2002.12327",
+      "url": "https://arxiv.org/pdf/2002.12327",
+      "titolo": "A Primer in BERTology: What We Know About How BERT Works",
+      "autori": "Rogers, Kovaleva, Rumshisky",
+      "venue": "TACL 2020",
+      "famiglia": "bertology-encoder-mascherati",
+      "ext": "pdf",
+      "sha256": "c4b5b7bffb63b2276515d91d5579a33dbd93f2e1b5a93e106c576d5de7d1a8d0",
+      "bytes": 1850399
+    },
+    "adebayo-sanity-checks-saliency": {
+      "arxiv": "1810.03292",
+      "url": "https://arxiv.org/pdf/1810.03292",
+      "titolo": "Sanity Checks for Saliency Maps",
+      "autori": "Adebayo, Gilmer, Muelly, Goodfellow, Hardt, Kim",
+      "venue": "NeurIPS 2018",
+      "famiglia": "attribuzioni-e-sanity-check",
+      "ext": "pdf",
+      "sha256": "654cb2393d1e2bf96374c2d8bf85d2561ed9a162ce58249e640d7685701c9ce0",
+      "bytes": 11047575
+    },
+    "chefer-transformer-interpretability": {
+      "arxiv": "2012.09838",
+      "url": "https://arxiv.org/pdf/2012.09838",
+      "titolo": "Transformer Interpretability Beyond Attention Visualization",
+      "autori": "Chefer, Gur, Wolf",
+      "venue": "CVPR 2021",
+      "famiglia": "attribuzioni-e-sanity-check",
+      "ext": "pdf",
+      "sha256": "5464f9b31fa05d32e93f373f1f5de032a3c72aa86e35b4be4ef8f9e1456a7768",
+      "bytes": 15273518
+    },
+    "hewitt-liang-control-tasks": {
+      "arxiv": "1909.03368",
+      "url": "https://arxiv.org/pdf/1909.03368",
+      "titolo": "Designing and Interpreting Probes with Control Tasks",
+      "autori": "Hewitt, Liang",
+      "venue": "EMNLP-IJCNLP 2019",
+      "famiglia": "probe-e-controfattuali",
+      "ext": "pdf",
+      "sha256": "5fc41d60b1a9b8974f6a28dae562b9d118ace511e833d0107c6013583945426a",
+      "bytes": 960430
+    },
+    "vig-causal-mediation-gender-bias": {
+      "arxiv": "2004.12265",
+      "url": "https://arxiv.org/pdf/2004.12265",
+      "titolo": "Causal Mediation Analysis for Interpreting Neural NLP: The Case of Gender Bias",
+      "autori": "Vig, Gehrmann, Belinkov, Qian, Nevo, Singer, Shieber",
+      "venue": "BlackboxNLP 2020",
+      "famiglia": "probe-e-controfattuali",
+      "ext": "pdf",
+      "sha256": "1e35f3c72663d08be952910fd20caa7a6c4dc353544424a81a1a05808cd7a35e",
+      "bytes": 3360716
+    },
+    "meng-bau-rome-locating-editing": {
+      "arxiv": "2202.05262",
+      "url": "https://arxiv.org/pdf/2202.05262",
+      "titolo": "Locating and Editing Factual Associations in GPT",
+      "autori": "Meng, Bau, Andonian, Belinkov",
+      "venue": "NeurIPS 2022",
+      "famiglia": "circuiti-e-interventi",
+      "ext": "pdf",
+      "sha256": "d7c17f896cca512fb258261421b073baa6f4e6e44b6bb7ada5c90185f423054a",
+      "bytes": 8262403
+    },
+    "wang-ioi-circuit-gpt2-small": {
+      "arxiv": "2211.00593",
+      "url": "https://arxiv.org/pdf/2211.00593",
+      "titolo": "Interpretability in the Wild: A Circuit for Indirect Object Identification in GPT-2 Small",
+      "autori": "Wang, Variengien, Conmy, Shlegeris, Steinhardt",
+      "venue": "ICLR 2023",
+      "famiglia": "circuiti-e-interventi",
+      "ext": "pdf",
+      "sha256": "af0ea3ca3912f819d2cd06b0f36f5c20bfcab72fbc83816d830c286af6872c91",
+      "bytes": 1342518
+    },
+    "syed-attribution-patching": {
+      "arxiv": "2310.10348",
+      "url": "https://arxiv.org/pdf/2310.10348",
+      "titolo": "Attribution Patching Outperforms Automated Circuit Discovery",
+      "autori": "Syed, Rager, Conmy",
+      "venue": "arXiv 2023",
+      "famiglia": "circuiti-e-interventi",
+      "ext": "pdf",
+      "sha256": "d2bb28ed2f9a93ecf3287885c3fe221cadeddaf526b89a5361a8043a8ee63f04",
+      "bytes": 2583167
+    },
+    "wallace-universal-adversarial-triggers": {
+      "arxiv": "1908.07125",
+      "url": "https://arxiv.org/pdf/1908.07125",
+      "titolo": "Universal Adversarial Triggers for Attacking and Analyzing NLP",
+      "autori": "Wallace, Feng, Kandpal, Gardner, Singh",
+      "venue": "EMNLP-IJCNLP 2019",
+      "famiglia": "perche-gli-attacchi-funzionano",
+      "ext": "pdf",
+      "sha256": "822f6cf89b1c109a67dfcdbef033debe4cb023c7ee169d454c0d598307e91048",
+      "bytes": 442623
+    },
+    "ilyas-adversarial-examples-features": {
+      "arxiv": "1905.02175",
+      "url": "https://arxiv.org/pdf/1905.02175",
+      "titolo": "Adversarial Examples Are Not Bugs, They Are Features",
+      "autori": "Ilyas, Santurkar, Tsipras, Engstrom, Tran, Madry",
+      "venue": "NeurIPS 2019",
+      "famiglia": "perche-gli-attacchi-funzionano",
+      "ext": "pdf",
+      "sha256": "81c3715d1e256579071591f3bc61f55d63b32a33dcc981026209d14d32990f32",
+      "bytes": 2593952
+    },
+    "wallace-instruction-hierarchy": {
+      "arxiv": "2404.13208",
+      "url": "https://arxiv.org/pdf/2404.13208",
+      "titolo": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+      "autori": "Wallace, Xiao, Leike, Weng, Heidecke, Beutel",
+      "venue": "arXiv 2024 (OpenAI)",
+      "famiglia": "perche-gli-attacchi-funzionano",
+      "ext": "pdf",
+      "sha256": "fbc2d65e913e75b8f0ae74e83e3443c36a727636d1038a071a2f10d8be63dac4",
+      "bytes": 488381
+    },
+    "huang-geiger-neuron-explanations-audit": {
+      "arxiv": "2309.10312",
+      "url": "https://arxiv.org/pdf/2309.10312",
+      "titolo": "Rigorously Assessing Natural Language Explanations of Neurons",
+      "autori": "Huang, Geiger, D'Oosterlinck, Wu, Potts",
+      "venue": "BlackboxNLP@EMNLP 2023",
+      "famiglia": "unita-di-analisi",
+      "ext": "pdf",
+      "sha256": "96c2c24d9a4b2560c24a6d90b9da69b2b53c4edf75e8697f99e56ec55b7af1f4",
+      "bytes": 1200740
+    },
+    "belrose-tuned-lens": {
+      "arxiv": "2303.08112",
+      "url": "https://arxiv.org/pdf/2303.08112",
+      "titolo": "Eliciting Latent Predictions from Transformers with the Tuned Lens",
+      "autori": "Belrose, Furman, Smith, Halawi, Ostrovsky, McKinney, Biderman, Steinhardt",
+      "venue": "arXiv 2023",
+      "famiglia": "unita-di-analisi",
+      "ext": "pdf",
+      "sha256": "641bbdb6e070ace8c029d19f536cab67fa928d2b56af621482a42a0c3c349faa",
+      "bytes": 1671177
+    },
+    "bills-openai-language-models-explain-neurons": {
+      "url": "https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html",
+      "titolo": "Language Models Can Explain Neurons in Language Models",
+      "autori": "Bills, Cammarata, Mossing, Tillman, Gao, Goh, Sutskever, Leike, Wu, Saunders",
+      "venue": "OpenAI 2023",
+      "famiglia": "unita-di-analisi",
+      "ext": "html",
+      "sha256": "2de72f61ad56d3677dff31ffcbe76e117954a5910b94154b38c70c24f4cdc65f",
+      "bytes": 25083
+    },
+    "bricken-towards-monosemanticity": {
+      "url": "http://transformer-circuits.pub/2023/monosemantic-features/index.html",
+      "titolo": "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning",
+      "autori": "Bricken, Templeton, Batson, Chen, Jermyn, Conerly, Turner, Anil, Denison, Askell, Lasenby, Wu, Kravec, Schiefer, Maxwell, Joseph, Tamkin, Nguyen, McLean, Burke, Hume, Carter, Henighan, Olah",
+      "venue": "Transformer Circuits Thread 2023 (Anthropic)",
+      "famiglia": "unita-di-analisi",
+      "ext": "html",
+      "sha256": "d3011059d4b3d55dd7347cb5c295e8d28cc8478c6caeabcceea177ddc6ce68fa",
+      "bytes": 20605691
+    }
+  }
+}

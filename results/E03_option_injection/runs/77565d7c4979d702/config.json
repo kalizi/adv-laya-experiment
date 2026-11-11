@@ -1,0 +1,17 @@
+{
+  "experiment": "E03_option_injection",
+  "kind": "adversarial",
+  "template": "append",
+  "position": "tail",
+  "pad_tokens": 902,
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "dataset": "massive-it",
+  "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+  "subset_hash": "bf6d3bc2cb5436abdb7b5950b34b722b8620bdc87aa5f155a3b538e8c3d7e9b6",
+  "k": 16,
+  "n_cases": 400,
+  "seed": 0,
+  "batch_size": 16,
+  "chunk": 32,
+  "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+}

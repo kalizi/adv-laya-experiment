@@ -1,0 +1,80 @@
+{
+  "experiment": "E15_quantization",
+  "run_id": "d81ee6d21a9d4581",
+  "config": {
+    "experiment": "E15_quantization",
+    "config_name": "deberta-onnx/q4",
+    "checkpoint": "/home/kalizi/Scrivania/Projects/adversarial-laya/data/onnx/open-jev-deberta-v3-large",
+    "dataset": "banking77",
+    "dataset_sha256": "c12b6fda6d253b3f8a218c7fcf536eddb1258abac35f5849642ffd49e0719589",
+    "subset_hash": "cb88c247513aefa5aa24be76cb5df285105ff4041dc4eda601082af9cf3f075f",
+    "k": 16,
+    "n_cases": 1000,
+    "seed": 0,
+    "batch_size": 16,
+    "chunk": 32,
+    "template": "prepend",
+    "weight_sha256": "5be15f8076cc2c16d76fb2e9c8703a0d7d355950422ce47e8dae072ce9ca3b8e",
+    "backend": "deberta-onnx",
+    "compiled": false,
+    "fast": false,
+    "variant": "q4",
+    "device": "onnx:CUDAExecutionProvider",
+    "kind": "adversarial"
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "5be15f8076cc2c16d76fb2e9c8703a0d7d355950422ce47e8dae072ce9ca3b8e"
+  },
+  "finished_at": "2026-10-01T12:20:41.842941+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.469,
+      "accuracy_by_primitive": {
+        "choice": 0.469,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.15933029999999998,
+      "brier": 0.7066144293900001,
+      "brier_by_primitive": {
+        "choice": 0.7066144293900001,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.074,
+        "0.85": 0.007
+      },
+      "mean_conf_wrong": 0.5920391713747646,
+      "latency": {
+        "n": 32,
+        "p50_ms": 528.51,
+        "p95_ms": 537.25,
+        "mean_ms": 515.75,
+        "std_ms": 70.74,
+        "total_ms": 16503.94,
+        "devices": [
+          "CUDAExecutionProvider"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 16.5039,
+        "decisions_per_s": 60.59
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 0.02,
+        "batches_this_process": 0
+      }
+    }
+  }
+}

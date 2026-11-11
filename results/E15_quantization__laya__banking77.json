@@ -1,0 +1,564 @@
+{
+  "experiment": "E15_quantization",
+  "question": "la riduzione di precisione chiude l'attacco, lo lascia passare, o lo facilita?",
+  "axes": {
+    "backend": "laya",
+    "precisioni": [
+      "none",
+      "int8",
+      "nf4"
+    ],
+    "k": [
+      16
+    ],
+    "n_cases": 1000,
+    "template": "prepend",
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "thresholds": {
+    "degenerate_threshold": "accuracy pulita < 2.0/k",
+    "soglia_asr": "0.50 (criteri-vittoria)",
+    "oer_soglia": 0.75
+  },
+  "results": [
+    {
+      "config": "laya/none",
+      "k": 16,
+      "seed": 0,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "laya",
+      "compiled": false,
+      "fast": false,
+      "quantization": "none",
+      "device": "cuda",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.794,
+      "accuracy_adv": 0.401,
+      "drop_pp": 39.3,
+      "asr": 0.5037783375314862,
+      "asr_denominator": 794,
+      "oer_clean": {
+        "0.75": 0.053,
+        "0.85": 0.032
+      },
+      "oer_adv": {
+        "0.75": 0.39,
+        "0.85": 0.273
+      },
+      "mean_conf_wrong_clean": 0.5720082524271844,
+      "mean_conf_wrong_adv": 0.7961572621035058,
+      "ece_clean": 0.024615200000000042,
+      "ece_adv": 0.3940620000000001,
+      "ms_per_decision": 17.898,
+      "decisions_per_s": 55.87,
+      "devices": [
+        "cuda"
+      ],
+      "quantization_report": {
+        "quantization": "none"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 159,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "be7455ed4909c75c",
+      "adv_run_id": "21dd5ebfdfe6d08a"
+    },
+    {
+      "config": "laya/int8",
+      "k": 16,
+      "seed": 0,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "laya",
+      "compiled": false,
+      "fast": false,
+      "quantization": "int8",
+      "encoder_linear_converted": 112,
+      "device": "cuda",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.792,
+      "accuracy_adv": 0.392,
+      "drop_pp": 40.0,
+      "asr": 0.5202020202020202,
+      "asr_denominator": 792,
+      "oer_clean": {
+        "0.75": 0.049,
+        "0.85": 0.031
+      },
+      "oer_adv": {
+        "0.75": 0.385,
+        "0.85": 0.269
+      },
+      "mean_conf_wrong_clean": 0.5680913461538462,
+      "mean_conf_wrong_adv": 0.7922182565789474,
+      "ece_clean": 0.03292300000000004,
+      "ece_adv": 0.40400990000000003,
+      "ms_per_decision": 63.4389,
+      "decisions_per_s": 15.76,
+      "devices": [
+        "cuda"
+      ],
+      "quantization_report": {
+        "quantization": "int8",
+        "encoder_linear_total": 112,
+        "encoder_linear_converted": 112,
+        "compute_dtype": "torch.bfloat16"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 159,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "2a2ff1893f3a9c87",
+      "adv_run_id": "266749729a0daa74"
+    },
+    {
+      "config": "laya/nf4",
+      "k": 16,
+      "seed": 0,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "laya",
+      "compiled": false,
+      "fast": false,
+      "quantization": "nf4",
+      "encoder_linear_converted": 112,
+      "device": "cuda",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.8,
+      "accuracy_adv": 0.384,
+      "drop_pp": 41.6,
+      "asr": 0.53,
+      "asr_denominator": 800,
+      "oer_clean": {
+        "0.75": 0.044,
+        "0.85": 0.025
+      },
+      "oer_adv": {
+        "0.75": 0.394,
+        "0.85": 0.283
+      },
+      "mean_conf_wrong_clean": 0.55336,
+      "mean_conf_wrong_adv": 0.7988321428571429,
+      "ece_clean": 0.04501300000000007,
+      "ece_adv": 0.4139277,
+      "ms_per_decision": 25.3901,
+      "decisions_per_s": 39.39,
+      "devices": [
+        "cuda"
+      ],
+      "quantization_report": {
+        "quantization": "nf4",
+        "encoder_linear_total": 112,
+        "encoder_linear_converted": 112,
+        "compute_dtype": "torch.bfloat16"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 159,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "08de60b5dfbe01e0",
+      "adv_run_id": "5fe5074ba538d33d"
+    },
+    {
+      "config": "laya/none",
+      "k": 16,
+      "seed": 1,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "laya",
+      "compiled": false,
+      "fast": false,
+      "quantization": "none",
+      "device": "cuda",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.795,
+      "accuracy_adv": 0.397,
+      "drop_pp": 39.8,
+      "asr": 0.5069182389937107,
+      "asr_denominator": 795,
+      "oer_clean": {
+        "0.75": 0.041,
+        "0.85": 0.029
+      },
+      "oer_adv": {
+        "0.75": 0.389,
+        "0.85": 0.286
+      },
+      "mean_conf_wrong_clean": 0.5404117073170732,
+      "mean_conf_wrong_adv": 0.8004437810945274,
+      "ece_clean": 0.030910800000000013,
+      "ece_adv": 0.4085837,
+      "ms_per_decision": 17.5693,
+      "decisions_per_s": 56.92,
+      "devices": [
+        "cuda"
+      ],
+      "quantization_report": {
+        "quantization": "none"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 162,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "89b26b7c5d87a01b",
+      "adv_run_id": "17682246e03480b3"
+    },
+    {
+      "config": "laya/int8",
+      "k": 16,
+      "seed": 1,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "laya",
+      "compiled": false,
+      "fast": false,
+      "quantization": "int8",
+      "encoder_linear_converted": 112,
+      "device": "cuda",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.798,
+      "accuracy_adv": 0.409,
+      "drop_pp": 38.9,
+      "asr": 0.49624060150375937,
+      "asr_denominator": 798,
+      "oer_clean": {
+        "0.75": 0.039,
+        "0.85": 0.029
+      },
+      "oer_adv": {
+        "0.75": 0.39,
+        "0.85": 0.279
+      },
+      "mean_conf_wrong_clean": 0.5399237623762376,
+      "mean_conf_wrong_adv": 0.8028961082910321,
+      "ece_clean": 0.027594000000000014,
+      "ece_adv": 0.39642589999999994,
+      "ms_per_decision": 64.092,
+      "decisions_per_s": 15.6,
+      "devices": [
+        "cuda"
+      ],
+      "quantization_report": {
+        "quantization": "int8",
+        "encoder_linear_total": 112,
+        "encoder_linear_converted": 112,
+        "compute_dtype": "torch.bfloat16"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 162,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "5de7ff40cd29e4a6",
+      "adv_run_id": "65af7e8d23529e65"
+    },
+    {
+      "config": "laya/nf4",
+      "k": 16,
+      "seed": 1,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "laya",
+      "compiled": false,
+      "fast": false,
+      "quantization": "nf4",
+      "encoder_linear_converted": 112,
+      "device": "cuda",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.8,
+      "accuracy_adv": 0.39,
+      "drop_pp": 41.0,
+      "asr": 0.52,
+      "asr_denominator": 800,
+      "oer_clean": {
+        "0.75": 0.04,
+        "0.85": 0.022
+      },
+      "oer_adv": {
+        "0.75": 0.403,
+        "0.85": 0.276
+      },
+      "mean_conf_wrong_clean": 0.5189285,
+      "mean_conf_wrong_adv": 0.8053677049180328,
+      "ece_clean": 0.026189300000000023,
+      "ece_adv": 0.4170761,
+      "ms_per_decision": 25.8362,
+      "decisions_per_s": 38.71,
+      "devices": [
+        "cuda"
+      ],
+      "quantization_report": {
+        "quantization": "nf4",
+        "encoder_linear_total": 112,
+        "encoder_linear_converted": 112,
+        "compute_dtype": "torch.bfloat16"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 162,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "a5bcb0d4e2bcfbd1",
+      "adv_run_id": "e1ea13ff1c2cd34f"
+    },
+    {
+      "config": "laya/none",
+      "k": 16,
+      "seed": 2,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "laya",
+      "compiled": false,
+      "fast": false,
+      "quantization": "none",
+      "device": "cuda",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.814,
+      "accuracy_adv": 0.379,
+      "drop_pp": 43.5,
+      "asr": 0.5417690417690417,
+      "asr_denominator": 814,
+      "oer_clean": {
+        "0.75": 0.051,
+        "0.85": 0.024
+      },
+      "oer_adv": {
+        "0.75": 0.403,
+        "0.85": 0.255
+      },
+      "mean_conf_wrong_clean": 0.5679677419354838,
+      "mean_conf_wrong_adv": 0.7926645732689211,
+      "ece_clean": 0.03575669999999996,
+      "ece_adv": 0.421358,
+      "ms_per_decision": 17.226,
+      "decisions_per_s": 58.05,
+      "devices": [
+        "cuda"
+      ],
+      "quantization_report": {
+        "quantization": "none"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 158,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "5be1fe9586c91311",
+      "adv_run_id": "2ad37847ad07b941"
+    },
+    {
+      "config": "laya/int8",
+      "k": 16,
+      "seed": 2,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "laya",
+      "compiled": false,
+      "fast": false,
+      "quantization": "int8",
+      "encoder_linear_converted": 112,
+      "device": "cuda",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.809,
+      "accuracy_adv": 0.378,
+      "drop_pp": 43.1,
+      "asr": 0.5414091470951793,
+      "asr_denominator": 809,
+      "oer_clean": {
+        "0.75": 0.05,
+        "0.85": 0.018
+      },
+      "oer_adv": {
+        "0.75": 0.398,
+        "0.85": 0.257
+      },
+      "mean_conf_wrong_clean": 0.5551167539267016,
+      "mean_conf_wrong_adv": 0.7916511254019293,
+      "ece_clean": 0.03699730000000001,
+      "ece_adv": 0.4236498,
+      "ms_per_decision": 64.2567,
+      "decisions_per_s": 15.56,
+      "devices": [
+        "cuda"
+      ],
+      "quantization_report": {
+        "quantization": "int8",
+        "encoder_linear_total": 112,
+        "encoder_linear_converted": 112,
+        "compute_dtype": "torch.bfloat16"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 158,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "dc52424332481ae2",
+      "adv_run_id": "c67f84f4d1b2d7c8"
+    },
+    {
+      "config": "laya/nf4",
+      "k": 16,
+      "seed": 2,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "laya",
+      "compiled": false,
+      "fast": false,
+      "quantization": "nf4",
+      "encoder_linear_converted": 112,
+      "device": "cuda",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.803,
+      "accuracy_adv": 0.377,
+      "drop_pp": 42.6,
+      "asr": 0.539227895392279,
+      "asr_denominator": 803,
+      "oer_clean": {
+        "0.75": 0.048,
+        "0.85": 0.021
+      },
+      "oer_adv": {
+        "0.75": 0.408,
+        "0.85": 0.286
+      },
+      "mean_conf_wrong_clean": 0.5495588832487309,
+      "mean_conf_wrong_adv": 0.7989200642054575,
+      "ece_clean": 0.030162399999999968,
+      "ece_adv": 0.4236548,
+      "ms_per_decision": 25.4909,
+      "decisions_per_s": 39.23,
+      "devices": [
+        "cuda"
+      ],
+      "quantization_report": {
+        "quantization": "nf4",
+        "encoder_linear_total": 112,
+        "encoder_linear_converted": 112,
+        "compute_dtype": "torch.bfloat16"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 158,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "17053c8a3ac63ec8",
+      "adv_run_id": "ee07d1c4e9d19caf"
+    }
+  ],
+  "replicate_spread": [
+    {
+      "config": "laya/none",
+      "k": 16,
+      "n_replicates": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "asr_min": 0.5038,
+      "asr_max": 0.5418,
+      "asr_mean": 0.5175,
+      "asr_spread_pp": 3.8,
+      "asr_straddles_threshold": false,
+      "accuracy_clean_min": 0.794,
+      "accuracy_clean_max": 0.814,
+      "oer_adv_max": 0.403,
+      "note": null
+    },
+    {
+      "config": "laya/int8",
+      "k": 16,
+      "n_replicates": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "asr_min": 0.4962,
+      "asr_max": 0.5414,
+      "asr_mean": 0.5193,
+      "asr_spread_pp": 4.52,
+      "asr_straddles_threshold": true,
+      "accuracy_clean_min": 0.792,
+      "accuracy_clean_max": 0.809,
+      "oer_adv_max": 0.398,
+      "note": "le repliche attraversano la soglia 0.50: la media non dice nulla, conclusione indeterminata"
+    },
+    {
+      "config": "laya/nf4",
+      "k": 16,
+      "n_replicates": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "asr_min": 0.52,
+      "asr_max": 0.5392,
+      "asr_mean": 0.5297,
+      "asr_spread_pp": 1.92,
+      "asr_straddles_threshold": false,
+      "accuracy_clean_min": 0.8,
+      "accuracy_clean_max": 0.803,
+      "oer_adv_max": 0.408,
+      "note": null
+    }
+  ],
+  "head_budget_walls": [],
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": null
+  }
+}

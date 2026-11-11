@@ -1,0 +1,50 @@
+{
+  "method": "Wilson 95%, z=1.96, from preds.jsonl",
+  "rows": [
+    {
+      "note": "E13",
+      "claim": "real K=8, archivio storico",
+      "clean_run_id": "2fd9b9f346f4daed",
+      "adv_run_id": null,
+      "clean_sha256": "cc2de2b906b30e4b57b2081ce7ccfdc01fff01b236a3deaa47be33d0b91555f5",
+      "adv_sha256": null,
+      "numerator": 375,
+      "denominator": 1000,
+      "point": 0.375,
+      "wilson_95": [
+        0.3455257633259225,
+        0.4054309613206752
+      ]
+    },
+    {
+      "note": "E15",
+      "claim": "DeBERTa fp32 K=16, ASR",
+      "clean_run_id": "0a837969383f12fe",
+      "adv_run_id": "c18c930552a0bf9d",
+      "clean_sha256": "4550f6d1052b2b53127654cb0d4242c903d4eef8e1fa280c7eea3f3cb9e957d7",
+      "adv_sha256": "58e41112ce46e893a87c662d82b809a24d1f2a720cde152d7f076cd3659a92b9",
+      "numerator": 454,
+      "denominator": 952,
+      "point": 0.47689075630252103,
+      "wilson_95": [
+        0.4453192806261591,
+        0.5086479875906668
+      ]
+    },
+    {
+      "note": "E03",
+      "claim": "target prepend/head K=32, ASR",
+      "clean_run_id": "d39645479f9e5e3e",
+      "adv_run_id": "b83761dd4e409aa1",
+      "clean_sha256": "5e5fee1f43ad968beff968f0ea4dded2340b7cd2464802c2e628b5ceeb3f5fbd",
+      "adv_sha256": "87a5640171890770b6583e2c8155d0138f3b0e973be762b030d1226fa1b9edc9",
+      "numerator": 763,
+      "denominator": 895,
+      "point": 0.852513966480447,
+      "wilson_95": [
+        0.8277769779097727,
+        0.8742377040987147
+      ]
+    }
+  ]
+}

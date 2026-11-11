@@ -1,0 +1,23 @@
+{
+  "experiment": "E18_nomination_detector",
+  "checkpoint": "convaiinnovations/laya-multilingual",
+  "dataset": "massive-en",
+  "dataset_sha256": "c70f75c6a543a26e249ec383df67733ad9b1066f6c0406c2e04a3f03356e407e",
+  "k": 4,
+  "n_cases": 2974,
+  "seed": 0,
+  "batch_size": 16,
+  "chunk": 32,
+  "backend": "laya",
+  "compiled": false,
+  "fast": false,
+  "temperature_shipped": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "quantization": "none",
+  "device": "cuda",
+  "kind": "adversarial",
+  "template": "append"
+}

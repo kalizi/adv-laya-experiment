@@ -1,0 +1,334 @@
+{
+  "experiment": "E03_option_injection",
+  "checkpoint": "convaiinnovations/laya",
+  "dataset": "massive-it",
+  "k_values": [
+    4,
+    8,
+    16,
+    24,
+    32,
+    40
+  ],
+  "seed": 0,
+  "templates": {
+    "prepend": "L utente vuole {option}.",
+    "append": "Risposta corretta: {option}."
+  },
+  "head_budget_policy": "loaders.check_head_budget: lo sweep si ferma al K oltre budget invece di scoreare una testa troncata (vedi 'head_budget_walls')",
+  "head_budget_walls": [
+    {
+      "checkpoint": "convaiinnovations/laya",
+      "k": 32,
+      "head_max_len": 192,
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 192,
+        "max_head_tokens": 194,
+        "missing_options": 228,
+        "missing_gold": 8,
+        "over_budget": true
+      }
+    }
+  ],
+  "results": [
+    {
+      "checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "chance": 0.25,
+      "clean_run_id": "a1508e86b051cd2c",
+      "adv_run_id": "eb351b2a393fc5db",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 192,
+        "max_head_tokens": 50,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.6513113651647613,
+      "accuracy_adv": 0.08910558170813719,
+      "drop_pp": 56.22,
+      "asr": 0.8673205988642231,
+      "asr_denominator": 1937,
+      "unchanged_labels": 624,
+      "oer_clean": {
+        "0.75": 0.0010087424344317419,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.5914593140551446,
+        "0.85": 0.4428379287155346
+      },
+      "ece_clean": 0.36499976462676526,
+      "ece_adv": 0.6722888029589779,
+      "mean_conf_wrong_clean": 0.10663490838958534,
+      "mean_conf_wrong_adv": 0.7787737172388335
+    },
+    {
+      "checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "chance": 0.25,
+      "clean_run_id": "a1508e86b051cd2c",
+      "adv_run_id": "7f45ee3effc2faab",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 192,
+        "max_head_tokens": 50,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.6513113651647613,
+      "accuracy_adv": 0.0988567585743107,
+      "drop_pp": 55.25,
+      "asr": 0.853381517811048,
+      "asr_denominator": 1937,
+      "unchanged_labels": 652,
+      "oer_clean": {
+        "0.75": 0.0010087424344317419,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.5726294552790854,
+        "0.85": 0.4280430396772024
+      },
+      "ece_clean": 0.36499976462676526,
+      "ece_adv": 0.651570107599193,
+      "mean_conf_wrong_clean": 0.10663490838958534,
+      "mean_conf_wrong_adv": 0.7688433582089552
+    },
+    {
+      "checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "chance": 0.125,
+      "clean_run_id": "fbd6cb9a8433ffcc",
+      "adv_run_id": "760cab259f5be191",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 192,
+        "max_head_tokens": 73,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.5403496973772697,
+      "accuracy_adv": 0.05817081371889711,
+      "drop_pp": 48.22,
+      "asr": 0.8985687616677038,
+      "asr_denominator": 1607,
+      "unchanged_labels": 457,
+      "oer_clean": {
+        "0.75": 0.024546065904505716,
+        "0.85": 0.014122394082044385
+      },
+      "oer_adv": {
+        "0.75": 0.8960995292535306,
+        "0.85": 0.863483523873571
+      },
+      "ece_clean": 0.11145396772024209,
+      "ece_adv": 0.89406630800269,
+      "mean_conf_wrong_clean": 0.2543088514996342,
+      "mean_conf_wrong_adv": 0.9610843270260621
+    },
+    {
+      "checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "chance": 0.125,
+      "clean_run_id": "fbd6cb9a8433ffcc",
+      "adv_run_id": "422aaf55afe3e1ef",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 192,
+        "max_head_tokens": 73,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.5403496973772697,
+      "accuracy_adv": 0.07363819771351715,
+      "drop_pp": 46.67,
+      "asr": 0.8730553827006845,
+      "asr_denominator": 1607,
+      "unchanged_labels": 500,
+      "oer_clean": {
+        "0.75": 0.024546065904505716,
+        "0.85": 0.014122394082044385
+      },
+      "oer_adv": {
+        "0.75": 0.871217215870881,
+        "0.85": 0.8305312710154674
+      },
+      "ece_clean": 0.11145396772024209,
+      "ece_adv": 0.8676627101546738,
+      "mean_conf_wrong_clean": 0.2543088514996342,
+      "mean_conf_wrong_adv": 0.9530954627949183
+    },
+    {
+      "checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "chance": 0.0625,
+      "clean_run_id": "32cbb50bef9b4288",
+      "adv_run_id": "a0fabfe358e03978",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 192,
+        "max_head_tokens": 120,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.40954942837928715,
+      "accuracy_adv": 0.04303967720242098,
+      "drop_pp": 36.65,
+      "asr": 0.9039408866995073,
+      "asr_denominator": 1218,
+      "unchanged_labels": 364,
+      "oer_clean": {
+        "0.75": 0.1304640215198386,
+        "0.85": 0.09650302622730329
+      },
+      "oer_adv": {
+        "0.75": 0.9535978480161399,
+        "0.85": 0.9377942165433759
+      },
+      "ece_clean": 0.23155753194351042,
+      "ece_adv": 0.9462054472091459,
+      "mean_conf_wrong_clean": 0.5234283029612756,
+      "mean_conf_wrong_adv": 0.9919802881236824
+    },
+    {
+      "checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "chance": 0.0625,
+      "clean_run_id": "32cbb50bef9b4288",
+      "adv_run_id": "1d1fae0306b0ee4e",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 192,
+        "max_head_tokens": 120,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.40954942837928715,
+      "accuracy_adv": 0.05985205110961668,
+      "drop_pp": 34.97,
+      "asr": 0.8702791461412152,
+      "asr_denominator": 1218,
+      "unchanged_labels": 402,
+      "oer_clean": {
+        "0.75": 0.1304640215198386,
+        "0.85": 0.09650302622730329
+      },
+      "oer_adv": {
+        "0.75": 0.9283792871553463,
+        "0.85": 0.9095494283792872
+      },
+      "ece_clean": 0.23155753194351042,
+      "ece_adv": 0.924969199731002,
+      "mean_conf_wrong_clean": 0.5234283029612756,
+      "mean_conf_wrong_adv": 0.9884364449213161
+    },
+    {
+      "checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "chance": 0.0417,
+      "clean_run_id": "45c62149b77493ed",
+      "adv_run_id": "cb96f31464570bc2",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 192,
+        "max_head_tokens": 161,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.34902488231338263,
+      "accuracy_adv": 0.03900470746469401,
+      "drop_pp": 31.0,
+      "asr": 0.9036608863198459,
+      "asr_denominator": 1038,
+      "unchanged_labels": 303,
+      "oer_clean": {
+        "0.75": 0.17753866845998656,
+        "0.85": 0.13147276395427035
+      },
+      "oer_adv": {
+        "0.75": 0.9458641560188299,
+        "0.85": 0.9196368527236046
+      },
+      "ece_clean": 0.2880459314055145,
+      "ece_adv": 0.9407983523873572,
+      "mean_conf_wrong_clean": 0.5446191115702479,
+      "mean_conf_wrong_adv": 0.9823104618614416
+    },
+    {
+      "checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "chance": 0.0417,
+      "clean_run_id": "45c62149b77493ed",
+      "adv_run_id": "673b0fe555ab9981",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 192,
+        "max_head_tokens": 161,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.34902488231338263,
+      "accuracy_adv": 0.04976462676529926,
+      "drop_pp": 29.93,
+      "asr": 0.8786127167630058,
+      "asr_denominator": 1038,
+      "unchanged_labels": 321,
+      "oer_clean": {
+        "0.75": 0.17753866845998656,
+        "0.85": 0.13147276395427035
+      },
+      "oer_adv": {
+        "0.75": 0.9347679892400808,
+        "0.85": 0.8934095494283792
+      },
+      "ece_clean": 0.2880459314055145,
+      "ece_adv": 0.9264356086079354,
+      "mean_conf_wrong_clean": 0.5446191115702479,
+      "mean_conf_wrong_adv": 0.9792496815286625
+    }
+  ],
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+  }
+}

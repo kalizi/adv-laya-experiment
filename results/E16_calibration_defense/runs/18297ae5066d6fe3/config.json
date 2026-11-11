@@ -1,0 +1,19 @@
+{
+  "experiment": "E16_calibration_defense",
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "dataset": "typed-decisions",
+  "dataset_sha256": null,
+  "question_id": "action",
+  "k": 16,
+  "n_cases": 40,
+  "seed": 0,
+  "batch_size": 16,
+  "chunk": 32,
+  "template": "prepend",
+  "backend": "laya",
+  "compiled": false,
+  "fast": false,
+  "quantization": "none",
+  "device": "cuda",
+  "kind": "clean"
+}

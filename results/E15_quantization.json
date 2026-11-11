@@ -1,0 +1,97 @@
+{
+  "experiment": "E15_quantization",
+  "note": "Indice dei file per famiglia. Ogni file ha le sue righe in 'results'; questo non le duplica. Rigenerato da tutti i file su disco, quindi una famiglia nuova non cancella le altre.",
+  "scopes": {
+    "E15_kcurve__deberta-onnx": {
+      "backend": "deberta-onnx",
+      "datasets": [
+        "banking77"
+      ],
+      "n_rows": 16,
+      "k": [
+        4,
+        8,
+        16,
+        32
+      ],
+      "configs": [
+        "deberta-onnx/fp16",
+        "deberta-onnx/fp32",
+        "deberta-onnx/q4",
+        "deberta-onnx/q4f16"
+      ]
+    },
+    "E15_kcurve__laya": {
+      "backend": "laya",
+      "datasets": [
+        "massive-it"
+      ],
+      "n_rows": 12,
+      "k": [
+        4,
+        8,
+        16,
+        32
+      ],
+      "configs": [
+        "laya/int8",
+        "laya/nf4",
+        "laya/none"
+      ]
+    },
+    "E15_quantization__deberta-onnx__banking77": {
+      "backend": "deberta-onnx",
+      "datasets": [
+        "banking77"
+      ],
+      "n_rows": 12,
+      "k": [
+        16
+      ],
+      "configs": [
+        "deberta-onnx/fp16",
+        "deberta-onnx/fp32",
+        "deberta-onnx/q4",
+        "deberta-onnx/q4f16"
+      ]
+    },
+    "E15_quantization__laya__banking77": {
+      "backend": "laya",
+      "datasets": [
+        "banking77"
+      ],
+      "n_rows": 9,
+      "k": [
+        16
+      ],
+      "configs": [
+        "laya/int8",
+        "laya/nf4",
+        "laya/none"
+      ]
+    },
+    "E15_quantization__laya__massive-it": {
+      "backend": "laya",
+      "datasets": [
+        "massive-it"
+      ],
+      "n_rows": 9,
+      "k": [
+        16
+      ],
+      "configs": [
+        "laya/int8",
+        "laya/nf4",
+        "laya/none"
+      ]
+    }
+  },
+  "files": [
+    "E15_quantization__E15_kcurve__deberta-onnx.json",
+    "E15_quantization__E15_kcurve__laya.json",
+    "E15_quantization__E15_quantization__deberta-onnx__banking77.json",
+    "E15_quantization__E15_quantization__laya__banking77.json",
+    "E15_quantization__E15_quantization__laya__massive-it.json"
+  ],
+  "n_rows": 58
+}

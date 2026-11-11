@@ -1,0 +1,2999 @@
+{
+  "experiment": "E03_option_injection",
+  "status": "historical_identity_incomplete",
+  "note": "Il checkpoint richiesto non dimostra quale backend abbia prodotto i record.",
+  "runs": [
+    {
+      "run_id": "0043bf7283b37280",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "86ad3c2e3c48529a7ff88d92010edf73ef58ad6a0fef49b462989d2bbd8e8e4c",
+      "preds_sha256": "c4b4c79b92a0bbb95d1a4809b1f54c0d4e27859994b799cf13cf3306699d97e2"
+    },
+    {
+      "run_id": "01853cb36c1d4528",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "58ad084e06bf28705b1f13dbdd713f6e3888ae2e6a54b5f7c0f25c95a6d728d4",
+      "preds_sha256": "a89669aab781aa238227f1880f1ecc3f92023a2382f642df2a351899d44c0edd"
+    },
+    {
+      "run_id": "01853cb36c1d4528-2",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "58ad084e06bf28705b1f13dbdd713f6e3888ae2e6a54b5f7c0f25c95a6d728d4",
+      "preds_sha256": "a89669aab781aa238227f1880f1ecc3f92023a2382f642df2a351899d44c0edd"
+    },
+    {
+      "run_id": "01853cb36c1d4528-3",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "58ad084e06bf28705b1f13dbdd713f6e3888ae2e6a54b5f7c0f25c95a6d728d4",
+      "preds_sha256": "a89669aab781aa238227f1880f1ecc3f92023a2382f642df2a351899d44c0edd"
+    },
+    {
+      "run_id": "0312fd8c1b260d64",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "76a61475e7c0252363974533cef1cb238e76feabc6edcc518f2964d5b20ea10a",
+      "preds_sha256": "3af405ce4f9cd9dcd68d44dcb98816e1f93f427b6055d48c79b4ef7437f9cb8f"
+    },
+    {
+      "run_id": "03276492b98962fe",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "169d09ff69ba9736635275a0d0034d1ca95427c0052125143d074f2fc021406d",
+      "preds_sha256": "5439fb869b8ab086429e9ac06df1faabecff941a69ae466cd94f0dc5957bc2e2"
+    },
+    {
+      "run_id": "0436034ca64d7882",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "31e0b4c9e9eb16fa7c00bbed0f45d215c439cf4ebcefda7a70c09a088ac64459",
+      "preds_sha256": "ab2c3db1cb5965275a3c65096f3b6a64e6b125a4c527c0e5edbd3b09414eff4e"
+    },
+    {
+      "run_id": "067646482674bb89",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "ee34d207ae9ffff7237403f5946015a62474ff2c45d5565a0b905d8cc03daaf0",
+      "preds_sha256": "34176cc422626c1e99eaff48bd719c34e2dd7579ac6623d37efd65279870dbb2"
+    },
+    {
+      "run_id": "0abb47bebee606ee",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "8eeb414bd9f057e877bd1166d0b890d1fb9a1b268d13a4f3a07d85aab24acad0",
+      "preds_sha256": "58091eb80210765f3b345c51c04febfc16f2314d7bf4fc201a114f673f754284"
+    },
+    {
+      "run_id": "0c2f2cf46a54b3db",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "2285228d722958958b35516bfc1e8f244899d331ccd748b9523b31b3f3c67463",
+      "preds_sha256": "f5ff0136a4e192680df1ffd72d42da3ce6ea946705dbb4b303fbdf46fb946ca1"
+    },
+    {
+      "run_id": "0c2f2cf46a54b3db-2",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "2285228d722958958b35516bfc1e8f244899d331ccd748b9523b31b3f3c67463",
+      "preds_sha256": "f5ff0136a4e192680df1ffd72d42da3ce6ea946705dbb4b303fbdf46fb946ca1"
+    },
+    {
+      "run_id": "0f68cf711ae35178",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "3dc5effbf05727bcfe76cb9825d116c896d5bf3cc0abdfe5b85663c9a3083d1d",
+      "preds_sha256": "d1d541f1cd2e7f35df04e9b7569ab0086e65df58736aea9bd81f560774dba1f1"
+    },
+    {
+      "run_id": "11b587f180b9ee27",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 600,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "8a28b39e74c4578865aee3a193d1b846eeafcac164b548bb2f5befa37b7cfc4f",
+      "preds_sha256": "298799bc910814f16129dc31b45f28e4f84950bf3c21e8409af7ec96593f6ca1"
+    },
+    {
+      "run_id": "1237ea31a61844f0",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "0d3941997ca24d759515a2035129e58d46a5e749104cf96980cae4748885cfe7",
+      "preds_sha256": "af51f6421be33cc497a6f3266de0096a20eb57c72e7859d5a371cd76fd8e0b4f"
+    },
+    {
+      "run_id": "13e7e3579593e79c",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "a493b033053b09c23acaba1a749fa545ee7f13ebb66061f2735b1d19dd5c694e",
+      "preds_sha256": "1dea201680bf8dc30b2115ef6ccb49573181822d5dd862c1609d47ef683fb3e8"
+    },
+    {
+      "run_id": "15d9b76da3e374e3",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": 476,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "74c7bd19b64e20631d5eb644ab2fa7086d225c20d22b1c25cb75e4f4a9475f92",
+      "preds_sha256": "d72ae26f6c0c6adc3a16b3518e70dabdfd0b2c486868bcff137fe1ee3dd6c302"
+    },
+    {
+      "run_id": "16389a63e026a5f6",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 32,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "881a113e5425b4c442e493cfbc94549798c27026ba002beba6adf4bc9bb510ed",
+      "preds_sha256": "0efb2f228d9e03ecf5a8468f9a22dae63b7118c86c7c4a339e93182379ddd560"
+    },
+    {
+      "run_id": "16ab2be6a1cf66b3",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 32,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "2200c06257770c3f37d04fec26b6a047e0a9093ff2b7701abc3eec4dd4bf1536",
+      "preds_sha256": "87a5640171890770b6583e2c8155d0138f3b0e973be762b030d1226fa1b9edc9"
+    },
+    {
+      "run_id": "16ec4c1c23711a29",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "f1ff9375e2e5c1e2dd6fa90b36306c9a1be9cbacd27ccd6089a1b15eb42cc09d",
+      "preds_sha256": "8802cedd2b19b9aad57d30de9f907977edccb4f44ca6c454f8eca61829639294"
+    },
+    {
+      "run_id": "1bc8c1e78d60f21e",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "882d1ca2f76fea212bc92269ea85e5b3c5189b5b452430fd30d8c60a6006277d",
+      "preds_sha256": "c7aafde99648346667b6aa4da65f269d7b4f51dc980951dd64edd209f16a8cd6"
+    },
+    {
+      "run_id": "1d1fae0306b0ee4e",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "d01d8a7d0eafaee914ae72096a8f8ccb62a52af6836753d349a0cb68df14c48a",
+      "preds_sha256": "c0d21eb3f1cf0b60dc4a6cfee0abf7318a7764fa2eaf6d0c192914910c012b37"
+    },
+    {
+      "run_id": "217339bbd478b587",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 60,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "1a8f266f65979a017ca6deed7d44559fb411d2e1949c688171cba4447cec9a87",
+      "preds_sha256": "db72f66961c2dee8420b46dd31889192849a946d2745914c8e704fd6a971b17d"
+    },
+    {
+      "run_id": "23687e95481ea9d7",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 24,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "c7f250340a2b196f8d7cbbab3e893f760d8f2f9edb615a9f8018370363a0e2bc",
+      "preds_sha256": "d61615af81e9b2c3d8ba90ff6b78c3d8d36e41d6e22df5e4f7cd8422d7d59530"
+    },
+    {
+      "run_id": "23bf115a70ea633a",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-en",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "f12b8650a6193a5f27eb3c5ba2d56455fcb9fe1d5695f66006cc6405d50bb809",
+      "preds_sha256": "fef45056b5a53268ff7e7e60a63850b7a01e0c198be138c0f9356267eb6996d9"
+    },
+    {
+      "run_id": "252af7cfb712a242",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "000ef7a75d7cb79c3b4fc05262e682a880b2981f9be0b71fb72332c5d2b6545b",
+      "preds_sha256": "1ffd478b4b803505f30b0e612099acdd395acaac4953bda1bc7a42fb242f62fe"
+    },
+    {
+      "run_id": "2547f55817977686",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 600,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "ecb0bcba98874a572d68d191b0b73bd1d7c98c4ca2c9f14c75e3354ca60a8081",
+      "preds_sha256": "e98c86f0b8d0c8aa25a7dccf1db0805e8ae198743115920fa8a11df0a43645ec"
+    },
+    {
+      "run_id": "2547f55817977686-2",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 600,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "ecb0bcba98874a572d68d191b0b73bd1d7c98c4ca2c9f14c75e3354ca60a8081",
+      "preds_sha256": "e98c86f0b8d0c8aa25a7dccf1db0805e8ae198743115920fa8a11df0a43645ec"
+    },
+    {
+      "run_id": "2aa539bb79a8b358",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 100,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "2a018971407452982441993feab01575abda97d0ed54a3b71dd8f1e7e2b60e76",
+      "preds_sha256": "f05897af8f1292a7d7467d53fd50bd9c78f8ea7dfb5a2ba7b9943b18ca03f87a"
+    },
+    {
+      "run_id": "2d5e8e6799979844",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "31b016126b2995bc1d77de9c2a8fea9a85c376cd118152ae238680b9df3ae719",
+      "preds_sha256": "bccefca89b44277dfc5388812ad6d786cf14fdd00b20659437d00f8d41398159"
+    },
+    {
+      "run_id": "2da63ca0cecd36ba",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 600,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "cbab41728aba50643c41aa29ef8f34ce13cff2f9d9426dc83136512427ef21b1",
+      "preds_sha256": "1111366abb4c4477cacdbf1120970bf464be95637083db17be38a4e1bccd83e3"
+    },
+    {
+      "run_id": "2da63ca0cecd36ba-2",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 600,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "cbab41728aba50643c41aa29ef8f34ce13cff2f9d9426dc83136512427ef21b1",
+      "preds_sha256": "1111366abb4c4477cacdbf1120970bf464be95637083db17be38a4e1bccd83e3"
+    },
+    {
+      "run_id": "31cdc83867767e65",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 32,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "88e10dd2c760abacdd31c95b3bcb4e24559db28259031ea00c8c9809339b7b37",
+      "preds_sha256": "3b0077efbb780b33e177e4990cbf8942f1655615443b590e342ae28b3e4b03b5"
+    },
+    {
+      "run_id": "322c3c0c15ab28b8",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 400,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "85264b3dc4702a35c4ef33de51e111021b8a684d91b734534c3484afa5500005",
+      "preds_sha256": "e680942387013fcdd4950f930a60a347d7646960343ff2ae32da1b119bd330d9"
+    },
+    {
+      "run_id": "32cbb50bef9b4288",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "3480339f24cc7cc980443140986c752b5e2ec7d14a7758d6f4b20f3a7f8bae76",
+      "preds_sha256": "c34b0b60bebb78446c1f320e64e6413d87f66e892a7bcd1b6166cdfb562e912c"
+    },
+    {
+      "run_id": "33eb70ee0928a9c8",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 40,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "820598dd18f0bdc8065db35ce65a0d95ac39b115bb1121e142ede6ac208d5d07",
+      "preds_sha256": "7c273abc788493ef0ce285ee908e31f8f6072149fe7cb5a93830022d55fecfb9"
+    },
+    {
+      "run_id": "37bf25049daced07",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "prepend",
+      "pad_tokens": 600,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "3bfbf558f36a9e8a0a965a28578a1213472ed8340d06aa8d552dc62b656b9461",
+      "preds_sha256": "d72ae26f6c0c6adc3a16b3518e70dabdfd0b2c486868bcff137fe1ee3dd6c302"
+    },
+    {
+      "run_id": "3b92a5be92d59b91",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 30,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "4089b366de0ecbf8526f8de6b5691ef3e33b5b1720a413fe40a8dc6b50e78c2c",
+      "preds_sha256": "1486cd79689e4e52753dd1094551c0e686d79c9f395c9958c5a697bc09c141b3"
+    },
+    {
+      "run_id": "3c4424b772d100b0",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "fa4d9c3fe8869509bc0911ee94c8b7a3977b858895cf7009e842cb8dd807d78e",
+      "preds_sha256": "418c19e42da414c0ef314ba20137f6a5d7889eaea80206f2760caa909fcd9c50"
+    },
+    {
+      "run_id": "3eb5e44c94482a96",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "c40a1aba3bcf9a021fb2170d46012e46b67315086627eef896cc1fdca43c1e18",
+      "preds_sha256": "2fcd96523b6731b4784d745c33c53496f2ca56cbf3e3226fb688ad6a8b81b11b"
+    },
+    {
+      "run_id": "40142158ce0c10f0",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9ca8caff31a6c41d2d7b95bf45619dafbce0b7ff7719135a1305a9544a9766e3",
+      "preds_sha256": "5f726c5d7614d116c7b94e116cebff2ac3cfb2b395317ff7cc21c31948254c03"
+    },
+    {
+      "run_id": "41eff182f8fba3b3",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "f16447ee1a8002d88af1c3dce6bb4a946ebdb8ed930e431c5fc8f46e16ab6e60",
+      "preds_sha256": "acdf61933fd7f08d0d4f35d57d7fca2eb0815b92ec90ec6dc9f6a32034db3512"
+    },
+    {
+      "run_id": "422aaf55afe3e1ef",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "ee8f9c34397e30b5a33dc3167549cb9caacaa8458a689bce914bb6a9c7fbb1d8",
+      "preds_sha256": "b7c0c3ff075994ec118e4c89322e5c557cccc23834f9d754c2013c76cd2d14eb"
+    },
+    {
+      "run_id": "424c94bf2e389702",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "5fa42607e29dba612eee8d648c647b5821c72948c4c3b55e0313c3dce9b51674",
+      "preds_sha256": "02a69f7b79b49d9ff8c875f85331818de66c6bd7027a68019d017895ba39cff3"
+    },
+    {
+      "run_id": "440cc67e79c53b16",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 32,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "b7cd109eba86e4efa49c271594175f5cd99d9fed33f17f14c0bdd736639a2767",
+      "preds_sha256": "113516e075e439046f8e7a0ce5d0bb738fdcc58c0f8e7a88fa73d4b03ec829ff"
+    },
+    {
+      "run_id": "451c0c249408643f",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-en",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "f8db8a974f7295a014bae762ba8b9598c9b70dc7aeda166ab1905cc7dfdf02e0",
+      "preds_sha256": "b139ff00cf2c14041fb8020e9c3b5cb174bbfb7dca263bca3d1fb5ccb5c8e402"
+    },
+    {
+      "run_id": "45c62149b77493ed",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "488dad93513dc0936f55016a2308173321a975290165e786830b8cb271d4f19a",
+      "preds_sha256": "bcf2671a9070865a501be41a5d5d2f73725328754dfaa65dc395dfcfd7553683"
+    },
+    {
+      "run_id": "45daf2d52c2fe924",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 32,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "e2d36ead82d873b26504305713da7ab024daa5c3e6795ab45d00e45f48dc0f3f",
+      "preds_sha256": "d3607c4425209d767b5314d7e51cd7d5afa9dabbb09c2135762cf6d53e1170fe"
+    },
+    {
+      "run_id": "47f88780ec0ff7c1",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "526ac4870a7b4080b9acbc9ede0b87bc0655e9659f2ac86fc5a4731b7b5f53c1",
+      "preds_sha256": "4618bce6d58910554a6d5ce7fc25680a73facf56aa98d197442d2ed602e0c1a7"
+    },
+    {
+      "run_id": "496dbe42d29477a5",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "f0c4aacae94f88c6532d773524aa532081bf58149fac574fb1a99e460579ee9e",
+      "preds_sha256": "1fa7818d7f709a5f2d0e4ab32c68f5c10c3ff6172b2f0af3c81d2454fa8fc74c"
+    },
+    {
+      "run_id": "49f15aa7e20af96b",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "65487fb03284ac1cafc17ba653c5f323b557d73a185a155c07852afad1470500",
+      "preds_sha256": "82d82acb4249552b82b71b01883cc3810df13b560d570f4abe5a6159628ba363"
+    },
+    {
+      "run_id": "4a58272272313661",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "34a597de11d8bb6382a6b41c7835d95a1e9e0fe64530e7f3e33f20014f0454b1",
+      "preds_sha256": "2e231f00e9090cf56892869bc02039ffa01bfddd39b9bf454cadd4c55453746b"
+    },
+    {
+      "run_id": "4a7d42c63c2dd8db",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-en",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "df1a3492b7734610957206d47f9d75651c0fc1a3f05a1e63f8276b437d1608f6",
+      "preds_sha256": "8d79008f1616b0e303fee43cfea6b4c5371b5d0fd503b8f0321f8e07ef5f7055"
+    },
+    {
+      "run_id": "4c8803a4c0bfd56d",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 600,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "fe8349f4b1f9b29c976d00779d07a3c52a8aeae35186ce58502e729e9e2c42d5",
+      "preds_sha256": "d3da3b3f0661bd6580a07662c464d5c6f44c737e8787a59825272d3007aae9ac"
+    },
+    {
+      "run_id": "4ce2d678c578f25c",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "63b168f1b34d71a30c57af72795d767814edec669588b980a9f3ee213547de4f",
+      "preds_sha256": "f77848386a32757cf961225f08dec39cfc157a42da909b3b6e8e74282c0509f8"
+    },
+    {
+      "run_id": "50d917b15809fad7",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "b6d452893fa2c512e9bb64622034b8aa518afeb94edb6f995afa2a0f4945e96e",
+      "preds_sha256": "bbdd9e3508f9ab1871a778baab0648ef76321c07af7fa840e4a746df3c22e8dd"
+    },
+    {
+      "run_id": "565e199e684af1a6",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "827b2d32e7843eb574d316fee92fe10ef474f593f7222e2aea232c77e0313d76",
+      "preds_sha256": "9aa8a2ba83abdfff2e98ec0cc3490ae10787c950bb055c0d70efd3755cbdcf6c"
+    },
+    {
+      "run_id": "56f2f67a80bbf01d",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "2a49a6f3191dc5de6e03c77447b11ee544f32ba7702887f8ae00f1a8fc7502c7",
+      "preds_sha256": "dcf68847492e77222a8f0faccacefc9ac8a9b91877b56c1ba45eb430b1ba9d07"
+    },
+    {
+      "run_id": "58045d405e927c46",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "00a73ae2d4673656f3371778e911be342622d358ad03e22fa6454a139b8eaf46",
+      "preds_sha256": "67f3813c0d84f6baa9fceb41a97bbc828aae6de86b65b7a6a82216a0c733b4f3"
+    },
+    {
+      "run_id": "5a76175900f933a5",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "762da649f4f72c873afce22d1d7bd2330fd67b0dbec5a0106ac03140605c4a9d",
+      "preds_sha256": "53578cc28bb1d55039ffdd0a8033a595e88a5871fd60ba20ae7fbed1db765a9c"
+    },
+    {
+      "run_id": "5e318659884144f5",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9920f5827468dc842518cbadcc20488ebc14edcc78c7622d7caa8527829c3077",
+      "preds_sha256": "ff4f991c47256226fff475fe43f0f770f110a144911ca2fa72537a38e3d7d83b"
+    },
+    {
+      "run_id": "5fabb2f4488d3ca9",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9f9d482aa3fd452269ef425d2dd596e7e2a36e0d181eb68a243d72800a8d9149",
+      "preds_sha256": "1391c11bf3bff3eda9b069ee4d4e41b815c48f7a0ecc087b2c02f917e49a2c26"
+    },
+    {
+      "run_id": "5fabb2f4488d3ca9-2",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9f9d482aa3fd452269ef425d2dd596e7e2a36e0d181eb68a243d72800a8d9149",
+      "preds_sha256": "1391c11bf3bff3eda9b069ee4d4e41b815c48f7a0ecc087b2c02f917e49a2c26"
+    },
+    {
+      "run_id": "5fabb2f4488d3ca9-3",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9f9d482aa3fd452269ef425d2dd596e7e2a36e0d181eb68a243d72800a8d9149",
+      "preds_sha256": "1391c11bf3bff3eda9b069ee4d4e41b815c48f7a0ecc087b2c02f917e49a2c26"
+    },
+    {
+      "run_id": "5fabb2f4488d3ca9-4",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9f9d482aa3fd452269ef425d2dd596e7e2a36e0d181eb68a243d72800a8d9149",
+      "preds_sha256": "1391c11bf3bff3eda9b069ee4d4e41b815c48f7a0ecc087b2c02f917e49a2c26"
+    },
+    {
+      "run_id": "5fabb2f4488d3ca9-5",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9f9d482aa3fd452269ef425d2dd596e7e2a36e0d181eb68a243d72800a8d9149",
+      "preds_sha256": "1391c11bf3bff3eda9b069ee4d4e41b815c48f7a0ecc087b2c02f917e49a2c26"
+    },
+    {
+      "run_id": "5fabb2f4488d3ca9-6",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9f9d482aa3fd452269ef425d2dd596e7e2a36e0d181eb68a243d72800a8d9149",
+      "preds_sha256": "1391c11bf3bff3eda9b069ee4d4e41b815c48f7a0ecc087b2c02f917e49a2c26"
+    },
+    {
+      "run_id": "5fabb2f4488d3ca9-7",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9f9d482aa3fd452269ef425d2dd596e7e2a36e0d181eb68a243d72800a8d9149",
+      "preds_sha256": "1391c11bf3bff3eda9b069ee4d4e41b815c48f7a0ecc087b2c02f917e49a2c26"
+    },
+    {
+      "run_id": "5fabb2f4488d3ca9-8",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9f9d482aa3fd452269ef425d2dd596e7e2a36e0d181eb68a243d72800a8d9149",
+      "preds_sha256": "1391c11bf3bff3eda9b069ee4d4e41b815c48f7a0ecc087b2c02f917e49a2c26"
+    },
+    {
+      "run_id": "6030d7f0e47b6bf2",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 100,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "d1da6b0a631aab831f1e07a90abfece3fbd1c4d19100eb4c0ed8272ebd97fceb",
+      "preds_sha256": "bc3413a256f399c2c2d1096e85e164d40c4c1ebbb3bfa5e9cbb93e0e95c1acf4"
+    },
+    {
+      "run_id": "6117692244456821",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "aa9c14132df56e694c6a1c4a93d912a29915a56c135557f307641c7c8a1e5c0e",
+      "preds_sha256": "ff89cf1406029be1d496d7cd5071097880ff6fee7afca4dab9b6e2ac3221d7a8"
+    },
+    {
+      "run_id": "653313cfc18aa232",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "ecf38b6e70175072f566aed8edf0cfcab8f5771a92b7f0e736fde784ecc62336",
+      "preds_sha256": "5d8fa9da99dd5f6c8c2b851fb304a05de4b00f4d935a000e9bc310c5a4f5f5e8"
+    },
+    {
+      "run_id": "65bd62257ac0491a",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "117da068614f9416205e7c807741557027b8543a44751fdc7b86b3589041c232",
+      "preds_sha256": "a4b3f025759b2c3bb69a7352b2a084919828346ad317a2edb33c501cd202cbae"
+    },
+    {
+      "run_id": "663d563d56bba2c4",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 30,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "4ca5d47a4fcc35f90b9b74fbd041f7cc5f60cf26069d6bdf14f7373b87a853b7",
+      "preds_sha256": "2f7fa4690ea643b7c6ef1dcca1d06b68a7a3d072653c8001d72fc634e19e66c8"
+    },
+    {
+      "run_id": "673b0fe555ab9981",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "ab4ff60996bbb4a001433d38a96fd783a21f535167c71e580f64999a99ebd3e3",
+      "preds_sha256": "d133356d4da7a37a3df658d84f456dadcbac4f7669aeb1e2926c5cc116c242be"
+    },
+    {
+      "run_id": "6886ec38dcfbc31a",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "4ea680e1dafa8d2cbe3913e1a870ab312a0e6ab55c8e01ff79e76bd77bfc5d8c",
+      "preds_sha256": "7023b7f252d51b449fb296dcfae62db417c61803d876a85cae9494b51f2a94f5"
+    },
+    {
+      "run_id": "68aef68b554a17f4",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "7f5acbb9a4489471b46ff0e7ba12922c1c722a96a3d6a11404b9dda014662d85",
+      "preds_sha256": "cb2304fd0d61c3b18bfc8047a9d5b65e61e9f55d87cd4882632ae1f1e5800d1d"
+    },
+    {
+      "run_id": "6b79490b11093d31",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "4480aa19d9fb7558231b0ccdef70276b9eee74d83d330c7242701f5fb08a9a1b",
+      "preds_sha256": "8146378669aa231e7a4531fed173403ecb235fa96f21a9e4b65297b716b7f37f"
+    },
+    {
+      "run_id": "6b9f44f90bdae2df",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 902,
+      "n_cases_declared": 400,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "dc957a25fe1af800bdd94793fe88ee93494a12a29035148221925ccb1f60ab72",
+      "preds_sha256": "feb06beba2ad67b8ba07e13827076ee1eb877c3b3e27774b11c8542f4e154903"
+    },
+    {
+      "run_id": "700d86188f0eea6e",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "2f22e981cb3657dfb76c54193a9f07b877f4174dfd28fba0de61f6ace796ad90",
+      "preds_sha256": "9e100a4d3672f725ca3842def26e5e0fa2d5f189c5c62a69ea10d45d83055c80"
+    },
+    {
+      "run_id": "707711c102602834",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": 600,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "421da9c97719b046a52e860b21a39d61716348ec18338820da4de572c85d6fc9",
+      "preds_sha256": "d72ae26f6c0c6adc3a16b3518e70dabdfd0b2c486868bcff137fe1ee3dd6c302"
+    },
+    {
+      "run_id": "72c54c409c2d7364",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "25c6755b4e9db697a65014580856e198781ff3ff9567c8dd37c4176535a538e9",
+      "preds_sha256": "0994abba991a9fb7b5b7655ac68c89c5f89f924be9cc7d038f023b9c839c95ae"
+    },
+    {
+      "run_id": "72c7b3b44b6d0503",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "1583d830c5491f89c47e6d1915080469e9b8042504e1b7ba7bc4e367615fd47a",
+      "preds_sha256": "1c401cd9436cb2ee094a7511c894508851dd1fc8b1f05d662e8b2e4dee1211cf"
+    },
+    {
+      "run_id": "7303250159a3a579",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 24,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "5d50be924212c5db07e6de089ed029d07094ca61d17b0bd83841b86e4aa9890d",
+      "preds_sha256": "a39d76dad68e18910cb234fa9257ff19fd6e0d5ec029648d1c3ad5ad8b8bdb51"
+    },
+    {
+      "run_id": "7327283fd6a45f59",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "b1287d340f747a66d256fd884acfe8cb6c6e8d058a77ceef7865792e98ab851d",
+      "preds_sha256": "29fa0d61ec93296affb959fbe3c67d4eefaca0d404ff39119aa3c321a654bcb0"
+    },
+    {
+      "run_id": "740706b6918b17ca",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "8bd3fa2ed0a72d3e0bc5f98fa56303cd41ad9fe58904c117ef52c5971a3631da",
+      "preds_sha256": "86af160846f6f8785a2b360e1dca7147139887b245cf66f14c63aa80875517e7"
+    },
+    {
+      "run_id": "75bd69a40aef0e7b",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "96c52d705c3d7e4b189ce654c74404ce8c59b2c5597d785e32f95ef8d015bca8",
+      "preds_sha256": "62b4fc91e8ad93e04ed14a90d028d18f5b971ee38c8a93f2477de5ca9369bb29"
+    },
+    {
+      "run_id": "760cab259f5be191",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "ac7920dfe990f53999216c23aa5819535c89505ea61322a409a6c94b2af16d8b",
+      "preds_sha256": "e925a7d8a3e21753a0c05787ac4ebbb07adcc792941c32cc96778752981d08f7"
+    },
+    {
+      "run_id": "77565d7c4979d702",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 902,
+      "n_cases_declared": 400,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "412113bfbda56a2d9e4e1ca7cd28a1d069546934c1fbfa6cd36047cab0ce4f54",
+      "preds_sha256": "feb06beba2ad67b8ba07e13827076ee1eb877c3b3e27774b11c8542f4e154903"
+    },
+    {
+      "run_id": "77934744cd5170af",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 32,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "5cd5e3dccc9d7d07464695fe1372c44c9a3c6c431e232099d496d8c41055f51a",
+      "preds_sha256": "644ce1731e89323ae4d795c015d57a1078f0ad591f44ba4fa9fc6b15317fa157"
+    },
+    {
+      "run_id": "7981972813945f8c",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "f6a63f6954bbebfd440418a3bfd0e908047f717688dbd80db0d3ac371c0f1376",
+      "preds_sha256": "12f25862030143b32b8f8625b2a072b04dd8f9f5047a9fba8ec240c78f71cdc7"
+    },
+    {
+      "run_id": "799c789654cac13a",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "98939dcfda3aac38f48f9ead68446b47975120c3bb438d3ea9ce416b824fda6f",
+      "preds_sha256": "200624594088c0ff1cd0c0d9e0874bcdd32bd6aab6e7252a3db0b0f21c6c61c2"
+    },
+    {
+      "run_id": "7c14da8a2b86abf7",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 600,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "02ffa991c941aae9421896d219e8bf15f3ea722c6794a8a51648638aab2d4036",
+      "preds_sha256": "d3da3b3f0661bd6580a07662c464d5c6f44c737e8787a59825272d3007aae9ac"
+    },
+    {
+      "run_id": "7ccf84b19a1412d5",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "455a03c3892dac5e648f512476645ff4b6d4d69408eb3b2f2d604e4355290390",
+      "preds_sha256": "eaf564979f7dba2f7e620809bfe2f21ae6f6bde75c9abc9f86cfb4eae46b46e0"
+    },
+    {
+      "run_id": "7d37e4ed2f9b2fd3",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "d082383e4a4ab036e69d750fd0713357310a6b18ba315a0825b440249b81eeb6",
+      "preds_sha256": "534501f46b53adfb633d545dc5a531b240c84c4a4b9add36e38996d91544b210"
+    },
+    {
+      "run_id": "7e5d27265f6cb2b8",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 60,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "3e721bfdd4ef0123706977f801b0c0355af31ef5ef052183844f1bf8b6d5b907",
+      "preds_sha256": "d2dce9bb9c3bf96bfb17aa0fad5be480f04e8d8ff484d05562bfb0970130fe42"
+    },
+    {
+      "run_id": "7ed49fa09b8fb40e",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "2d783d5afa43691805a169e1e4f08a22c5f1fcd8adfa6a634056d2d32a300ed5",
+      "preds_sha256": "a1e804651f7cafecab83679586a2a6d42812789ba0ace068a3721b4fadd82e7d"
+    },
+    {
+      "run_id": "7ef9845aeabea92d",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "c50d08df0c67c320bf1a48275347c8097eeb984f23179521823a7e69b5a9d7e1",
+      "preds_sha256": "e01935c20f0cb54069f24253f7dd3d5f68083b8b551161e5fd6c69a0604c8439"
+    },
+    {
+      "run_id": "7f45ee3effc2faab",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "a5cda866b5ebc92915340213f25b9d5e11ad2e2fb77b499410a3c058de1af940",
+      "preds_sha256": "0607fdbcba2a429598617176c191cdc47dc1aac5210402c66d65457fdf09b93c"
+    },
+    {
+      "run_id": "7fb772b0531508d8",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 24,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "68b462593bbf94f988bf5b71e7708493174679000f99f4ef47137a352367b147",
+      "preds_sha256": "39ff3bea8a0d9f87bd4108aaca5bc39014d976c82fd04ae0ca90ce6b2f443612"
+    },
+    {
+      "run_id": "810f3ed90171237a",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "58b1764c373bb0f0fe9b064c4bc13f903b5db34320c0417687ca18308dc88275",
+      "preds_sha256": "2a30277eb81eeb5bcf231fb4b5d34584676bcf6e2e6867c5e59f5ea25f9da6f0"
+    },
+    {
+      "run_id": "838bd7ae7cae1405",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "5b16fe483ee3aafc10eb6bd24fc78a699ec82b4cf459b119f0fe82b6a00e2d49",
+      "preds_sha256": "0613e8bfe636084e351dc73f33ae43a92f92b9b72dcf1f5454ed7e6ac8dd13e6"
+    },
+    {
+      "run_id": "84bfd5fd7e6a45cd",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "4723ad3b0510cdb154381515d61b833df3a357fbe8c66973952560f6b63c0ecf",
+      "preds_sha256": "cb8b441f0fb7b4aefdc9f1467f21343083cfb55aabd2501c0e7c3998352a469b"
+    },
+    {
+      "run_id": "855045e77ef73bcc",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "7eec630571ef822fcbed4999226f875530f15366ddaa44d31e75901602937bb1",
+      "preds_sha256": "db3f7072223af9bf533a319802abffd7497b303a742ca7271ffecaff3063c06e"
+    },
+    {
+      "run_id": "87eee9a97001fe35",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "d182709039851b56efd6915fbd89cf082a8a8f0248275c4ceebd2df5233cf52e",
+      "preds_sha256": "aee942ddfc17e96a260e9a10460f9c9a9ce4d65cd9b54815996955a9a76743c8"
+    },
+    {
+      "run_id": "8939bc6850a27bda",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "da1be1008f0810c1cb2c7c39eaa14223c373dbcff88b31836cd584c496735a7b",
+      "preds_sha256": "cf59c68643b53504be9c2813d47435dd2c246d8e0c328480e25dcc0c57074d53"
+    },
+    {
+      "run_id": "899c076686239ac9",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "2c4d159cdbc85d83cf3ddee40ea829323b5bb2bbd3e9715020f19655191df2aa",
+      "preds_sha256": "4acde45dd48dbc4951e46edc7a0acd4b3003d1d17f6179d3ec273338bc07a3cf"
+    },
+    {
+      "run_id": "89ad762c6b1d867b",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 32,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "0e00dcb19c2f176b450a1852761514b83fdfd03f21a646e2ba59db0770a9e8fc",
+      "preds_sha256": "1aa3c9dd8c80e8250e143dc6585335db147cc8214b3b1659b9bbf053014a4182"
+    },
+    {
+      "run_id": "8bd3bc1d49d2c5ac",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 32,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "6b509199c4a75f841603d3b535f7d84fc86e00de0a34a501e645e91ecf462853",
+      "preds_sha256": "80458f1b3b2a0586293985a5f72e8fff176b137fb000a542c1c9ca1a29a37fa6"
+    },
+    {
+      "run_id": "8d1bc042a63a437d",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 8,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "aca969f8326a88f82c7006849d342b55f50881378fed63726f6f8d9814c355e7",
+      "preds_sha256": "9e25baeff77a13b185a98938632e09da62d93002cc8b123cd1af5a4cf2752a76"
+    },
+    {
+      "run_id": "8e92ce18f969e1bf",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 600,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "29d403d61c92a918c311e37d0dbff35963cd43658b4b90005cc64deb65a19c2a",
+      "preds_sha256": "298799bc910814f16129dc31b45f28e4f84950bf3c21e8409af7ec96593f6ca1"
+    },
+    {
+      "run_id": "9017bd531df279ae",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "prepend",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "7cf80699e5d18ab778af709962bc56b8e18d74a4860080a139b0e6e34b7deffc",
+      "preds_sha256": "61fae8ebd77337e0b65e25adf52dcc776952cc8af66d157229c32fdf8e7a2413"
+    },
+    {
+      "run_id": "94913fd9c2d580b8",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "fd6d0a8d2bb3f9dc53db0f5d45021c89b70a431dd6ac006a4edc882dd2b84241",
+      "preds_sha256": "7306521e2052966382a9f5c000da42946aae68a810a1a43bca7d44e5c4b40801"
+    },
+    {
+      "run_id": "9a8b6527e7ecf6f5",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 24,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "66e33ef074a571a8e5b49f18a2b72b73a80aa3fd219c9fb48a0d74e3a84101a0",
+      "preds_sha256": "bef0744c0f8658c9a889ff8833932ce5a2c8a773faaedd4cfafe806910201a2a"
+    },
+    {
+      "run_id": "9ac6c191d4472cd8",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 100,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "015746d3c475214fa248a6dfc733a9662ae701b6d7d9efabcf648bcffd4011a1",
+      "preds_sha256": "de795e4724fa03a1e81bade03859f9bac0f8791d5f75f50eff68818e7254206d"
+    },
+    {
+      "run_id": "9d15d2020ed2cefe",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "fce711c973d1718bc731a81546384cc05873e318df18128a11966e665c8b3de5",
+      "preds_sha256": "76163fcf5da49c30cc0e999e7bf08841ed9ecb0de771d706e819ea45ae10565f"
+    },
+    {
+      "run_id": "9d9e7041ee576a3a",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": 388,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "3e329c5dfb02f943a08d13881a7adec01176cf3f84a88c22b5b181b0e0ee7ba4",
+      "preds_sha256": "22c722487f75b610c1ad06c678a246b36f8ad55764ba2ba1f5a3601b2fa06337"
+    },
+    {
+      "run_id": "9f63af009f0ae984",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "4c59504d557597064256926e0c22bb65deed8c29caaf39d3f2365855abe737a6",
+      "preds_sha256": "8e49b28444fdec4e11bb5de5e726b3cea8918e05c12f9f077c46b6728db69900"
+    },
+    {
+      "run_id": "a012db5c5e831541",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "7bc88cb22ad30322def45f7c19c38509f0ad371cbce25c8384391ba1e71296f9",
+      "preds_sha256": "aaaac932dca0799142a87319383fc371e881b8faeb7766d078567a9dd72bce7f"
+    },
+    {
+      "run_id": "a0fabfe358e03978",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "4d64e1b9d8fd16b5bb25e8879187da5045fa09e47177afb6280925b6ad548ffa",
+      "preds_sha256": "9fac3e92e271a26d976d21fd32a508744b524239aa26961d500cd7e366dd30d1"
+    },
+    {
+      "run_id": "a1508e86b051cd2c",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "fcefd0747bbf42e5c1ecba014c497d328f921fa4535081eeee1b5022ca3a1d3e",
+      "preds_sha256": "0cf4cad6df63539ef1b1107dfb771ec7a7e1811cac4f70b36951fbde5d9bb687"
+    },
+    {
+      "run_id": "a2c2c5069a36e1d4",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "2a89126483470b70ee91b5725410b56390b47809472ef8166f21f0515b2effb5",
+      "preds_sha256": "e318a499f97e23f74b9b2f151236a65057a3673a6ae0db3e0dbbbc1e4971da45"
+    },
+    {
+      "run_id": "a5cf08b21f15cc1f",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "29cb570472309a3075e55fafdfdba9bc035a0f73812c3a12d5154b6b00dd188e",
+      "preds_sha256": "bddb95a427400c87846bdc263c8986c9da8763713372cad4c423d9f1cb227c96"
+    },
+    {
+      "run_id": "a61df1c137d95cd3",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "dfcd8c88406319675622236562ba681fce4035b9d3be97ff1124c54b799e5308",
+      "preds_sha256": "d3f78d50a825c8923e8dbe2585a048990f16b31716310077b69e3f54b6c17fba"
+    },
+    {
+      "run_id": "a630a295192c5959",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "6a9f4fbf48027b4330f94b6a37f593523f84a7d00d1727fd2a996d8370b80d4d",
+      "preds_sha256": "ea857c9706fe8c627a3219980449b69d37bbc664088f52cca5d71aa171c72f4f"
+    },
+    {
+      "run_id": "a755266f93014526",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "8b572a27f8d97749e451cd285a4ad434a585deaa91648abd3ce7011930b5b5b1",
+      "preds_sha256": "b080dfa125514203980e38abaac506aee8b9ec28fb6f6ffea10d4d73418289a2"
+    },
+    {
+      "run_id": "a755266f93014526-2",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "8b572a27f8d97749e451cd285a4ad434a585deaa91648abd3ce7011930b5b5b1",
+      "preds_sha256": "b080dfa125514203980e38abaac506aee8b9ec28fb6f6ffea10d4d73418289a2"
+    },
+    {
+      "run_id": "a755266f93014526-3",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "8b572a27f8d97749e451cd285a4ad434a585deaa91648abd3ce7011930b5b5b1",
+      "preds_sha256": "b080dfa125514203980e38abaac506aee8b9ec28fb6f6ffea10d4d73418289a2"
+    },
+    {
+      "run_id": "a755266f93014526-4",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "8b572a27f8d97749e451cd285a4ad434a585deaa91648abd3ce7011930b5b5b1",
+      "preds_sha256": "b080dfa125514203980e38abaac506aee8b9ec28fb6f6ffea10d4d73418289a2"
+    },
+    {
+      "run_id": "a755266f93014526-5",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "8b572a27f8d97749e451cd285a4ad434a585deaa91648abd3ce7011930b5b5b1",
+      "preds_sha256": "b080dfa125514203980e38abaac506aee8b9ec28fb6f6ffea10d4d73418289a2"
+    },
+    {
+      "run_id": "a755266f93014526-6",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "8b572a27f8d97749e451cd285a4ad434a585deaa91648abd3ce7011930b5b5b1",
+      "preds_sha256": "b080dfa125514203980e38abaac506aee8b9ec28fb6f6ffea10d4d73418289a2"
+    },
+    {
+      "run_id": "a755266f93014526-7",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "8b572a27f8d97749e451cd285a4ad434a585deaa91648abd3ce7011930b5b5b1",
+      "preds_sha256": "b080dfa125514203980e38abaac506aee8b9ec28fb6f6ffea10d4d73418289a2"
+    },
+    {
+      "run_id": "a8d9a4ffbe4be990",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 100,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "03cfd6774b70b6e6a8786526942d18a19dd6993627fe04b2762e673eeca83955",
+      "preds_sha256": "6b939187f3a1b10c533587709164abb5b0449c25c1200977ec31c6459bad04fb"
+    },
+    {
+      "run_id": "ab2dc74b3f26c6c6",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "4927e1dcffdb486019baa50e1e153be548ba288de52251fb9d9eb578555cfa63",
+      "preds_sha256": "a6ff0dcc6ecd1555b147266b67c85bf63e60ec921be2d1137999a05d148b4a53"
+    },
+    {
+      "run_id": "aec001ead7af98b4",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "86bd8d9ed4ef3a5ca9fc80e765e3583770eba0594d86f0493510c1a0f22e7275",
+      "preds_sha256": "72d6bd6e20c03ae8c2085df9f5b43f6860cb5ee9ccc43d3e9a636ecb60549882"
+    },
+    {
+      "run_id": "b52f931ff353c062",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 8,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "605ddeae0e0b9579cb9652aa31347bd2e9693852ec986302bce9547935641d8f",
+      "preds_sha256": "fd2609a3a5653fa2b91f4d2ae778c6203c47e2219523f943c90f5fd5a6d6d4c4"
+    },
+    {
+      "run_id": "b83d4f9988f1e3ca",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "87bc56fe44dcfd88bf0690b33e5ae97e025f9e04abda583a418c5feea0d83a12",
+      "preds_sha256": "ae620f881cf68b030eccefdbe28dea29ac8fba7541ffeb6b218ea1d8998e7304"
+    },
+    {
+      "run_id": "bbe61fdc7a04c76b",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "68e5a1412c976ddfd0ac5bc25aa5dac424847aedbdf80b034cc142a88c47437d",
+      "preds_sha256": "6e0e374898b5e93d74ba9c6b4835180d9f8d43d780d80f71b9e572142f4f1bd6"
+    },
+    {
+      "run_id": "bd5c82dac6dff987",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "c94a4b5f63477bf52a0efd10ba978be03d54f20e7ed68f7c2ad0b5bf7567276f",
+      "preds_sha256": "2c49aa61ea56b32e65baa2e9635cf12f8e0081b2930b5c40811326859836b496"
+    },
+    {
+      "run_id": "c14de34e32f69c1f",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 32,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "0546462e802266e7e7f94de36b65dc53c12958c160c76f6e33cc88f7af266d85",
+      "preds_sha256": "8c73d65f0d418690207cbf43be387bc9b5ed5681cae01d46d535dfb0b09a3043"
+    },
+    {
+      "run_id": "c1520a7d181307cb",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "3a7f78076f6a510b8839ac7afa0472e6b12e5a0271da16ae9ca0d23c49edf036",
+      "preds_sha256": "31e2b5c89166d9c2ef1883309e06ce45eaf6bc2e294f948cc574aaf1c257e0b1"
+    },
+    {
+      "run_id": "c1aafc478e717f2e",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 8,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "46a11748447b0aece8a7eabf210b1992bcfdffed58857e85af430920dae7124d",
+      "preds_sha256": "fd381c6631ffb507fbfe3ce8b8f8b6c71848c75304524d2220da7b15142f4e65"
+    },
+    {
+      "run_id": "c2110805b624e5fe",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 32,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9ce21c6e693242581d5cc6a45af2fc738bcf9b6d345f42ae7d786803d3e52c8a",
+      "preds_sha256": "f29bb375565c0435de696177492f80abf69c8e47b76907a270a3fd8379e123ea"
+    },
+    {
+      "run_id": "c7ff9a14fb38f8f2",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "964aff63da48a6445a983f2770ed6bd513c4c473702f748847ce8a839eaac284",
+      "preds_sha256": "c96ebff08952494faf0ed7cdb6488917711b181c0d287b1b9dc36cca5330738f"
+    },
+    {
+      "run_id": "c82628e5db21199e",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "0954e5184a7ddab44ac657f390c0e39705c4f20ed36170572615955ea66dedb1",
+      "preds_sha256": "4dcb0e07d3c015e1adbf15b1ca291f65deb6b6353392f65bf38c106c5c6aac84"
+    },
+    {
+      "run_id": "ca247abdb4935d97",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "23a0f87bd8d30dfb91a2f306c18bac17df9f1c4df29dc8fec34070540e8aea17",
+      "preds_sha256": "329398ad7b65327741e0bfd9763b5c7d1509e11f0b80006754b7ff1b9e399624"
+    },
+    {
+      "run_id": "cb96f31464570bc2",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "28881b8461159e2ece1d108cf2720e7657bd44cfb2795ca8ed36d3305b7eeb61",
+      "preds_sha256": "c63e2e2a38b03cb59304897efa42503703da0e70588d8b74f8df46d36baaf27b"
+    },
+    {
+      "run_id": "cd18c9c88e371332",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 400,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "c3bbc7b033d73b57a5956185aae28ff2dc21011514940ee9a9a83bd83fb9e6cd",
+      "preds_sha256": "a2d242ccf150a38a071990d2b26feca3a0b8212e450eded2bc07bb3ee0322818"
+    },
+    {
+      "run_id": "cd763ffe82e0ac73",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 476,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "da7490a801f83d50109024b22dfc9fb75accf45376f31ae57c2bb7b23232b2d3",
+      "preds_sha256": "de86dfa1deb753f7b3f374d72fdd96038864fefc02b1abfca5aa5dacce837363"
+    },
+    {
+      "run_id": "ce0ec90daeea0f2a",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "dd78719c307a4092348e7bb6c32670e063766088fdd5bb6a9da07a32c12e757d",
+      "preds_sha256": "1322c50a147d67a7a7ee512b3c79ea7dfaabe4a56902ee2138ca0d9f107372dd"
+    },
+    {
+      "run_id": "cea0cbe29bb6095a",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 32,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "094f0f9983240c69744993424d3aa23266f5f550d723a4abdf969b2de4b86b9c",
+      "preds_sha256": "0c8f7d1d4a74dfce6977c7a7b2707eceaa7fcd5713bc8c90cee399012c83ec06"
+    },
+    {
+      "run_id": "d11fd443b5a64b22",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 30,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "58940e8a0ced551e623a074aed73966543b10cbf9d657c53a2cb3dac757dd4d7",
+      "preds_sha256": "83a224df9721ad032af32ec6f810b72c8cfb3c3830c1f7693af594c09a172110"
+    },
+    {
+      "run_id": "d43232efe881c3bc",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-en",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9f6d6fea364087b767eb057e410241a65804735aa9a65283e3f24a15cba8ed08",
+      "preds_sha256": "8dce8d017fac389ecbc03cd0d3954ea7cbb1f3185c68ed6c480c7fe88a8154d8"
+    },
+    {
+      "run_id": "d5c5b98c4eeb0567",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": 390,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "e0e81c7a9f3a35b228c9a2ad8b0da2ab8792100fedad74c4d20d5ed514a9daa7",
+      "preds_sha256": "df0e06066db789a80941e7838def4f831c690dda47e22472541618ce61df2c3e"
+    },
+    {
+      "run_id": "d802b22c9740bae9",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "ca8780599f059083cd21033accbb9df84e32a6d0d868bfebbabbdfeb51ecf096",
+      "preds_sha256": "b87965fd3618605b59c508267d9ae63d685863e46c598177a931afd297d375cb"
+    },
+    {
+      "run_id": "d89ab791eb918e48",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "db6805dac740a236678a6119f7a5258316ad5c67ff90b11f7ab92fe67d2592ca",
+      "preds_sha256": "0fc7adc531869684081da9601a150d7952d988eaeb16d3e6e85f2cc83d451bc0"
+    },
+    {
+      "run_id": "d8eb3f79b7f76bc0",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "c5a3ad48bf60cb07c9558d2e22fd729d6e34ee10efd7fbfeac160765952cbf1e",
+      "preds_sha256": "5d038a08d41e4e45edc186e1b5018af5047b1a43487c70eb965f49b63027b266"
+    },
+    {
+      "run_id": "da09665be5b84494",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 32,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "86531d62aa64da6ac8291173bc8f9e125db7644b37ed53256a7103d00d616b50",
+      "preds_sha256": "4e3d45038b4e158feb9c9e76ed1a403e5b8c8309d286fbe8d3816da0654e3ba7"
+    },
+    {
+      "run_id": "db278f486e9f6e8a",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "a4869a9fbe58b0405ad9a67bad772a03b26104b7031b4e7c5ff6e95d5a405152",
+      "preds_sha256": "def474a1c90b606fd9baa5db5523361c4b172066a4fe359b2c0aed8f4766d2db"
+    },
+    {
+      "run_id": "e0dbdab322d678ca",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "1ca1f6d367f39dcd07958340167252b8789aaabbb56cde773ed7936fa15f31b7",
+      "preds_sha256": "db2b27a82bf9c5c386c050cc36f140b36a41ff8817fdbb7186f7335d38537033"
+    },
+    {
+      "run_id": "e76822874042bf76",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "ea4cfb7858816391cf736acae67c73a2e5a2d0b13c1a37597b0f7aebe5995abb",
+      "preds_sha256": "303fd0f00ab54e2d0482717ed85537d438303f7fc2b0e7eccda08dcb430873b4"
+    },
+    {
+      "run_id": "e76822874042bf76-2",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "ea4cfb7858816391cf736acae67c73a2e5a2d0b13c1a37597b0f7aebe5995abb",
+      "preds_sha256": "303fd0f00ab54e2d0482717ed85537d438303f7fc2b0e7eccda08dcb430873b4"
+    },
+    {
+      "run_id": "e76822874042bf76-3",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "ea4cfb7858816391cf736acae67c73a2e5a2d0b13c1a37597b0f7aebe5995abb",
+      "preds_sha256": "303fd0f00ab54e2d0482717ed85537d438303f7fc2b0e7eccda08dcb430873b4"
+    },
+    {
+      "run_id": "e8803d092405c8cf",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9a4702acae9b3f9dd8ad958d8a5161f7ffa652a090fbedb2737ca1fa23585bf7",
+      "preds_sha256": "2ca3ee327a0b6ef350682d81c98052ee5bfdbc636aac51adb15e6a646c8150c4"
+    },
+    {
+      "run_id": "e90034e1fc8603b5",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "a75a22b21e6f71dbf9a18a0ada5298bd568c6ce7e1d081397052adee9c42d59f",
+      "preds_sha256": "b66a3e4be8aeefff9d2a820687b1057695c83b786e398c53016f3dc6417ba8e1"
+    },
+    {
+      "run_id": "eb0aee9902072b77",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 8,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "e4c78c5d4dd06d48ff981479ddb6a7af0dff722765af77f847581cbcd6054992",
+      "preds_sha256": "ea320ec4589e5dc859116da3cb36a8f07672468ddb37266412ad5c4882cf3afb"
+    },
+    {
+      "run_id": "eb351b2a393fc5db",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "1a45866f56f281306c544e4bde9bd14442baf6f415ffe1c38c247efb8839ec75",
+      "preds_sha256": "2f435df8b37e50c87dfaae60a3097e9caad7baf62ebcc35dc8ac13b219fbf751"
+    },
+    {
+      "run_id": "ebfba31a031d4276",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "014bf5afe984778a6373a4439fd7d724348555e4a6838122c49777017bf9c3cd",
+      "preds_sha256": "3123f505a74df6c8af4221fbfe01eb15d7c9feed8a09822c24c06aed793f8be3"
+    },
+    {
+      "run_id": "ec7b9f96a3491548",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 40,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "d68487d6e88da05f3f83d75f7ec9411cd04c8e7923a63c2b9b04b90c00ca62f7",
+      "preds_sha256": "2463396628b7ec7f59ab8a2c36ad2ef7c2c40c7509d55ceae1cba665a7e892a4"
+    },
+    {
+      "run_id": "ed70303ff153c412",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "008535f2de0d985fc5140d0914bab830e12982deeb5f6f2fc711248b0f3300a4",
+      "preds_sha256": "aee524fa7560ebb8f70e46016b1b035fdce0b6fd84f86e828f130c4b3a7e0524"
+    },
+    {
+      "run_id": "effd083e53ddf77d",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 40,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "e8c3f48a430cb636732d2089ab1c8b390e8efbae6b87f9f266975cffaf7e86ce",
+      "preds_sha256": "22c718c0495328a8f1afa6c3406a93d44b808a96029cf8780a9f695558dc1216"
+    },
+    {
+      "run_id": "f048d8a00fae69e8",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 40,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "d8d15196d189199569b7b9c1151f14e0cc20748991be3a985afe96cc96836274",
+      "preds_sha256": "11a4477b8aeda0219c6708eeb661bcc8c6032020d05fdf40c6c22e7e343e0f33"
+    },
+    {
+      "run_id": "f14318c70ec00293",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 32,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "15ebfdd5ce8061b1258a9a3c5d8a0f71d12c1e921277fc3024c0fd5a0131de2c",
+      "preds_sha256": "05f35311420409ceea6c9659432f49dc7cb85b48054f0bd994fbd538d30b69b1"
+    },
+    {
+      "run_id": "f2bdf261485e7036",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "673b19cfe94a46fbc09523f55b5ceb820b7179b4b795c37fae93c48736314921",
+      "preds_sha256": "2c4f86d4a4181ed821e76319eb113c1153263a1994031d696d2444264ccaabca"
+    },
+    {
+      "run_id": "f395cb435280b0a7",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 32,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "c2d98098bbb2583fde3eed68238b2bc7fcc1e98a94ba43b0e95797d8553b055c",
+      "preds_sha256": "98807210656cf562858b8dadc6c41869139305c2b23a8e9d7aba67b10b2fee8b"
+    },
+    {
+      "run_id": "f68efb2bedbb571b",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "c01d2cf0462bf1162a43e61536faba3fcdc9efccc5762cce2eeb816a85779828",
+      "preds_sha256": "921b33bc53f85fd38a0727f11b8907cf17ae174b1aa7a53199a7305187101f1a"
+    },
+    {
+      "run_id": "f68efb2bedbb571b-2",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "c01d2cf0462bf1162a43e61536faba3fcdc9efccc5762cce2eeb816a85779828",
+      "preds_sha256": "921b33bc53f85fd38a0727f11b8907cf17ae174b1aa7a53199a7305187101f1a"
+    },
+    {
+      "run_id": "f68efb2bedbb571b-3",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 400,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "c01d2cf0462bf1162a43e61536faba3fcdc9efccc5762cce2eeb816a85779828",
+      "preds_sha256": "921b33bc53f85fd38a0727f11b8907cf17ae174b1aa7a53199a7305187101f1a"
+    },
+    {
+      "run_id": "f7bd7be0a4837afe",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "34425dc300732713807d5766fb971b0fb2d056fc461260532d37d68b1bf83ee2",
+      "preds_sha256": "ed3b0f3382fc519aba7d12e5b268e4bc971653efd5631f5689970e9b530ee590"
+    },
+    {
+      "run_id": "f95d644ddbe948ba",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": null,
+      "n_cases_declared": 60,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "9dd5275ab230686cd97ac16778a989fa60f454800c5ede364dc13284e7889df0",
+      "preds_sha256": "922a2063f459047d63bae4e7e95957b26f4c351a0a4c8dc3289ce226603076a8"
+    },
+    {
+      "run_id": "f9d0afddff1f114e",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "235cf8c8e605849f05d0104dbc50e4988f930391656306bc3be23812dae4c0f1",
+      "preds_sha256": "90cdc2ad5577b6ec237a900a499745b10ee3bee056532d8cce4ca7233d4f9216"
+    },
+    {
+      "run_id": "fbd6cb9a8433ffcc",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "95459ecb54d0a80e7cb0fef829f8640a26745cd742e4171b9884fc6ec332e9e8",
+      "preds_sha256": "27ece952584f8fdd0807674daa18571ddf4ffc52a78f809bd5fca7f0c8753f07"
+    },
+    {
+      "run_id": "fc551aba34ff02a3",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 1000,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "66d18c975014c0f4e9c8e6620917ea220e53affa67e80ddd3d77bcd0baff6849",
+      "preds_sha256": "c09feb4874727de8c5f6d64ffb6dcdcb1b9c13adf8d02ba969af8c3b813809e3"
+    },
+    {
+      "run_id": "fc75ce03ca07f4da",
+      "kind": "adversarial",
+      "requested_checkpoint": "clm-v0.1-8B",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "pad_tokens": 0,
+      "n_cases_declared": 100,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "11367be4598a8ac981c1797b1226d20f9215e22f264a436e94a3219e5de0b9b9",
+      "preds_sha256": "07c287bcc372f1eee1ae2baa2df44826aff7ff988d0892d94870b9493534d560"
+    },
+    {
+      "run_id": "fcfcec8b09ebd8a5",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 8,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "10f47a6b84fd050a283741995a5ded944d679d1caad1800c059c15518abeb60d",
+      "preds_sha256": "2d58a9d39e958734b4f68183f23f4607ff530189b02c5a62923e5285ea2e55a8"
+    },
+    {
+      "run_id": "fd7fc64539e0331c",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "prepend",
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "0146b33e79ebcb3fa0abafb5dcd586588683c55082de035a5184a5e4e9753e14",
+      "preds_sha256": "f713f4f2b0cc0b48a6a84c8c62f3c4bb46029e8c491394b9a61650c7f328ad56"
+    },
+    {
+      "run_id": "fdf4cb0740e0de44",
+      "kind": "adversarial",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "pad_tokens": 0,
+      "n_cases_declared": 400,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "056759003d93fd5e75d161b3840f62f9a4772933e07a946e9fd5e1fbc6295b49",
+      "preds_sha256": "540d2a9a60303df1a9553fffa2a8578fc0c424fe3eca11f6ae32459959150eb7"
+    },
+    {
+      "run_id": "feb1dc2679728920",
+      "kind": "clean",
+      "requested_checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 24,
+      "template": null,
+      "pad_tokens": null,
+      "n_cases_declared": 2974,
+      "missing_identity_fields": [
+        "backend",
+        "device"
+      ],
+      "config_sha256": "825be848d45e028b3dba6d0c7a610fbcaec19b3a6e0385e2778d319eb6c28507",
+      "preds_sha256": "b77a40298d3657ef63bb9994932e4b230cb29ff422dd2af391b698551e78eb83"
+    }
+  ]
+}

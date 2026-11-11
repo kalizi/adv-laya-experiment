@@ -1,0 +1,650 @@
+{
+  "experiment": "E22_attention_structure",
+  "question": "la nota dice 1/3 globale e 2/3 locale con finestra 128: lo dice anche il modello caricato?",
+  "claimed_in_notes": {
+    "fraction_global": 0.35714285714285715,
+    "fraction_local": 0.6428571428571429,
+    "window": 128,
+    "alternating": true
+  },
+  "claimed_in_notes_before": {
+    "fraction_global": 0.3333333333333333,
+    "reach": 128,
+    "corretto_il": "2026-10-08"
+  },
+  "notes": [
+    "10-modello/architettura-laya.md",
+    "20-attack-surface/truncation-stato.md"
+  ],
+  "structure": {
+    "checkpoint": "convaiinnovations/laya-typed-decisions",
+    "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+    "encoder": "/home/kalizi/.cache/huggingface/hub/models--convaiinnovations--laya-typed-decisions/snapshots/e929ae5cf69bc34259cd2f95c9e91145b818b1f0/encoder",
+    "architectures": [
+      "ModernBertForMaskedLM"
+    ],
+    "attn_implementation": "sdpa",
+    "n_layers": 28,
+    "layers": [
+      {
+        "layer": 0,
+        "module": "layers.0.attn",
+        "layer_type": "full_attention",
+        "sliding_window_module": null,
+        "heads": 16
+      },
+      {
+        "layer": 1,
+        "module": "layers.1.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 2,
+        "module": "layers.2.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 3,
+        "module": "layers.3.attn",
+        "layer_type": "full_attention",
+        "sliding_window_module": null,
+        "heads": 16
+      },
+      {
+        "layer": 4,
+        "module": "layers.4.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 5,
+        "module": "layers.5.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 6,
+        "module": "layers.6.attn",
+        "layer_type": "full_attention",
+        "sliding_window_module": null,
+        "heads": 16
+      },
+      {
+        "layer": 7,
+        "module": "layers.7.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 8,
+        "module": "layers.8.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 9,
+        "module": "layers.9.attn",
+        "layer_type": "full_attention",
+        "sliding_window_module": null,
+        "heads": 16
+      },
+      {
+        "layer": 10,
+        "module": "layers.10.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 11,
+        "module": "layers.11.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 12,
+        "module": "layers.12.attn",
+        "layer_type": "full_attention",
+        "sliding_window_module": null,
+        "heads": 16
+      },
+      {
+        "layer": 13,
+        "module": "layers.13.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 14,
+        "module": "layers.14.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 15,
+        "module": "layers.15.attn",
+        "layer_type": "full_attention",
+        "sliding_window_module": null,
+        "heads": 16
+      },
+      {
+        "layer": 16,
+        "module": "layers.16.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 17,
+        "module": "layers.17.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 18,
+        "module": "layers.18.attn",
+        "layer_type": "full_attention",
+        "sliding_window_module": null,
+        "heads": 16
+      },
+      {
+        "layer": 19,
+        "module": "layers.19.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 20,
+        "module": "layers.20.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 21,
+        "module": "layers.21.attn",
+        "layer_type": "full_attention",
+        "sliding_window_module": null,
+        "heads": 16
+      },
+      {
+        "layer": 22,
+        "module": "layers.22.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 23,
+        "module": "layers.23.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 24,
+        "module": "layers.24.attn",
+        "layer_type": "full_attention",
+        "sliding_window_module": null,
+        "heads": 16
+      },
+      {
+        "layer": 25,
+        "module": "layers.25.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 26,
+        "module": "layers.26.attn",
+        "layer_type": "sliding_attention",
+        "sliding_window_module": 65,
+        "heads": 16
+      },
+      {
+        "layer": 27,
+        "module": "layers.27.attn",
+        "layer_type": "full_attention",
+        "sliding_window_module": null,
+        "heads": 16
+      }
+    ],
+    "layer_types_config": [
+      "full_attention",
+      "sliding_attention",
+      "sliding_attention",
+      "full_attention",
+      "sliding_attention",
+      "sliding_attention",
+      "full_attention",
+      "sliding_attention",
+      "sliding_attention",
+      "full_attention",
+      "sliding_attention",
+      "sliding_attention",
+      "full_attention",
+      "sliding_attention",
+      "sliding_attention",
+      "full_attention",
+      "sliding_attention",
+      "sliding_attention",
+      "full_attention",
+      "sliding_attention",
+      "sliding_attention",
+      "full_attention",
+      "sliding_attention",
+      "sliding_attention",
+      "full_attention",
+      "sliding_attention",
+      "sliding_attention",
+      "full_attention"
+    ],
+    "n_global": 10,
+    "n_local": 18,
+    "fraction_global": 0.35714285714285715,
+    "fraction_local": 0.6428571428571429,
+    "windows_module": [
+      65
+    ],
+    "window_effective": 64,
+    "local_attention_config": 128,
+    "sliding_window_config": 64,
+    "global_attn_every_n_layers": 3,
+    "num_attention_heads": 16,
+    "hidden_size": 1024,
+    "position_embedding_type": "absolute",
+    "rope_parameters": {
+      "full_attention": {
+        "rope_theta": 160000.0,
+        "rope_type": "default"
+      },
+      "sliding_attention": {
+        "rope_theta": 10000.0,
+        "rope_type": "default"
+      }
+    },
+    "module_disagreements": [],
+    "cfg": {
+      "max_len": 1024,
+      "head_max_len": 256
+    }
+  },
+  "receptive_field": {
+    "seq_tokens": 258,
+    "probes": [
+      0,
+      20,
+      60,
+      120,
+      200
+    ],
+    "max_reach_by_type": {
+      "full_attention": 257,
+      "sliding_attention": 64
+    },
+    "layers": [
+      {
+        "layer": 0,
+        "layer_type": "full_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 257,
+          "20": 237,
+          "60": 197,
+          "120": 137,
+          "200": 200
+        }
+      },
+      {
+        "layer": 1,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 2,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 3,
+        "layer_type": "full_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 257,
+          "20": 237,
+          "60": 197,
+          "120": 137,
+          "200": 200
+        }
+      },
+      {
+        "layer": 4,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 5,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 6,
+        "layer_type": "full_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 257,
+          "20": 237,
+          "60": 197,
+          "120": 137,
+          "200": 200
+        }
+      },
+      {
+        "layer": 7,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 8,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 9,
+        "layer_type": "full_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 257,
+          "20": 237,
+          "60": 197,
+          "120": 137,
+          "200": 200
+        }
+      },
+      {
+        "layer": 10,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 11,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 12,
+        "layer_type": "full_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 257,
+          "20": 237,
+          "60": 197,
+          "120": 137,
+          "200": 200
+        }
+      },
+      {
+        "layer": 13,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 14,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 15,
+        "layer_type": "full_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 257,
+          "20": 237,
+          "60": 197,
+          "120": 137,
+          "200": 200
+        }
+      },
+      {
+        "layer": 16,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 17,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 18,
+        "layer_type": "full_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 257,
+          "20": 237,
+          "60": 197,
+          "120": 137,
+          "200": 200
+        }
+      },
+      {
+        "layer": 19,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 20,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 21,
+        "layer_type": "full_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 257,
+          "20": 237,
+          "60": 197,
+          "120": 137,
+          "200": 200
+        }
+      },
+      {
+        "layer": 22,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 23,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 24,
+        "layer_type": "full_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 257,
+          "20": 237,
+          "60": 197,
+          "120": 137,
+          "200": 200
+        }
+      },
+      {
+        "layer": 25,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 26,
+        "layer_type": "sliding_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 64,
+          "20": 64,
+          "60": 64,
+          "120": 64,
+          "200": 64
+        }
+      },
+      {
+        "layer": 27,
+        "layer_type": "full_attention",
+        "seq_tokens": 258,
+        "reach": {
+          "0": 257,
+          "20": 237,
+          "60": 197,
+          "120": 137,
+          "200": 200
+        }
+      }
+    ]
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+  },
+  "problems": [],
+  "note_matches_model": true
+}

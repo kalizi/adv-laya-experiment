@@ -1,0 +1,77 @@
+{
+  "experiment": "E16_calibration_defense",
+  "run_id": "a660b99b8865456e",
+  "config": {
+    "experiment": "E16_calibration_defense",
+    "checkpoint": "convaiinnovations/laya-typed-decisions",
+    "dataset": "massive-it",
+    "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+    "k": 16,
+    "n_cases": 60,
+    "seed": 0,
+    "batch_size": 16,
+    "chunk": 32,
+    "template": "prepend",
+    "backend": "laya",
+    "compiled": false,
+    "fast": false,
+    "quantization": "none",
+    "device": "cuda",
+    "kind": "adversarial"
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": null
+  },
+  "finished_at": "2026-10-01T15:09:22.338069+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 60,
+      "n_cases": 60,
+      "accuracy": 0.016666666666666666,
+      "accuracy_by_primitive": {
+        "choice": 0.016666666666666666,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.87736,
+      "brier": 1.7917001353333333,
+      "brier_by_primitive": {
+        "choice": 1.7917001353333333,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.85,
+        "0.85": 0.6666666666666666
+      },
+      "mean_conf_wrong": 0.8947745762711864,
+      "latency": {
+        "n": 2,
+        "p50_ms": 566.86,
+        "p95_ms": 608.78,
+        "mean_ms": 566.86,
+        "std_ms": 59.29,
+        "total_ms": 1133.72,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 18.8953,
+        "decisions_per_s": 52.92
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 0.0,
+        "batches_this_process": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{"ms": 580.12, "decisions": 32, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 561.52, "decisions": 32, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 613.138, "decisions": 32, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 594.134, "decisions": 32, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 396.861, "decisions": 22, "device": "cuda", "dtype": "torch.bfloat16"}

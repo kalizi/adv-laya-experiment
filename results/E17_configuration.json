@@ -1,0 +1,605 @@
+{
+  "experiment": "E17_configuration",
+  "question": "esiste una configurazione di esecuzione che chiude il buco nel guardrail?",
+  "study_valid": true,
+  "axes": {
+    "dataset": "massive-it",
+    "k": [
+      4
+    ],
+    "n_cases": 2974,
+    "template": "append",
+    "configurazioni": [
+      "stock",
+      "fast",
+      "compile",
+      "fast+compile",
+      "stock-batch1",
+      "fast-batch1"
+    ],
+    "checkpoint": [
+      "convaiinnovations/laya-multilingual",
+      "convaiinnovations/laya-typed-decisions"
+    ]
+  },
+  "results": [
+    {
+      "config": "stock-batch1",
+      "checkpoint": "laya-multilingual",
+      "requested_fast": false,
+      "requested_compile": false,
+      "fast_engaged": false,
+      "compiled": false,
+      "batch_size_requested": 1,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.765635507733692,
+      "accuracy_adv": 0.021183591123066576,
+      "drop_pp": 74.45,
+      "asr": 0.9732103645147123,
+      "asr_denominator": 2277,
+      "oer_clean": {
+        "0.75": 0.020847343644922665,
+        "0.85": 0.012777404169468728
+      },
+      "oer_adv": {
+        "0.75": 0.8967720242098184,
+        "0.85": 0.8597848016139878
+      },
+      "mean_conf_wrong_clean": 0.4015152080344333,
+      "mean_conf_wrong_adv": 0.941641429062178,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "18ed20c2aa94cac1",
+      "adv_run_id": "874e207378012eb2"
+    },
+    {
+      "config": "stock",
+      "checkpoint": "laya-multilingual",
+      "requested_fast": false,
+      "requested_compile": false,
+      "fast_engaged": false,
+      "compiled": false,
+      "batch_size_requested": 16,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.765635507733692,
+      "accuracy_adv": 0.021183591123066576,
+      "drop_pp": 74.45,
+      "asr": 0.9732103645147123,
+      "asr_denominator": 2277,
+      "oer_clean": {
+        "0.75": 0.020847343644922665,
+        "0.85": 0.012777404169468728
+      },
+      "oer_adv": {
+        "0.75": 0.8967720242098184,
+        "0.85": 0.8597848016139878
+      },
+      "mean_conf_wrong_clean": 0.4015203730272596,
+      "mean_conf_wrong_adv": 0.941625352112676,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "72edd77793382c56",
+      "adv_run_id": "3c6841a51a44c83c",
+      "confidence_profile": {
+        "clean": {
+          "n_correct": 2277,
+          "n_wrong": 697,
+          "conf_correct_median": 0.8365,
+          "conf_wrong_median": 0.372,
+          "conf_wrong_max": 1.0
+        },
+        "attacked": {
+          "n_correct": 63,
+          "n_wrong": 2911,
+          "conf_correct_median": 0.5917,
+          "conf_wrong_median": 0.9986,
+          "conf_wrong_max": 1.0
+        }
+      }
+    },
+    {
+      "config": "compile",
+      "checkpoint": "laya-multilingual",
+      "requested_fast": false,
+      "requested_compile": true,
+      "fast_engaged": false,
+      "compiled": true,
+      "batch_size_requested": 16,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.7659717552118359,
+      "accuracy_adv": 0.021856086079354405,
+      "drop_pp": 74.41,
+      "asr": 0.9723441615452151,
+      "asr_denominator": 2278,
+      "oer_clean": {
+        "0.75": 0.021183591123066576,
+        "0.85": 0.012777404169468728
+      },
+      "oer_adv": {
+        "0.75": 0.8964357767316745,
+        "0.85": 0.8618022864828514
+      },
+      "mean_conf_wrong_clean": 0.4020324712643678,
+      "mean_conf_wrong_adv": 0.9421383293227914,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "3fdd895ad4183cc3",
+      "adv_run_id": "a1f7a4a4a0f1af1e"
+    },
+    {
+      "config": "fast-batch1",
+      "checkpoint": "laya-multilingual",
+      "requested_fast": true,
+      "requested_compile": false,
+      "fast_engaged": true,
+      "compiled": false,
+      "batch_size_requested": 1,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.7663080026899798,
+      "accuracy_adv": 0.02151983860121049,
+      "drop_pp": 74.48,
+      "asr": 0.9727950855638438,
+      "asr_denominator": 2279,
+      "oer_clean": {
+        "0.75": 0.020847343644922665,
+        "0.85": 0.012777404169468728
+      },
+      "oer_adv": {
+        "0.75": 0.8977807666442502,
+        "0.85": 0.8597848016139878
+      },
+      "mean_conf_wrong_clean": 0.40170992805755396,
+      "mean_conf_wrong_adv": 0.9417286941580756,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "101ed99dd5b5b35e",
+      "adv_run_id": "be466776fdc15cc6"
+    },
+    {
+      "config": "fast",
+      "checkpoint": "laya-multilingual",
+      "requested_fast": true,
+      "requested_compile": false,
+      "fast_engaged": true,
+      "compiled": false,
+      "batch_size_requested": 16,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.7663080026899798,
+      "accuracy_adv": 0.02151983860121049,
+      "drop_pp": 74.48,
+      "asr": 0.9727950855638438,
+      "asr_denominator": 2279,
+      "oer_clean": {
+        "0.75": 0.020847343644922665,
+        "0.85": 0.012777404169468728
+      },
+      "oer_adv": {
+        "0.75": 0.8977807666442502,
+        "0.85": 0.8597848016139878
+      },
+      "mean_conf_wrong_clean": 0.40170992805755396,
+      "mean_conf_wrong_adv": 0.9417286941580756,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "5f13820d80e69e90",
+      "adv_run_id": "d9e72b2ad7273168"
+    },
+    {
+      "config": "fast+compile",
+      "checkpoint": "laya-multilingual",
+      "requested_fast": true,
+      "requested_compile": true,
+      "fast_engaged": true,
+      "compiled": true,
+      "batch_size_requested": 16,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.7663080026899798,
+      "accuracy_adv": 0.02151983860121049,
+      "drop_pp": 74.48,
+      "asr": 0.9727950855638438,
+      "asr_denominator": 2279,
+      "oer_clean": {
+        "0.75": 0.020847343644922665,
+        "0.85": 0.012777404169468728
+      },
+      "oer_adv": {
+        "0.75": 0.8977807666442502,
+        "0.85": 0.8597848016139878
+      },
+      "mean_conf_wrong_clean": 0.4017093525179856,
+      "mean_conf_wrong_adv": 0.9417289347079038,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "96ca9379bd95b87b",
+      "adv_run_id": "19335a70d4a3e4e5"
+    },
+    {
+      "config": "stock-batch1",
+      "checkpoint": "laya-typed-decisions",
+      "requested_fast": false,
+      "requested_compile": false,
+      "fast_engaged": false,
+      "compiled": false,
+      "batch_size_requested": 1,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.6341627437794216,
+      "accuracy_adv": 0.013113651647612643,
+      "drop_pp": 62.1,
+      "asr": 0.9793213149522799,
+      "asr_denominator": 1886,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "mean_conf_wrong_clean": 0.0478469669117647,
+      "mean_conf_wrong_adv": 0.3557682112436116,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "04b966e20e16d664",
+      "adv_run_id": "ba4acb0b8fe4cd28"
+    },
+    {
+      "config": "stock",
+      "checkpoint": "laya-typed-decisions",
+      "requested_fast": false,
+      "requested_compile": false,
+      "fast_engaged": false,
+      "compiled": false,
+      "batch_size_requested": 16,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.6341627437794216,
+      "accuracy_adv": 0.013113651647612643,
+      "drop_pp": 62.1,
+      "asr": 0.9793213149522799,
+      "asr_denominator": 1886,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "mean_conf_wrong_clean": 0.04784623161764706,
+      "mean_conf_wrong_adv": 0.3557612947189097,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "5f80f3bb1f213237",
+      "adv_run_id": "1a150c4636c0c326",
+      "confidence_profile": {
+        "clean": {
+          "n_correct": 1886,
+          "n_wrong": 1088,
+          "conf_correct_median": 0.0952,
+          "conf_wrong_median": 0.0379,
+          "conf_wrong_max": 0.3298
+        },
+        "attacked": {
+          "n_correct": 39,
+          "n_wrong": 2935,
+          "conf_correct_median": 0.1403,
+          "conf_wrong_median": 0.3537,
+          "conf_wrong_max": 0.6892
+        }
+      }
+    },
+    {
+      "config": "compile",
+      "checkpoint": "laya-typed-decisions",
+      "requested_fast": false,
+      "requested_compile": true,
+      "fast_engaged": false,
+      "compiled": true,
+      "batch_size_requested": 16,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.6344989912575656,
+      "accuracy_adv": 0.013113651647612643,
+      "drop_pp": 62.14,
+      "asr": 0.9793322734499205,
+      "asr_denominator": 1887,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "mean_conf_wrong_clean": 0.04775372585096596,
+      "mean_conf_wrong_adv": 0.3557061669505962,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "94d4f222006c05aa",
+      "adv_run_id": "9d0950f092e30e3c"
+    },
+    {
+      "config": "fast-batch1",
+      "checkpoint": "laya-typed-decisions",
+      "requested_fast": true,
+      "requested_compile": false,
+      "fast_engaged": true,
+      "compiled": false,
+      "batch_size_requested": 1,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.6348352387357095,
+      "accuracy_adv": 0.012777404169468728,
+      "drop_pp": 62.21,
+      "asr": 0.9798728813559322,
+      "asr_denominator": 1888,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "mean_conf_wrong_clean": 0.047807274401473296,
+      "mean_conf_wrong_adv": 0.35540231607629424,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "804c42f647545961",
+      "adv_run_id": "48386289c3bebc2b"
+    },
+    {
+      "config": "fast",
+      "checkpoint": "laya-typed-decisions",
+      "requested_fast": true,
+      "requested_compile": false,
+      "fast_engaged": true,
+      "compiled": false,
+      "batch_size_requested": 16,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.6348352387357095,
+      "accuracy_adv": 0.012777404169468728,
+      "drop_pp": 62.21,
+      "asr": 0.9798728813559322,
+      "asr_denominator": 1888,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "mean_conf_wrong_clean": 0.047807274401473296,
+      "mean_conf_wrong_adv": 0.35540231607629424,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "89daecc5286b515f",
+      "adv_run_id": "bc3352a0e6fe4d4f"
+    },
+    {
+      "config": "fast+compile",
+      "checkpoint": "laya-typed-decisions",
+      "requested_fast": true,
+      "requested_compile": true,
+      "fast_engaged": true,
+      "compiled": true,
+      "batch_size_requested": 16,
+      "batch_size_effective": 2,
+      "batching_is_inert": false,
+      "dataset": "massive-it",
+      "template": "append",
+      "n_cases": 2974,
+      "accuracy_clean": 0.6348352387357095,
+      "accuracy_adv": 0.012777404169468728,
+      "drop_pp": 62.21,
+      "asr": 0.9798728813559322,
+      "asr_denominator": 1888,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "mean_conf_wrong_clean": 0.04780718232044199,
+      "mean_conf_wrong_adv": 0.35540231607629424,
+      "ms_per_decision": null,
+      "devices": [
+        "cuda"
+      ],
+      "clean_run_id": "8bd4cc1967e59dcf",
+      "adv_run_id": "c62e5e77d91f06c5"
+    }
+  ],
+  "asr_range": [
+    0.9723441615452151,
+    0.9798728813559322
+  ],
+  "oer_adv_range": [
+    0.0,
+    0.8977807666442502
+  ],
+  "oer_clean_range": [
+    0.0,
+    0.021183591123066576
+  ],
+  "asr_threshold": 0.5,
+  "oer_threshold": 0.5,
+  "configurazioni_che_chiudono_il_buco": [],
+  "configurazioni_che_chiudono_l_attacco": [],
+  "n_rows": 12,
+  "n_calcoli_distinti": 6,
+  "batching_inert_on": [],
+  "fast_richiesto_e_non_attivato": [],
+  "verdetto": "nessuna configurazione chiude l'attacco in nessuno dei due checkpoint: ASR resta sopra 0.97 ovunque. Sul guardrail la differenza e' fra checkpoint, non fra configurazioni: OER@0.75 resta 0.89-0.90 su laya-multilingual e 0.000 su laya-typed-decisions, e su entrambi e' costante su tutta la griglia",
+  "paired": {
+    "laya-multilingual": {
+      "n_common_correct": 2270,
+      "n_configurazioni": 3,
+      "decisioni_mancanti_per_riga": {
+        "stock-batch1": 0,
+        "compile": 0,
+        "fast-batch1": 0
+      },
+      "rows": [
+        {
+          "config": "stock-batch1",
+          "asr_paired": 0.9731277533039647,
+          "asr_paired_ci95": [
+            0.9656337200474695,
+            0.9790231109296751
+          ],
+          "oer_adv_paired": 0.8898678414096917
+        },
+        {
+          "config": "compile",
+          "asr_paired": 0.9722466960352423,
+          "asr_paired_ci95": [
+            0.9646500392826158,
+            0.9782476542066756
+          ],
+          "oer_adv_paired": 0.8894273127753304
+        },
+        {
+          "config": "fast-batch1",
+          "asr_paired": 0.9726872246696036,
+          "asr_paired_ci95": [
+            0.9651416545869027,
+            0.9786356076463154
+          ],
+          "oer_adv_paired": 0.8903083700440528
+        }
+      ],
+      "asr_paired_range": [
+        0.9722466960352423,
+        0.9731277533039647
+      ],
+      "escursione_appaiata": 0.0008810572687224516,
+      "ci95_ampiezza": 0.013389390882205587,
+      "escursione_rispetto_a_ci": 15.196958651303607,
+      "nota": "Le configurazioni con previsioni byte-identiche sono un solo calcolo e vanno unite prima di appaiare: contarle due volte stringerebbe l'escursione a caso."
+    },
+    "laya-typed-decisions": {
+      "n_common_correct": 1871,
+      "n_configurazioni": 3,
+      "decisioni_mancanti_per_riga": {
+        "stock-batch1": 0,
+        "compile": 0,
+        "fast-batch1": 0
+      },
+      "rows": [
+        {
+          "config": "stock-batch1",
+          "asr_paired": 0.9791555318011759,
+          "asr_paired_ci95": [
+            0.97163274199199,
+            0.9847147169080045
+          ],
+          "oer_adv_paired": 0.0
+        },
+        {
+          "config": "compile",
+          "asr_paired": 0.9791555318011759,
+          "asr_paired_ci95": [
+            0.97163274199199,
+            0.9847147169080045
+          ],
+          "oer_adv_paired": 0.0
+        },
+        {
+          "config": "fast-batch1",
+          "asr_paired": 0.9796900053447354,
+          "asr_paired_ci95": [
+            0.9722467217497731,
+            0.9851674939365013
+          ],
+          "oer_adv_paired": 0.0
+        }
+      ],
+      "asr_paired_range": [
+        0.9791555318011759,
+        0.9796900053447354
+      ],
+      "escursione_appaiata": 0.0005344735435595105,
+      "ci95_ampiezza": 0.013081974916014483,
+      "escursione_rispetto_a_ci": 24.47637506786691,
+      "nota": "Le configurazioni con previsioni byte-identiche sono un solo calcolo e vanno unite prima di appaiare: contarle due volte stringerebbe l'escursione a caso."
+    }
+  },
+  "temperature_per_bucket": {
+    "laya-typed-decisions": {
+      "choice:3-5": 1.7602,
+      "choice:11+": 0.1006
+    },
+    "laya-multilingual": {
+      "choice:3-5": 1.0,
+      "choice:11+": 1.0
+    }
+  },
+  "temperature_note": "La temperatura applicata dipende dal bucket di K e dalla checkpoint: a K=4 laya-typed-decisions usa choice:3-5 = 1.7602 (non clampato), a K=16 usa choice:11+ = 0.1006 clampato a 0.5. Il clamp quindi NON spiega l'OER=0 a K=4."
+}

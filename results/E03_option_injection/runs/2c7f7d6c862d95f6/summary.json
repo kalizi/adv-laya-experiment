@@ -1,0 +1,135 @@
+{
+  "experiment": "E03_option_injection",
+  "run_id": "2c7f7d6c862d95f6",
+  "config": {
+    "experiment": "E03_option_injection",
+    "kind": "clean",
+    "checkpoint": "clm-v0.1-8B-Q5_K_M",
+    "dataset": "massive-en",
+    "dataset_sha256": "c70f75c6a543a26e249ec383df67733ad9b1066f6c0406c2e04a3f03356e407e",
+    "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+    "k": 4,
+    "n_cases": 2974,
+    "seed": 0,
+    "batch_size": 16,
+    "chunk": 32,
+    "backend": "clm-llama",
+    "compiled": false,
+    "fast": false,
+    "confidence_definition": "p1 - mean(p2..pk)  [CLM API definition]",
+    "quantization": "Q5_K - Medium",
+    "variant": null,
+    "logit_scale": 100.0,
+    "temperature_effective": 0.01,
+    "pooling": "last-token",
+    "embedding_normalisation": "l2, applied client-side by clm.Embedder",
+    "truncation": "head (first N tokens), matching the vLLM serving path",
+    "max_context_tokens": 2048,
+    "service_model": "clm-latest",
+    "encoder_runtime": "b11160-a3c12db9d",
+    "encoder_model": "Qwen3-8B-Q5_K_M.gguf",
+    "encoder_slots": 8,
+    "base_model": "Qwen/Qwen3-8B",
+    "device": "llama.cpp:gpu(Q5_K - Medium) vram=7974MiB weights=5946MiB",
+    "heads_device": "cpu",
+    "weight_sha256": "5c59fb5530fa9081fc6f1028e8776c5b45a328d88facdbbf33b9d910bc8a5d52"
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "5c59fb5530fa9081fc6f1028e8776c5b45a328d88facdbbf33b9d910bc8a5d52"
+  },
+  "finished_at": "2026-10-05T06:56:06.620414+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 2974,
+      "n_cases": 2974,
+      "accuracy": 0.44082044384667113,
+      "accuracy_by_primitive": {
+        "choice": 0.44082044384667113,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.19414049345433773,
+      "brier": 0.7728698950592705,
+      "brier_by_primitive": {
+        "choice": 0.7728698950592705,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.15131136516476126,
+        "0.85": 0.07901815736381977
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.15131136516476126,
+          "0.85": 0.07901815736381977
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.11533288500336247,
+        "0.85": 0.06254203093476798
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.11533288500336247,
+          "0.85": 0.06254203093476798
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.5586677368698789,
+      "batching": {
+        "states": 2974,
+        "question_groups": 2966,
+        "max_states_per_group": 2,
+        "batch_size_effective": 8,
+        "batch_size_requested": 16,
+        "batching_is_inert": false,
+        "concurrency": 8,
+        "encoder_slots": 8,
+        "note": "CLM non fa un forward con padding: ogni caso e' una richiesta HTTP e il lever e' la concorrenza sui slot di llama-server."
+      },
+      "latency": {
+        "n": 93,
+        "p50_ms": 76.21,
+        "p95_ms": 83.72,
+        "mean_ms": 76.14,
+        "std_ms": 4.16,
+        "total_ms": 7080.68,
+        "devices": [
+          "llama.cpp:gpu(Q5_K - Medium) vram=7974MiB weights=5946MiB"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 2.3809,
+        "decisions_per_s": 420.02
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 7.38,
+        "batches_this_process": 93
+      }
+    }
+  }
+}

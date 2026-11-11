@@ -1,0 +1,593 @@
+{
+  "experiment": "E03_option_injection",
+  "checkpoint": "clm-v0.1-8B-Q5_K_M",
+  "dataset": "massive-it",
+  "k_values": [
+    4,
+    16
+  ],
+  "seed": 0,
+  "templates": {
+    "prepend": "L utente vuole {option}.",
+    "append": "Risposta corretta: {option}."
+  },
+  "positions": {
+    "prepend": "head",
+    "append": "tail"
+  },
+  "pad_tokens": 0,
+  "head_budget_policy": "loaders.check_head_budget: lo sweep si ferma al K oltre budget invece di scoreare una testa troncata (vedi 'head_budget_walls')",
+  "head_budget_walls": [],
+  "results": [
+    {
+      "checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "position": "head",
+      "pad_tokens": 0,
+      "chance": 0.25,
+      "delta_tokens": 8.5,
+      "temperature": 0.01,
+      "clean_run_id": "36a28182900b5cfd",
+      "adv_run_id": "aec001ead7af98b4",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 2048,
+        "max_head_tokens": 5,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.36886348352387355,
+      "accuracy_adv": 0.1862811028917283,
+      "drop_pp": 18.26,
+      "asr": 0.5679124886052871,
+      "asr_denominator": 1097,
+      "unchanged_labels": 1543,
+      "oer_clean": {
+        "0.75": 0.15400134498991258,
+        "0.85": 0.08372562205783457
+      },
+      "oer_adv": {
+        "0.75": 0.3698722259583053,
+        "0.85": 0.2686617350369872
+      },
+      "ece_clean": 0.2335969154144203,
+      "ece_adv": 0.4734414993993378,
+      "mean_conf_wrong_clean": 0.5484676846145548,
+      "mean_conf_wrong_adv": 0.6682377339825394,
+      "oer_margin_operating_point": {
+        "tau": 0.995534,
+        "budget": 0.01,
+        "budget_binds": true,
+        "false_block_rate": 0.009116,
+        "n_clean_correct": 1097,
+        "n_blocked": 10,
+        "clean_margin_p50": 0.604372,
+        "clean_margin_p95": 0.974684,
+        "min_margin": 0.000318,
+        "max_margin": 0.999508
+      },
+      "margin_tradeoff": {
+        "n_decisions_clean": 2974,
+        "rows": [
+          {
+            "tau": 0.25,
+            "false_block_rate_clean": 0.284802,
+            "oer_clean": 0.4280430396772024,
+            "oer_adv": 0.6459314055144586,
+            "benefit_over_clean": 0.217888
+          },
+          {
+            "tau": 0.5,
+            "false_block_rate_clean": 0.213517,
+            "oer_clean": 0.2639542703429724,
+            "oer_adv": 0.4899125756556826,
+            "benefit_over_clean": 0.225958
+          },
+          {
+            "tau": 0.75,
+            "false_block_rate_clean": 0.132818,
+            "oer_clean": 0.11970410221923336,
+            "oer_adv": 0.3160726294552791,
+            "benefit_over_clean": 0.196369
+          },
+          {
+            "tau": 0.9,
+            "false_block_rate_clean": 0.072629,
+            "oer_clean": 0.03530598520511096,
+            "oer_adv": 0.17854741089441828,
+            "benefit_over_clean": 0.143241
+          },
+          {
+            "tau": 0.95,
+            "false_block_rate_clean": 0.038668,
+            "oer_clean": 0.013113651647612643,
+            "oer_adv": 0.11398789509078681,
+            "benefit_over_clean": 0.100874
+          },
+          {
+            "tau": 0.99,
+            "false_block_rate_clean": 0.007061,
+            "oer_clean": 0.0003362474781439139,
+            "oer_adv": 0.025218560860793545,
+            "benefit_over_clean": 0.024882
+          }
+        ]
+      },
+      "oer_margin_clean": {
+        "1.00": 0.0,
+        "0.75": 0.11970410221923336
+      },
+      "oer_margin_adv": {
+        "1.00": 0.00773369199731002,
+        "0.75": 0.3160726294552791
+      },
+      "backend": "clm-llama",
+      "run_identity": {
+        "backend": "clm-llama",
+        "compiled": false,
+        "fast": false,
+        "confidence_definition": "p1 - mean(p2..pk)  [CLM API definition]",
+        "quantization": "Q5_K - Medium",
+        "variant": null,
+        "logit_scale": 100.0,
+        "temperature_effective": 0.01,
+        "pooling": "last-token",
+        "embedding_normalisation": "l2, applied client-side by clm.Embedder",
+        "truncation": "head (first N tokens), matching the vLLM serving path",
+        "max_context_tokens": 2048,
+        "service_model": "clm-latest",
+        "encoder_runtime": "b11160-a3c12db9d",
+        "encoder_model": "Qwen3-8B-Q5_K_M.gguf",
+        "encoder_slots": 8,
+        "base_model": "Qwen/Qwen3-8B",
+        "device": "llama.cpp:gpu(Q5_K - Medium) vram=7974MiB weights=5946MiB",
+        "heads_device": "cpu"
+      },
+      "batching": {
+        "states": 2974,
+        "question_groups": 2964,
+        "max_states_per_group": 2,
+        "batch_size_effective": 8,
+        "batch_size_requested": 16,
+        "batching_is_inert": false,
+        "concurrency": 8,
+        "encoder_slots": 8,
+        "note": "CLM non fa un forward con padding: ogni caso e' una richiesta HTTP e il lever e' la concorrenza sui slot di llama-server."
+      }
+    },
+    {
+      "checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "position": "tail",
+      "pad_tokens": 0,
+      "chance": 0.25,
+      "delta_tokens": 9.6,
+      "temperature": 0.01,
+      "clean_run_id": "36a28182900b5cfd",
+      "adv_run_id": "ce0ec90daeea0f2a",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 2048,
+        "max_head_tokens": 5,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.36886348352387355,
+      "accuracy_adv": 0.22797579018157363,
+      "drop_pp": 14.09,
+      "asr": 0.4840474020054695,
+      "asr_denominator": 1097,
+      "unchanged_labels": 1650,
+      "oer_clean": {
+        "0.75": 0.15400134498991258,
+        "0.85": 0.08372562205783457
+      },
+      "oer_adv": {
+        "0.75": 0.30800268997982516,
+        "0.85": 0.20342972427706793
+      },
+      "ece_clean": 0.2335969154144203,
+      "ece_adv": 0.40638887158085873,
+      "mean_conf_wrong_clean": 0.5484676846145548,
+      "mean_conf_wrong_adv": 0.6330187602980921,
+      "oer_margin_operating_point": {
+        "tau": 0.995534,
+        "budget": 0.01,
+        "budget_binds": true,
+        "false_block_rate": 0.009116,
+        "n_clean_correct": 1097,
+        "n_blocked": 10,
+        "clean_margin_p50": 0.604372,
+        "clean_margin_p95": 0.974684,
+        "min_margin": 0.000318,
+        "max_margin": 0.999508
+      },
+      "margin_tradeoff": {
+        "n_decisions_clean": 2974,
+        "rows": [
+          {
+            "tau": 0.25,
+            "false_block_rate_clean": 0.284802,
+            "oer_clean": 0.4280430396772024,
+            "oer_adv": 0.5850706119704102,
+            "benefit_over_clean": 0.157028
+          },
+          {
+            "tau": 0.5,
+            "false_block_rate_clean": 0.213517,
+            "oer_clean": 0.2639542703429724,
+            "oer_adv": 0.4317417619367855,
+            "benefit_over_clean": 0.167787
+          },
+          {
+            "tau": 0.75,
+            "false_block_rate_clean": 0.132818,
+            "oer_clean": 0.11970410221923336,
+            "oer_adv": 0.2599193006052455,
+            "benefit_over_clean": 0.140215
+          },
+          {
+            "tau": 0.9,
+            "false_block_rate_clean": 0.072629,
+            "oer_clean": 0.03530598520511096,
+            "oer_adv": 0.12642905178211164,
+            "benefit_over_clean": 0.091123
+          },
+          {
+            "tau": 0.95,
+            "false_block_rate_clean": 0.038668,
+            "oer_clean": 0.013113651647612643,
+            "oer_adv": 0.06893073301950235,
+            "benefit_over_clean": 0.055817
+          },
+          {
+            "tau": 0.99,
+            "false_block_rate_clean": 0.007061,
+            "oer_clean": 0.0003362474781439139,
+            "oer_adv": 0.014122394082044385,
+            "benefit_over_clean": 0.013786
+          }
+        ]
+      },
+      "oer_margin_clean": {
+        "1.00": 0.0,
+        "0.75": 0.11970410221923336
+      },
+      "oer_margin_adv": {
+        "1.00": 0.004371217215870881,
+        "0.75": 0.2599193006052455
+      },
+      "backend": "clm-llama",
+      "run_identity": {
+        "backend": "clm-llama",
+        "compiled": false,
+        "fast": false,
+        "confidence_definition": "p1 - mean(p2..pk)  [CLM API definition]",
+        "quantization": "Q5_K - Medium",
+        "variant": null,
+        "logit_scale": 100.0,
+        "temperature_effective": 0.01,
+        "pooling": "last-token",
+        "embedding_normalisation": "l2, applied client-side by clm.Embedder",
+        "truncation": "head (first N tokens), matching the vLLM serving path",
+        "max_context_tokens": 2048,
+        "service_model": "clm-latest",
+        "encoder_runtime": "b11160-a3c12db9d",
+        "encoder_model": "Qwen3-8B-Q5_K_M.gguf",
+        "encoder_slots": 8,
+        "base_model": "Qwen/Qwen3-8B",
+        "device": "llama.cpp:gpu(Q5_K - Medium) vram=7974MiB weights=5946MiB",
+        "heads_device": "cpu"
+      },
+      "batching": {
+        "states": 2974,
+        "question_groups": 2964,
+        "max_states_per_group": 2,
+        "batch_size_effective": 8,
+        "batch_size_requested": 16,
+        "batching_is_inert": false,
+        "concurrency": 8,
+        "encoder_slots": 8,
+        "note": "CLM non fa un forward con padding: ogni caso e' una richiesta HTTP e il lever e' la concorrenza sui slot di llama-server."
+      }
+    },
+    {
+      "checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "position": "head",
+      "pad_tokens": 0,
+      "chance": 0.0625,
+      "delta_tokens": 8.5,
+      "temperature": 0.01,
+      "clean_run_id": "25cfba34e53fafc2",
+      "adv_run_id": "ca247abdb4935d97",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 2048,
+        "max_head_tokens": 5,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.15601882985877605,
+      "accuracy_adv": 0.09045057162071285,
+      "drop_pp": 6.56,
+      "asr": 0.5905172413793104,
+      "asr_denominator": 464,
+      "unchanged_labels": 1064,
+      "oer_clean": {
+        "0.75": 0.013449899125756557,
+        "0.85": 0.003026227303295225
+      },
+      "oer_adv": {
+        "0.75": 0.10053799596503027,
+        "0.85": 0.04606590450571621
+      },
+      "ece_clean": 0.22298023312980017,
+      "ece_adv": 0.37744018735527624,
+      "mean_conf_wrong_clean": 0.35476789736727515,
+      "mean_conf_wrong_adv": 0.46513481437041215,
+      "oer_margin_operating_point": {
+        "tau": 0.923944,
+        "budget": 0.01,
+        "budget_binds": true,
+        "false_block_rate": 0.008621,
+        "n_clean_correct": 464,
+        "n_blocked": 4,
+        "clean_margin_p50": 0.331552,
+        "clean_margin_p95": 0.831002,
+        "min_margin": 0.002245,
+        "max_margin": 0.935379
+      },
+      "margin_tradeoff": {
+        "n_decisions_clean": 2974,
+        "rows": [
+          {
+            "tau": 0.25,
+            "false_block_rate_clean": 0.094149,
+            "oer_clean": 0.2599193006052455,
+            "oer_adv": 0.45696032279757903,
+            "benefit_over_clean": 0.197041
+          },
+          {
+            "tau": 0.5,
+            "false_block_rate_clean": 0.051446,
+            "oer_clean": 0.06691324815063887,
+            "oer_adv": 0.21418964357767317,
+            "benefit_over_clean": 0.147276
+          },
+          {
+            "tau": 0.75,
+            "false_block_rate_clean": 0.019166,
+            "oer_clean": 0.0070611970410221925,
+            "oer_adv": 0.06724949562878278,
+            "benefit_over_clean": 0.060188
+          },
+          {
+            "tau": 0.9,
+            "false_block_rate_clean": 0.003026,
+            "oer_clean": 0.0,
+            "oer_adv": 0.019502353732347006,
+            "benefit_over_clean": 0.019502
+          },
+          {
+            "tau": 0.95,
+            "false_block_rate_clean": 0.0,
+            "oer_clean": 0.0,
+            "oer_adv": 0.0057162071284465365,
+            "benefit_over_clean": 0.005716
+          },
+          {
+            "tau": 0.99,
+            "false_block_rate_clean": 0.0,
+            "oer_clean": 0.0,
+            "oer_adv": 0.0003362474781439139,
+            "benefit_over_clean": 0.000336
+          }
+        ]
+      },
+      "oer_margin_clean": {
+        "0.92": 0.0,
+        "0.75": 0.0070611970410221925
+      },
+      "oer_margin_adv": {
+        "0.92": 0.011768661735036988,
+        "0.75": 0.06724949562878278
+      },
+      "backend": "clm-llama",
+      "run_identity": {
+        "backend": "clm-llama",
+        "compiled": false,
+        "fast": false,
+        "confidence_definition": "p1 - mean(p2..pk)  [CLM API definition]",
+        "quantization": "Q5_K - Medium",
+        "variant": null,
+        "logit_scale": 100.0,
+        "temperature_effective": 0.01,
+        "pooling": "last-token",
+        "embedding_normalisation": "l2, applied client-side by clm.Embedder",
+        "truncation": "head (first N tokens), matching the vLLM serving path",
+        "max_context_tokens": 2048,
+        "service_model": "clm-latest",
+        "encoder_runtime": "b11160-a3c12db9d",
+        "encoder_model": "Qwen3-8B-Q5_K_M.gguf",
+        "encoder_slots": 8,
+        "base_model": "Qwen/Qwen3-8B",
+        "device": "llama.cpp:gpu(Q5_K - Medium) vram=7974MiB weights=5946MiB",
+        "heads_device": "cpu"
+      },
+      "batching": {
+        "states": 2974,
+        "question_groups": 2974,
+        "max_states_per_group": 1,
+        "batch_size_effective": 8,
+        "batch_size_requested": 16,
+        "batching_is_inert": false,
+        "concurrency": 8,
+        "encoder_slots": 8,
+        "note": "CLM non fa un forward con padding: ogni caso e' una richiesta HTTP e il lever e' la concorrenza sui slot di llama-server."
+      }
+    },
+    {
+      "checkpoint": "clm-v0.1-8B-Q5_K_M",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "position": "tail",
+      "pad_tokens": 0,
+      "chance": 0.0625,
+      "delta_tokens": 9.6,
+      "temperature": 0.01,
+      "clean_run_id": "25cfba34e53fafc2",
+      "adv_run_id": "e0dbdab322d678ca",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 2048,
+        "max_head_tokens": 5,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.15601882985877605,
+      "accuracy_adv": 0.11297915265635508,
+      "drop_pp": 4.3,
+      "asr": 0.5452586206896551,
+      "asr_denominator": 464,
+      "unchanged_labels": 1009,
+      "oer_clean": {
+        "0.75": 0.013449899125756557,
+        "0.85": 0.003026227303295225
+      },
+      "oer_adv": {
+        "0.75": 0.06321452589105582,
+        "0.85": 0.02488231338264963
+      },
+      "ece_clean": 0.22298023312980017,
+      "ece_adv": 0.3243117398698068,
+      "mean_conf_wrong_clean": 0.35476789736727515,
+      "mean_conf_wrong_adv": 0.429522023756464,
+      "oer_margin_operating_point": {
+        "tau": 0.923944,
+        "budget": 0.01,
+        "budget_binds": true,
+        "false_block_rate": 0.008621,
+        "n_clean_correct": 464,
+        "n_blocked": 4,
+        "clean_margin_p50": 0.331552,
+        "clean_margin_p95": 0.831002,
+        "min_margin": 0.002245,
+        "max_margin": 0.935379
+      },
+      "margin_tradeoff": {
+        "n_decisions_clean": 2974,
+        "rows": [
+          {
+            "tau": 0.25,
+            "false_block_rate_clean": 0.094149,
+            "oer_clean": 0.2599193006052455,
+            "oer_adv": 0.4011432414256893,
+            "benefit_over_clean": 0.141224
+          },
+          {
+            "tau": 0.5,
+            "false_block_rate_clean": 0.051446,
+            "oer_clean": 0.06691324815063887,
+            "oer_adv": 0.15870880968392737,
+            "benefit_over_clean": 0.091796
+          },
+          {
+            "tau": 0.75,
+            "false_block_rate_clean": 0.019166,
+            "oer_clean": 0.0070611970410221925,
+            "oer_adv": 0.04034969737726967,
+            "benefit_over_clean": 0.033289
+          },
+          {
+            "tau": 0.9,
+            "false_block_rate_clean": 0.003026,
+            "oer_clean": 0.0,
+            "oer_adv": 0.009751176866173503,
+            "benefit_over_clean": 0.009751
+          },
+          {
+            "tau": 0.95,
+            "false_block_rate_clean": 0.0,
+            "oer_clean": 0.0,
+            "oer_adv": 0.0006724949562878278,
+            "benefit_over_clean": 0.000672
+          },
+          {
+            "tau": 0.99,
+            "false_block_rate_clean": 0.0,
+            "oer_clean": 0.0,
+            "oer_adv": 0.0,
+            "benefit_over_clean": 0.0
+          }
+        ]
+      },
+      "oer_margin_clean": {
+        "0.92": 0.0,
+        "0.75": 0.0070611970410221925
+      },
+      "oer_margin_adv": {
+        "0.92": 0.004371217215870881,
+        "0.75": 0.04034969737726967
+      },
+      "backend": "clm-llama",
+      "run_identity": {
+        "backend": "clm-llama",
+        "compiled": false,
+        "fast": false,
+        "confidence_definition": "p1 - mean(p2..pk)  [CLM API definition]",
+        "quantization": "Q5_K - Medium",
+        "variant": null,
+        "logit_scale": 100.0,
+        "temperature_effective": 0.01,
+        "pooling": "last-token",
+        "embedding_normalisation": "l2, applied client-side by clm.Embedder",
+        "truncation": "head (first N tokens), matching the vLLM serving path",
+        "max_context_tokens": 2048,
+        "service_model": "clm-latest",
+        "encoder_runtime": "b11160-a3c12db9d",
+        "encoder_model": "Qwen3-8B-Q5_K_M.gguf",
+        "encoder_slots": 8,
+        "base_model": "Qwen/Qwen3-8B",
+        "device": "llama.cpp:gpu(Q5_K - Medium) vram=7974MiB weights=5946MiB",
+        "heads_device": "cpu"
+      },
+      "batching": {
+        "states": 2974,
+        "question_groups": 2974,
+        "max_states_per_group": 1,
+        "batch_size_effective": 8,
+        "batch_size_requested": 16,
+        "batching_is_inert": false,
+        "concurrency": 8,
+        "encoder_slots": 8,
+        "note": "CLM non fa un forward con padding: ogni caso e' una richiesta HTTP e il lever e' la concorrenza sui slot di llama-server."
+      }
+    }
+  ],
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "5c59fb5530fa9081fc6f1028e8776c5b45a328d88facdbbf33b9d910bc8a5d52"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "experiment": "E12d_homoglyph",
+  "question": "gli omoglifi ingannano il modello o lo degradano a caso?",
+  "axes": {
+    "checkpoint": "convaiinnovations/laya-typed-decisions",
+    "n_cases": 30,
+    "seed": 0,
+    "doses": [
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "study_valid": true
+  },
+  "study_valid": {
+    "why": "l'operatore ha firma (state) -> str: non vede questions ne gold",
+    "verified_per_row": "questions_untouched"
+  },
+  "results": [
+    {
+      "probe": "greco dose 10%",
+      "dose": 0.1,
+      "delta_tokens_mean": 45.63333333333333,
+      "labels_changed": 48,
+      "n_decisions": 150,
+      "flips": 32,
+      "asr": 0.2831858407079646,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.182709375,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "greco dose 25%",
+      "dose": 0.25,
+      "delta_tokens_mean": 97.4,
+      "labels_changed": 87,
+      "n_decisions": 150,
+      "flips": 69,
+      "asr": 0.6106194690265486,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.20247826086956522,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "greco dose 50%",
+      "dose": 0.5,
+      "delta_tokens_mean": 161.9,
+      "labels_changed": 86,
+      "n_decisions": 150,
+      "flips": 70,
+      "asr": 0.6194690265486725,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.20475142857142856,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 7
+    },
+    {
+      "probe": "greco dose 100%",
+      "dose": 1.0,
+      "delta_tokens_mean": 212.03333333333333,
+      "labels_changed": 83,
+      "n_decisions": 150,
+      "flips": 70,
+      "asr": 0.6194690265486725,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.2105342857142857,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 6
+    },
+    {
+      "probe": "cirillico dose 25%",
+      "dose": 0.25,
+      "delta_tokens_mean": 86.0,
+      "labels_changed": 72,
+      "n_decisions": 150,
+      "flips": 54,
+      "asr": 0.4778761061946903,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.21607777777777779,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 13
+    },
+    {
+      "probe": "cirillico dose 100%",
+      "dose": 1.0,
+      "delta_tokens_mean": 177.66666666666666,
+      "labels_changed": 90,
+      "n_decisions": 150,
+      "flips": 72,
+      "asr": 0.6371681415929203,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.2093597222222222,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 8
+    },
+    {
+      "probe": "omoglifi dose 25%",
+      "dose": 0.25,
+      "delta_tokens_mean": 97.4,
+      "labels_changed": 87,
+      "n_decisions": 150,
+      "flips": 69,
+      "asr": 0.6106194690265486,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.20247826086956522,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "spazi distribuiti ~59 char",
+      "dose": null,
+      "delta_tokens_mean": 49.2,
+      "labels_changed": 69,
+      "n_decisions": 150,
+      "flips": 54,
+      "asr": 0.4778761061946903,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.1948425925925926,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "omoglifi dose 100%",
+      "dose": 1.0,
+      "delta_tokens_mean": 212.03333333333333,
+      "labels_changed": 83,
+      "n_decisions": 150,
+      "flips": 70,
+      "asr": 0.6194690265486725,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.2105342857142857,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 6
+    },
+    {
+      "probe": "spazi distribuiti ~238 char",
+      "dose": null,
+      "delta_tokens_mean": 0.7,
+      "labels_changed": 92,
+      "n_decisions": 150,
+      "flips": 75,
+      "asr": 0.6637168141592921,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.20616266666666666,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 6
+    },
+    {
+      "probe": "filler in coda (pari Δtoken)",
+      "dose": null,
+      "delta_tokens_mean": 212.23333333333332,
+      "labels_changed": 41,
+      "n_decisions": 150,
+      "flips": 22,
+      "asr": 0.19469026548672566,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.19306363636363635,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 11
+    }
+  ]
+}

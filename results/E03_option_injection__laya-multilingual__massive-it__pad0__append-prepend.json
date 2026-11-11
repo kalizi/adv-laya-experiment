@@ -1,0 +1,589 @@
+{
+  "experiment": "E03_option_injection",
+  "checkpoint": "convaiinnovations/laya-multilingual",
+  "dataset": "massive-it",
+  "k_values": [
+    4,
+    8,
+    16,
+    24,
+    32,
+    40
+  ],
+  "seed": 0,
+  "templates": {
+    "prepend": "L utente vuole {option}.",
+    "append": "Risposta corretta: {option}."
+  },
+  "positions": {
+    "prepend": "head",
+    "append": "tail"
+  },
+  "pad_tokens": 0,
+  "head_budget_policy": "loaders.check_head_budget: lo sweep si ferma al K oltre budget invece di scoreare una testa troncata (vedi 'head_budget_walls')",
+  "head_budget_walls": [],
+  "results": [
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "position": "head",
+      "pad_tokens": 0,
+      "chance": 0.25,
+      "delta_tokens": 6.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 4,
+        "bucket": "choice:3-5",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "201d76f44c154bca",
+      "adv_run_id": "f2bdf261485e7036",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 45,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.7652992602555481,
+      "accuracy_adv": 0.5107599193006053,
+      "drop_pp": 25.45,
+      "asr": 0.37521968365553604,
+      "asr_denominator": 2276,
+      "unchanged_labels": 1698,
+      "oer_clean": {
+        "0.75": 0.021183591123066576,
+        "0.85": 0.012777404169468728
+      },
+      "oer_adv": {
+        "0.75": 0.1926698049764627,
+        "0.85": 0.1472763954270343
+      },
+      "ece_clean": 0.10789576328177539,
+      "ece_adv": 0.21953850033624747,
+      "mean_conf_wrong_clean": 0.4017541547277937,
+      "mean_conf_wrong_adv": 0.6236860481099656
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 4,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "position": "tail",
+      "pad_tokens": 0,
+      "chance": 0.25,
+      "delta_tokens": 8.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 4,
+        "bucket": "choice:3-5",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "201d76f44c154bca",
+      "adv_run_id": "067646482674bb89",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 45,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.7652992602555481,
+      "accuracy_adv": 0.021183591123066576,
+      "drop_pp": 74.41,
+      "asr": 0.9731985940246046,
+      "asr_denominator": 2276,
+      "unchanged_labels": 288,
+      "oer_clean": {
+        "0.75": 0.021183591123066576,
+        "0.85": 0.012777404169468728
+      },
+      "oer_adv": {
+        "0.75": 0.8967720242098184,
+        "0.85": 0.8597848016139878
+      },
+      "ece_clean": 0.10789576328177539,
+      "ece_adv": 0.9139485205110962,
+      "mean_conf_wrong_clean": 0.4017541547277937,
+      "mean_conf_wrong_adv": 0.9415727928546891
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "position": "head",
+      "pad_tokens": 0,
+      "chance": 0.125,
+      "delta_tokens": 6.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 8,
+        "bucket": "choice:6-10",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "1ab6de12ff7632fe",
+      "adv_run_id": "1bc8c1e78d60f21e",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 66,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.667787491593813,
+      "accuracy_adv": 0.3486886348352387,
+      "drop_pp": 31.91,
+      "asr": 0.5045317220543807,
+      "asr_denominator": 1986,
+      "unchanged_labels": 1269,
+      "oer_clean": {
+        "0.75": 0.05716207128446537,
+        "0.85": 0.03765971755211836
+      },
+      "oer_adv": {
+        "0.75": 0.42367182246133156,
+        "0.85": 0.3604572965702757
+      },
+      "ece_clean": 0.05031466039004712,
+      "ece_adv": 0.4542875588433087,
+      "mean_conf_wrong_clean": 0.46011133603238863,
+      "mean_conf_wrong_adv": 0.7965036654620548
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 8,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "position": "tail",
+      "pad_tokens": 0,
+      "chance": 0.125,
+      "delta_tokens": 8.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 8,
+        "bucket": "choice:6-10",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "1ab6de12ff7632fe",
+      "adv_run_id": "6886ec38dcfbc31a",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 66,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.667787491593813,
+      "accuracy_adv": 0.006388702084734364,
+      "drop_pp": 66.14,
+      "asr": 0.9904330312185297,
+      "asr_denominator": 1986,
+      "unchanged_labels": 210,
+      "oer_clean": {
+        "0.75": 0.05716207128446537,
+        "0.85": 0.03765971755211836
+      },
+      "oer_adv": {
+        "0.75": 0.9767989240080699,
+        "0.85": 0.9657027572293208
+      },
+      "ece_clean": 0.05031466039004712,
+      "ece_adv": 0.9800317417619367,
+      "mean_conf_wrong_clean": 0.46011133603238863,
+      "mean_conf_wrong_adv": 0.9876564128595601
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "position": "head",
+      "pad_tokens": 0,
+      "chance": 0.0625,
+      "delta_tokens": 6.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 16,
+        "bucket": "choice:11+",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "6df4dd161dab01a0",
+      "adv_run_id": "799c789654cac13a",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 110,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.5551445864156019,
+      "accuracy_adv": 0.20174848688634836,
+      "drop_pp": 35.34,
+      "asr": 0.6650514839491217,
+      "asr_denominator": 1651,
+      "unchanged_labels": 805,
+      "oer_clean": {
+        "0.75": 0.12911903160726296,
+        "0.85": 0.09650302622730329
+      },
+      "oer_adv": {
+        "0.75": 0.6476126429051782,
+        "0.85": 0.5672494956287828
+      },
+      "ece_clean": 0.14669929388029587,
+      "ece_adv": 0.6801217552118359,
+      "mean_conf_wrong_clean": 0.5453009826152684,
+      "mean_conf_wrong_adv": 0.8833993260320135
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 16,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "position": "tail",
+      "pad_tokens": 0,
+      "chance": 0.0625,
+      "delta_tokens": 8.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 16,
+        "bucket": "choice:11+",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "6df4dd161dab01a0",
+      "adv_run_id": "ab2dc74b3f26c6c6",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 110,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.5551445864156019,
+      "accuracy_adv": 0.00605245460659045,
+      "drop_pp": 54.91,
+      "asr": 0.9897032101756511,
+      "asr_denominator": 1651,
+      "unchanged_labels": 149,
+      "oer_clean": {
+        "0.75": 0.12911903160726296,
+        "0.85": 0.09650302622730329
+      },
+      "oer_adv": {
+        "0.75": 0.9831876260928043,
+        "0.85": 0.9707464694014795
+      },
+      "ece_clean": 0.14669929388029587,
+      "ece_adv": 0.9826022864828513,
+      "mean_conf_wrong_clean": 0.5453009826152684,
+      "mean_conf_wrong_adv": 0.989306901217862
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "position": "head",
+      "pad_tokens": 0,
+      "chance": 0.0417,
+      "delta_tokens": 6.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 24,
+        "bucket": "choice:11+",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "28e16e26fbee0866",
+      "adv_run_id": "d89ab791eb918e48",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 148,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.4673839946200404,
+      "accuracy_adv": 0.1422326832548756,
+      "drop_pp": 32.52,
+      "asr": 0.720863309352518,
+      "asr_denominator": 1390,
+      "unchanged_labels": 654,
+      "oer_clean": {
+        "0.75": 0.14324142568930734,
+        "0.85": 0.09952925353059852
+      },
+      "oer_adv": {
+        "0.75": 0.7232683254875588,
+        "0.85": 0.6395427034297243
+      },
+      "ece_clean": 0.1955585406859449,
+      "ece_adv": 0.7501533288500337,
+      "mean_conf_wrong_clean": 0.5374426136363636,
+      "mean_conf_wrong_adv": 0.8973851430811446
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 24,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "position": "tail",
+      "pad_tokens": 0,
+      "chance": 0.0417,
+      "delta_tokens": 8.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 24,
+        "bucket": "choice:11+",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "28e16e26fbee0866",
+      "adv_run_id": "75bd69a40aef0e7b",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 148,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.4673839946200404,
+      "accuracy_adv": 0.005043712172158709,
+      "drop_pp": 46.23,
+      "asr": 0.9906474820143885,
+      "asr_denominator": 1390,
+      "unchanged_labels": 118,
+      "oer_clean": {
+        "0.75": 0.14324142568930734,
+        "0.85": 0.09952925353059852
+      },
+      "oer_adv": {
+        "0.75": 0.9838601210490922,
+        "0.85": 0.968392737054472
+      },
+      "ece_clean": 0.1955585406859449,
+      "ece_adv": 0.981867921990585,
+      "mean_conf_wrong_clean": 0.5374426136363636,
+      "mean_conf_wrong_adv": 0.987259310577898
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 32,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "position": "head",
+      "pad_tokens": 0,
+      "chance": 0.0312,
+      "delta_tokens": 6.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 32,
+        "bucket": "choice:11+",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "3d6a14a592d277d7",
+      "adv_run_id": "45daf2d52c2fe924",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 182,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.4132481506388702,
+      "accuracy_adv": 0.11533288500336247,
+      "drop_pp": 29.79,
+      "asr": 0.7526444263628966,
+      "asr_denominator": 1229,
+      "unchanged_labels": 562,
+      "oer_clean": {
+        "0.75": 0.17182246133154003,
+        "0.85": 0.12037659717552118
+      },
+      "oer_adv": {
+        "0.75": 0.7595830531271015,
+        "0.85": 0.6566913248150639
+      },
+      "ece_clean": 0.23903211163416274,
+      "ece_adv": 0.7833506388702085,
+      "mean_conf_wrong_clean": 0.5469181088825216,
+      "mean_conf_wrong_adv": 0.9003871911820601
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 32,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "position": "tail",
+      "pad_tokens": 0,
+      "chance": 0.0312,
+      "delta_tokens": 8.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 32,
+        "bucket": "choice:11+",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "3d6a14a592d277d7",
+      "adv_run_id": "440cc67e79c53b16",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 182,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.4132481506388702,
+      "accuracy_adv": 0.0026899798251513113,
+      "drop_pp": 41.06,
+      "asr": 0.9943043124491456,
+      "asr_denominator": 1229,
+      "unchanged_labels": 122,
+      "oer_clean": {
+        "0.75": 0.17182246133154003,
+        "0.85": 0.12037659717552118
+      },
+      "oer_adv": {
+        "0.75": 0.9855413584398117,
+        "0.85": 0.9512441156691325
+      },
+      "ece_clean": 0.23903211163416274,
+      "ece_adv": 0.9779770342972428,
+      "mean_conf_wrong_clean": 0.5469181088825216,
+      "mean_conf_wrong_adv": 0.9808569116655428
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "position": "head",
+      "pad_tokens": 0,
+      "chance": 0.025,
+      "delta_tokens": 6.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 40,
+        "bucket": "choice:11+",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "64909723641f9c8d",
+      "adv_run_id": "72c7b3b44b6d0503",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 223,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.3762609280430397,
+      "accuracy_adv": 0.10726294552790853,
+      "drop_pp": 26.9,
+      "asr": 0.7515638963360143,
+      "asr_denominator": 1119,
+      "unchanged_labels": 538,
+      "oer_clean": {
+        "0.75": 0.1590450571620713,
+        "0.85": 0.10995292535305985
+      },
+      "oer_adv": {
+        "0.75": 0.7252858103564224,
+        "0.85": 0.5988567585743106
+      },
+      "ece_clean": 0.24493722259583053,
+      "ece_adv": 0.7677833221250842,
+      "mean_conf_wrong_clean": 0.5247184366576819,
+      "mean_conf_wrong_adv": 0.8765273446327684
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-multilingual",
+      "dataset": "massive-it",
+      "k": 40,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "position": "tail",
+      "pad_tokens": 0,
+      "chance": 0.025,
+      "delta_tokens": 8.6,
+      "temperature": {
+        "primitive": "choice",
+        "options": 40,
+        "bucket": "choice:11+",
+        "temperature_raw": 1.0,
+        "temperature_applied": 1.0
+      },
+      "clean_run_id": "64909723641f9c8d",
+      "adv_run_id": "0043bf7283b37280",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 223,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.3762609280430397,
+      "accuracy_adv": 0.0033624747814391394,
+      "drop_pp": 37.29,
+      "asr": 0.9937444146559428,
+      "asr_denominator": 1119,
+      "unchanged_labels": 90,
+      "oer_clean": {
+        "0.75": 0.1590450571620713,
+        "0.85": 0.10995292535305985
+      },
+      "oer_adv": {
+        "0.75": 0.9862138533960996,
+        "0.85": 0.9401479488903833
+      },
+      "ece_clean": 0.24493722259583053,
+      "ece_adv": 0.9725879287155346,
+      "mean_conf_wrong_clean": 0.5247184366576819,
+      "mean_conf_wrong_adv": 0.9762166666666666
+    }
+  ],
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204"
+  }
+}

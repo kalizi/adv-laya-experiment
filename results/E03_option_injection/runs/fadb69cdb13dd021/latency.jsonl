@@ -1,0 +1,2 @@
+{"ms": 99.89, "decisions": 32, "device": "llama.cpp:gpu(Q8_0) vram=8652MiB weights=8306MiB", "dtype": "gguf:Q8_0", "heads_device": "cpu"}
+{"ms": 25.549, "decisions": 8, "device": "llama.cpp:gpu(Q8_0) vram=8652MiB weights=8306MiB", "dtype": "gguf:Q8_0", "heads_device": "cpu"}

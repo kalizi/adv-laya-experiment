@@ -1,0 +1,12 @@
+{"ms": 7189.369, "decisions": 256, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 7220.857, "decisions": 256, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 7213.961, "decisions": 256, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 7244.279, "decisions": 256, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 7275.662, "decisions": 256, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 7316.703, "decisions": 256, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 7244.686, "decisions": 256, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 7226.703, "decisions": 256, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 7273.706, "decisions": 256, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 7225.315, "decisions": 256, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 7282.52, "decisions": 256, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 4484.953, "decisions": 158, "device": "cuda", "dtype": "torch.bfloat16"}

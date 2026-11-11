@@ -1,0 +1,2 @@
+{"ms": 784.808, "decisions": 32, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 50.939, "decisions": 8, "device": "cuda", "dtype": "torch.bfloat16"}

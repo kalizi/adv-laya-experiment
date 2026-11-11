@@ -1,0 +1,7 @@
+{"ms": 2053.12, "decisions": 32, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 2040.685, "decisions": 32, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 2095.442, "decisions": 32, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 2044.859, "decisions": 32, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 2053.932, "decisions": 32, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 2053.246, "decisions": 32, "device": "cuda", "dtype": "torch.bfloat16"}
+{"ms": 522.561, "decisions": 8, "device": "cuda", "dtype": "torch.bfloat16"}

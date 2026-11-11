@@ -1,0 +1,7 @@
+{
+  "experiment": "E02_option_count",
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "k": 8,
+  "n_cases": 5,
+  "dataset": "typed-decisions/test"
+}

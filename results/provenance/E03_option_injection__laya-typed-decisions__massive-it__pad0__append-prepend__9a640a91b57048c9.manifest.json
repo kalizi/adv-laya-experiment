@@ -1,0 +1,1593 @@
+{
+  "experiment": "E03_option_injection",
+  "status": "verified_from_paired_raw_stores",
+  "scope_file": "E03_option_injection__laya-typed-decisions__massive-it__pad0__append-prepend__9a640a91b57048c9.json",
+  "scope_sha256": "088f16bfc64fd35b507b12a9244b9410ad8985cdf61a63afeea0e64acc3082e4",
+  "command": "uv run adv e03 --checkpoint convaiinnovations/laya-typed-decisions --device cuda --batch-size 16",
+  "rows": [
+    {
+      "k": 4,
+      "template": "append",
+      "position": "tail",
+      "n_cases": 2974,
+      "asr": 0.9793213149522799,
+      "asr_denominator": 1886,
+      "accuracy_clean": 0.6341627437794216,
+      "accuracy_adv": 0.013113651647612643,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "0775dc946d1a7063",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 4,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "858de9f003cbebd6666c817d18f0398d0f0ac485c2d0afe079a4576116f1e425",
+          "preds_sha256": "f4148f06413ae08ce6a5778af8a169d6d3653491edfcf51182d5ed634ba4d5ab",
+          "latency_sha256": "0b7d45b12e7905ab30bd247793609f09cd2698b74a4071a372c27ac25a462c25",
+          "summary_sha256": "73c5d9b310a2b613b3078931c67e7ab51956bcd4237acddcb545debb36ccf9bd",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "cd123f5f819735c9",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 4,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "append",
+            "position": "tail",
+            "pad_tokens": 0
+          },
+          "config_sha256": "19bcfa909981f9e0c5251ccb8f1a8b1121ff4f3f4ebc96fa97fc06be0367c74f",
+          "preds_sha256": "1dea201680bf8dc30b2115ef6ccb49573181822d5dd862c1609d47ef683fb3e8",
+          "latency_sha256": "e46a537c7999efbefe1356ff1f2f8347f386bf87bdc27f04de4fc976e75614f4",
+          "summary_sha256": "318f8c19ff9baa647bee69c7be5098786a89a9eef9d99eaec8826d845feb65fc",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    },
+    {
+      "k": 4,
+      "template": "prepend",
+      "position": "head",
+      "n_cases": 2974,
+      "asr": 0.869034994697773,
+      "asr_denominator": 1886,
+      "accuracy_clean": 0.6341627437794216,
+      "accuracy_adv": 0.08406186953597848,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "0775dc946d1a7063",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 4,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "858de9f003cbebd6666c817d18f0398d0f0ac485c2d0afe079a4576116f1e425",
+          "preds_sha256": "f4148f06413ae08ce6a5778af8a169d6d3653491edfcf51182d5ed634ba4d5ab",
+          "latency_sha256": "0b7d45b12e7905ab30bd247793609f09cd2698b74a4071a372c27ac25a462c25",
+          "summary_sha256": "73c5d9b310a2b613b3078931c67e7ab51956bcd4237acddcb545debb36ccf9bd",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "74c00324a2c99a12",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 4,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "prepend",
+            "position": "head",
+            "pad_tokens": 0
+          },
+          "config_sha256": "0b899e43fb9af1bf89d222e49ca40791ae5f26bcfd702084766d7c2ccd9cdaad",
+          "preds_sha256": "02a69f7b79b49d9ff8c875f85331818de66c6bd7027a68019d017895ba39cff3",
+          "latency_sha256": "e696e624311d968757e15900d2bc8fd9916be9fedacebf3ebc4865e08bb8d974",
+          "summary_sha256": "eb6dae041d693c13686b208112992a6d29fec91c3ca0c1faba53343ea522189a",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    },
+    {
+      "k": 8,
+      "template": "append",
+      "position": "tail",
+      "n_cases": 2974,
+      "asr": 0.9791258969341161,
+      "asr_denominator": 1533,
+      "accuracy_clean": 0.51546738399462,
+      "accuracy_adv": 0.010759919300605245,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "64f74b179b571e04",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 8,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "c6ebafd4ea273c82d7896c161efaea79abcaf69fd43560accc7b06ed72d43de7",
+          "preds_sha256": "6bf0c378f59c1967fcfc45f777b7f88ba2c5447abd5b8adfe680ea4ab915a018",
+          "latency_sha256": "9fd910616d1176593604a6c9a826f60301b90ff10af83da29d3fe8d1ebe20bc6",
+          "summary_sha256": "f2e23eb9f7f5fd1790532e47f7caa65e935d975d07a80f2881bc52acfda030f2",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "fda659d94199fab9",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 8,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "append",
+            "position": "tail",
+            "pad_tokens": 0
+          },
+          "config_sha256": "43847fe7f4a075b57886a791e2f3f09f4127a17d14888752be532afa48b4cb68",
+          "preds_sha256": "e318a499f97e23f74b9b2f151236a65057a3673a6ae0db3e0dbbbc1e4971da45",
+          "latency_sha256": "6f06cc1e4fa684d39b00e7118d37855fc2094566a113fd727969c171742f3bae",
+          "summary_sha256": "17af8e47dffd8730581a94466656085fe98b7403da7b72000a94a47f09977870",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    },
+    {
+      "k": 8,
+      "template": "prepend",
+      "position": "head",
+      "n_cases": 2974,
+      "asr": 0.8878016960208741,
+      "asr_denominator": 1533,
+      "accuracy_clean": 0.51546738399462,
+      "accuracy_adv": 0.05917955615332885,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "64f74b179b571e04",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 8,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "c6ebafd4ea273c82d7896c161efaea79abcaf69fd43560accc7b06ed72d43de7",
+          "preds_sha256": "6bf0c378f59c1967fcfc45f777b7f88ba2c5447abd5b8adfe680ea4ab915a018",
+          "latency_sha256": "9fd910616d1176593604a6c9a826f60301b90ff10af83da29d3fe8d1ebe20bc6",
+          "summary_sha256": "f2e23eb9f7f5fd1790532e47f7caa65e935d975d07a80f2881bc52acfda030f2",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "99f317da53b7ed3a",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 8,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "prepend",
+            "position": "head",
+            "pad_tokens": 0
+          },
+          "config_sha256": "2811b90312eedd453b414bdac0183d5dec4fb00847171d98ad11fdfde9cc9116",
+          "preds_sha256": "ea857c9706fe8c627a3219980449b69d37bbc664088f52cca5d71aa171c72f4f",
+          "latency_sha256": "ae1f2b9880b3e475aa6351ec954546f330def9c23cd1a46444522174c31642e9",
+          "summary_sha256": "4231dfbb411ac34b2d0a380b6e6d60b39cb4c6a9bb89c3f64bcb83969b3ef856",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    },
+    {
+      "k": 16,
+      "template": "append",
+      "position": "tail",
+      "n_cases": 2974,
+      "asr": 0.9686209744013212,
+      "asr_denominator": 1211,
+      "accuracy_clean": 0.40719569603227973,
+      "accuracy_adv": 0.014122394082044385,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "17ae23bd053b5524",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 16,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "3ee7423b3cc3d5423fd47f5130a7e097d94c30f2073efba478240f3038e8b65a",
+          "preds_sha256": "1b7676e31e8730e71884eaecca5e5b028b10b9d892173e1aa7da4df2582ed682",
+          "latency_sha256": "dba364a6678fa2e26b01f5595800a9eb34ac684ff33bd9234432c6d8d4eec406",
+          "summary_sha256": "0b9820f58f0d2671c39fa34e09e964bece1f72c660ea34879915092555975087",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "b1c2b84f8fd3b6de",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 16,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "append",
+            "position": "tail",
+            "pad_tokens": 0
+          },
+          "config_sha256": "cec0dd24e203fce170edd90cab91cedc2fdd4bcbd60833c3e81882df272db889",
+          "preds_sha256": "bddb95a427400c87846bdc263c8986c9da8763713372cad4c423d9f1cb227c96",
+          "latency_sha256": "cea5fdd2f5cbbeeb5db57dc639796a5b46e8f056418f5338fff92f86a57f190e",
+          "summary_sha256": "675a813e10c9675bc0b35c3f33b2500bbb0ea7acf5a12fa802b4b52f9ad11213",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    },
+    {
+      "k": 16,
+      "template": "prepend",
+      "position": "head",
+      "n_cases": 2974,
+      "asr": 0.8967795210569777,
+      "asr_denominator": 1211,
+      "accuracy_clean": 0.40719569603227973,
+      "accuracy_adv": 0.04371217215870881,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "17ae23bd053b5524",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 16,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "3ee7423b3cc3d5423fd47f5130a7e097d94c30f2073efba478240f3038e8b65a",
+          "preds_sha256": "1b7676e31e8730e71884eaecca5e5b028b10b9d892173e1aa7da4df2582ed682",
+          "latency_sha256": "dba364a6678fa2e26b01f5595800a9eb34ac684ff33bd9234432c6d8d4eec406",
+          "summary_sha256": "0b9820f58f0d2671c39fa34e09e964bece1f72c660ea34879915092555975087",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "8e5188648b3a9338",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 16,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "prepend",
+            "position": "head",
+            "pad_tokens": 0
+          },
+          "config_sha256": "b2772d394a0d33dd614b668ee5a3f8f6060222c9e4ec001783bec490a5258421",
+          "preds_sha256": "0994abba991a9fb7b5b7655ac68c89c5f89f924be9cc7d038f023b9c839c95ae",
+          "latency_sha256": "4aebece5992aea6276d8ffd12dfbb08701cd19521eac5e4d41a851de8b57d496",
+          "summary_sha256": "d60f27ce20850492cd5aa2cbfb68782b72a6010625940d630e215ca39bb6b450",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    },
+    {
+      "k": 24,
+      "template": "append",
+      "position": "tail",
+      "n_cases": 2974,
+      "asr": 0.9532888465204957,
+      "asr_denominator": 1049,
+      "accuracy_clean": 0.3527236045729657,
+      "accuracy_adv": 0.01882985877605918,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "67fbfa139a0677cf",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 24,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "1180008efe912f0f468958e8b6f29dd2270cafe6d87f2b8aa3fa5c7cfee42eae",
+          "preds_sha256": "dfca0b391a4b728a7e20225425c5df2537217577c5a77dea14a5e95babe8ac1a",
+          "latency_sha256": "524272c301bc4008026efa6c2ff140f4ea9bc9ccb0b787b5d796e0150c0012aa",
+          "summary_sha256": "594cee39566230b15b1ed389db3360f8601f07ab868994c3f0613dfdc24d3018",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "56044d32008a682e",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 24,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "append",
+            "position": "tail",
+            "pad_tokens": 0
+          },
+          "config_sha256": "33752a07bd2d83e6a97a238752bdd665dfcdefbe063558856a1314df29cdc978",
+          "preds_sha256": "bccefca89b44277dfc5388812ad6d786cf14fdd00b20659437d00f8d41398159",
+          "latency_sha256": "78920961344886ab85417afe973ff769d307fa7545b4c90fb5ed43c426fd237b",
+          "summary_sha256": "6735f04ebb35412e4c2e65e3954bb7924f8e724581a4b91a4a6e93b1fa18fd04",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    },
+    {
+      "k": 24,
+      "template": "prepend",
+      "position": "head",
+      "n_cases": 2974,
+      "asr": 0.8760724499523356,
+      "asr_denominator": 1049,
+      "accuracy_clean": 0.3527236045729657,
+      "accuracy_adv": 0.04774714189643578,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "67fbfa139a0677cf",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 24,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "1180008efe912f0f468958e8b6f29dd2270cafe6d87f2b8aa3fa5c7cfee42eae",
+          "preds_sha256": "dfca0b391a4b728a7e20225425c5df2537217577c5a77dea14a5e95babe8ac1a",
+          "latency_sha256": "524272c301bc4008026efa6c2ff140f4ea9bc9ccb0b787b5d796e0150c0012aa",
+          "summary_sha256": "594cee39566230b15b1ed389db3360f8601f07ab868994c3f0613dfdc24d3018",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "0df713fb100c545a",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 24,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "prepend",
+            "position": "head",
+            "pad_tokens": 0
+          },
+          "config_sha256": "dcd2c5dfee45a94fde1b27b906b8d8fe4e0e3ecf5b95367ab71b4f32d664fda9",
+          "preds_sha256": "ff89cf1406029be1d496d7cd5071097880ff6fee7afca4dab9b6e2ac3221d7a8",
+          "latency_sha256": "bfb2d518942a2632f4f776cf6a3d6d3ad98c8d1759daac13d2334a2723239a7b",
+          "summary_sha256": "c23dab70c62328a7de2a5bb42fee53709946138f211f359ca0c9cad26c729c79",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    },
+    {
+      "k": 32,
+      "template": "append",
+      "position": "tail",
+      "n_cases": 2974,
+      "asr": 0.9340782122905028,
+      "asr_denominator": 895,
+      "accuracy_clean": 0.30094149293880296,
+      "accuracy_adv": 0.02252858103564223,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "d39645479f9e5e3e",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 32,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "8e69da38188e6cf4083681bcf5a340e4206bea97f2f9330cc28aef256e290f87",
+          "preds_sha256": "5e5fee1f43ad968beff968f0ea4dded2340b7cd2464802c2e628b5ceeb3f5fbd",
+          "latency_sha256": "e0d48df1380e8ee9a09539b411e4a1b84cdcb3f86932eb50d5d03987909f28e3",
+          "summary_sha256": "b3adea306541bf411d29b6e06414287a1c0b1608ed72a0487e2424f50679a0fb",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "0281d3b0a3487f12",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 32,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "append",
+            "position": "tail",
+            "pad_tokens": 0
+          },
+          "config_sha256": "6f4c0046ee9dbb0e80f9a67899536c29b67b8160dc41aecf66e7441f136cce1e",
+          "preds_sha256": "1aa3c9dd8c80e8250e143dc6585335db147cc8214b3b1659b9bbf053014a4182",
+          "latency_sha256": "33d2b20544bb8236a18f759b532a266943f26211964216887f94dd4f464785dd",
+          "summary_sha256": "42d917b5796fbe5ea665e3f3c206fc4fa602c3198046a392f9a41194f80bd098",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    },
+    {
+      "k": 32,
+      "template": "prepend",
+      "position": "head",
+      "n_cases": 2974,
+      "asr": 0.852513966480447,
+      "asr_denominator": 895,
+      "accuracy_clean": 0.30094149293880296,
+      "accuracy_adv": 0.05043712172158709,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "d39645479f9e5e3e",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 32,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "8e69da38188e6cf4083681bcf5a340e4206bea97f2f9330cc28aef256e290f87",
+          "preds_sha256": "5e5fee1f43ad968beff968f0ea4dded2340b7cd2464802c2e628b5ceeb3f5fbd",
+          "latency_sha256": "e0d48df1380e8ee9a09539b411e4a1b84cdcb3f86932eb50d5d03987909f28e3",
+          "summary_sha256": "b3adea306541bf411d29b6e06414287a1c0b1608ed72a0487e2424f50679a0fb",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "b83761dd4e409aa1",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 32,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "prepend",
+            "position": "head",
+            "pad_tokens": 0
+          },
+          "config_sha256": "40b136446216ba4290a615ac03064d670e2bd51314bf466ccde22fc6845786e9",
+          "preds_sha256": "87a5640171890770b6583e2c8155d0138f3b0e973be762b030d1226fa1b9edc9",
+          "latency_sha256": "c6af6e70ec8d65fbe74be858f9121c14d7bdcc779efe9a9ae331bb13b78a02c0",
+          "summary_sha256": "c1c3c7a002e1b002be93974a9dc92a48f6ca5d5793d88cfed560b3bc14d955b7",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    },
+    {
+      "k": 40,
+      "template": "append",
+      "position": "tail",
+      "n_cases": 2974,
+      "asr": 0.8679950186799502,
+      "asr_denominator": 803,
+      "accuracy_clean": 0.2700067249495629,
+      "accuracy_adv": 0.04337592468056489,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "bc24786264241b3c",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 40,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "210e1bbd0d169adbd9d3526e87c5242a55d0db95c9615f29e0831b07fd8d2750",
+          "preds_sha256": "38854c04ee384f5ac1bc1b45171bcfef5ef7615e4fbb5cc77585e8c3cad94b62",
+          "latency_sha256": "66444ec886f5f41a91aaa24902f27019abeff27d41ab7fc55867e4c30094c44d",
+          "summary_sha256": "4f768d7c4efbf29fd0ebc65770726748546d2f38067847194ebee04a83353011",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "58cd0e23934a0374",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 40,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "append",
+            "position": "tail",
+            "pad_tokens": 0
+          },
+          "config_sha256": "8c2ab8f1d757e544e3b3bbf0f8c851f41d454dff655b1e7ec8d699fb2d48061a",
+          "preds_sha256": "aee942ddfc17e96a260e9a10460f9c9a9ce4d65cd9b54815996955a9a76743c8",
+          "latency_sha256": "1afa8b4249d4e70d3210dbb70b087dee8e1a1ec31d4909ef99def9f37adc271c",
+          "summary_sha256": "6e9d50e44b4fff0d71ac5b3c5efa715f89dd550eecbb927a6f567e5c3a69e350",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    },
+    {
+      "k": 40,
+      "template": "prepend",
+      "position": "head",
+      "n_cases": 2974,
+      "asr": 0.8231631382316313,
+      "asr_denominator": 803,
+      "accuracy_clean": 0.2700067249495629,
+      "accuracy_adv": 0.05581708137188971,
+      "dataset": "massive-it",
+      "split": "test",
+      "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+      "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+      "seed": 0,
+      "backend": "laya",
+      "batch_size": 16,
+      "chunk": 32,
+      "precision": "torch.bfloat16",
+      "device": "cuda",
+      "weight_revision_main_at_freeze": "e929ae5cf69bc34259cd2f95c9e91145b818b1f0",
+      "weight_revision_candidates_same_blob": [
+        "1a793eb568e6718f15941d08f85432581df534e3",
+        "e929ae5cf69bc34259cd2f95c9e91145b818b1f0"
+      ],
+      "weight_revision_note": "Il run salva SHA256 dei pesi, non il commit HF; refs/main e le revisioni compatibili sono documentate al congelamento.",
+      "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+      "runs": [
+        {
+          "kind": "clean",
+          "run_id": "bc24786264241b3c",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 40,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "clean"
+          },
+          "config_sha256": "210e1bbd0d169adbd9d3526e87c5242a55d0db95c9615f29e0831b07fd8d2750",
+          "preds_sha256": "38854c04ee384f5ac1bc1b45171bcfef5ef7615e4fbb5cc77585e8c3cad94b62",
+          "latency_sha256": "66444ec886f5f41a91aaa24902f27019abeff27d41ab7fc55867e4c30094c44d",
+          "summary_sha256": "4f768d7c4efbf29fd0ebc65770726748546d2f38067847194ebee04a83353011",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        },
+        {
+          "kind": "adversarial",
+          "run_id": "315a01787fcf380d",
+          "config": {
+            "experiment": "E03_option_injection",
+            "checkpoint": "convaiinnovations/laya-typed-decisions",
+            "dataset": "massive-it",
+            "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+            "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+            "k": 40,
+            "n_cases": 2974,
+            "seed": 0,
+            "batch_size": 16,
+            "chunk": 32,
+            "backend": "laya",
+            "compiled": false,
+            "fast": false,
+            "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+            "temperature_applied": null,
+            "temperature_shipped": [
+              1.0148024559020996,
+              1.0374259948730469,
+              1.0575125217437744
+            ],
+            "quantization": "none",
+            "encoder_linear_converted": null,
+            "device": "cuda",
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+            "kind": "adversarial",
+            "template": "prepend",
+            "position": "head",
+            "pad_tokens": 0
+          },
+          "config_sha256": "b0a1f94dcc0856d1dd286eb72e6e6bc7a687f1e60890da8c9a9ccc2f1a63b35d",
+          "preds_sha256": "29fa0d61ec93296affb959fbe3c67d4eefaca0d404ff39119aa3c321a654bcb0",
+          "latency_sha256": "78a85e2d34d9423b7a927ff2f77030e9b68f27be3b18c4527b55b863dc43809d",
+          "summary_sha256": "08f52de3d027e1c75b7e7ad80d8aed92c8c6d7bd9b074be1cd6490f483f7a64b",
+          "runtime": {
+            "python": "3.14.7",
+            "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+            "laya": "0.3.11",
+            "torch": "2.14.0+cu130",
+            "transformers": "5.17.0",
+            "device": "NVIDIA GeForce RTX 3080",
+            "cuda_available": true,
+            "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+          },
+          "actual_devices": [
+            "cuda"
+          ],
+          "precision": "torch.bfloat16",
+          "n_batches": 93
+        }
+      ]
+    }
+  ]
+}

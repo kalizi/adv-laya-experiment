@@ -1,0 +1,78 @@
+# --- Python / uv ---
+# NOTA: pyproject.toml e uv.lock vanno COMMITTATI (riproducibilità).
+# Nunca: ambienti, build, cache.
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+uv-cache/
+
+
+# --- Dati grezzi (mai nel repo: solo sha256 + script di download) ---
+data/raw/
+# export ONNX dereferenziato: 3.4 GB, mai nel repo (vedi performance-velocita)
+data/onnx/
+data/adv/*.tmp
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+*.onnx
+
+# --- Cache Hugging Face / Torch ---
+.cache/
+hf_cache/
+*.huggingface/
+wandb/
+mlruns/
+
+# --- Configurazione locale Obsidian (fuori dalla release) ---
+.obsidian/
+
+# --- Stato locale dell'assistente (fuori dalla release) ---
+/:memory:.ses
+.trash/
+publishing-TODO.md
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# --- Output temporanei ---
+*.log.tmp
+.ipynb_checkpoints/
+
+# --- Letteratura: i PDF stanno su disco (87M), non nel repo ---
+# Come data/raw: restano il manifest con sha256 (`60-interpretabilita/paper/manifest.json`)
+# e lo script di download (`tools/fetch_papers.py`). Un PDF mancante si riscarica in un
+# comando e si verifica; un PDF committato e poi divergente da quello di arXiv e' invisibile.
+60-interpretabilita/paper/*.pdf
+60-interpretabilita/paper/*.html
+
+# --- Run store: record grezzi distribuiti negli archivi verificati di results/release/ ---
+# I `preds.jsonl` restano ignorati singolarmente. `tools/release_records.py` raccoglie
+# tutti quelli citati dai riepiloghi verificabili in archivi zstd con hash per membro;
+# senza quegli archivi `make verify` non e' riproducibile da una copia del repository.
+# Config, summary, state e latency restano file normali di release.
+results/*/runs/*/preds.jsonl
+
+# --- Paper: gli ausiliari LaTeX non nel repo, il .pdf si (e' l'artefatto che si legge) ---
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+
+# -- Stuff ---
+CLAUDE.md
+todo-list.md

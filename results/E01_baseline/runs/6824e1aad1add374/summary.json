@@ -1,0 +1,75 @@
+{
+  "experiment": "E01_baseline",
+  "run_id": "6824e1aad1add374",
+  "config": {
+    "experiment": "E01_baseline",
+    "checkpoint": "convaiinnovations/laya",
+    "dataset": "typed-decisions/test",
+    "dataset_sha256": "337086d01dfa687105078288f0862d3c40d7e914483febc8323be948dc9590bb",
+    "subset_hash": "f45512a0342cd6de5c3b03f84de01bf71baf12e1061e04d3ac29916fc0e8473a",
+    "n_cases": 400,
+    "min_agreement": null,
+    "weight_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+    "batch_size": 16,
+    "chunk": 32,
+    "backend": "laya",
+    "compiled": false,
+    "fast": false
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+  },
+  "finished_at": "2026-10-01T07:34:51.688557+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 2000,
+      "n_cases": 400,
+      "accuracy": 0.3595,
+      "accuracy_by_primitive": {
+        "choice": 0.2833333333333333,
+        "noul": 0.485,
+        "score": 0.3225
+      },
+      "ece": 0.15441300000000002,
+      "brier": 0.750041404865,
+      "brier_by_primitive": {
+        "choice": 0.8084844104000001,
+        "noul": 0.6071480448,
+        "score": 0.8133791707625
+      },
+      "oer": {
+        "0.75": 0.0435,
+        "0.85": 0.015
+      },
+      "mean_conf_wrong": 0.2724161592505855,
+      "latency": {
+        "n": 13,
+        "p50_ms": 1732.8,
+        "p95_ms": 2309.75,
+        "mean_ms": 1603.64,
+        "std_ms": 539.05,
+        "total_ms": 20847.35,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 10.4237,
+        "decisions_per_s": 95.94
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 20.92,
+        "batches_this_process": 13
+      }
+    },
+    "skipped": 0
+  }
+}

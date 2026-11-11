@@ -1,0 +1,464 @@
+{
+  "experiment": "E03_option_injection",
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "dataset": "massive-en",
+  "k_values": [
+    4,
+    8,
+    16,
+    24,
+    32,
+    40
+  ],
+  "seed": 0,
+  "templates": {
+    "prepend": "L utente vuole {option}.",
+    "append": "Risposta corretta: {option}."
+  },
+  "head_budget_policy": "loaders.check_head_budget: lo sweep si ferma al K oltre budget invece di scoreare una testa troncata (vedi 'head_budget_walls')",
+  "head_budget_walls": [],
+  "results": [
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "chance": 0.25,
+      "clean_run_id": "41eff182f8fba3b3",
+      "adv_run_id": "fd7fc64539e0331c",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 47,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.8570948217888366,
+      "accuracy_adv": 0.3355749831876261,
+      "drop_pp": 52.15,
+      "asr": 0.6151431934091801,
+      "asr_denominator": 2549,
+      "unchanged_labels": 1140,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "ece_clean": 0.6448547410894419,
+      "ece_adv": 0.11467481506388705,
+      "mean_conf_wrong_clean": 0.07127670588235294,
+      "mean_conf_wrong_adv": 0.2551111336032389
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 4,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "chance": 0.25,
+      "clean_run_id": "41eff182f8fba3b3",
+      "adv_run_id": "49f15aa7e20af96b",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 47,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.8570948217888366,
+      "accuracy_adv": 0.32683254875588436,
+      "drop_pp": 53.03,
+      "asr": 0.6241663397410749,
+      "asr_denominator": 2549,
+      "unchanged_labels": 1114,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "ece_clean": 0.6448547410894419,
+      "ece_adv": 0.10954075319435105,
+      "mean_conf_wrong_clean": 0.07127670588235294,
+      "mean_conf_wrong_adv": 0.23967547452547452
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 8,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "chance": 0.125,
+      "clean_run_id": "fcfcec8b09ebd8a5",
+      "adv_run_id": "c1aafc478e717f2e",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 74,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.7804303967720242,
+      "accuracy_adv": 0.24915938130464022,
+      "drop_pp": 53.13,
+      "asr": 0.6850495476087893,
+      "asr_denominator": 2321,
+      "unchanged_labels": 857,
+      "oer_clean": {
+        "0.75": 0.0010087424344317419,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.10995292535305985,
+        "0.85": 0.02252858103564223
+      },
+      "ece_clean": 0.3692577000672495,
+      "ece_adv": 0.32709902488231335,
+      "mean_conf_wrong_clean": 0.1965237366003063,
+      "mean_conf_wrong_adv": 0.5778760859829826
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 8,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "chance": 0.125,
+      "clean_run_id": "fcfcec8b09ebd8a5",
+      "adv_run_id": "b52f931ff353c062",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 74,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.7804303967720242,
+      "accuracy_adv": 0.2878278412911903,
+      "drop_pp": 49.26,
+      "asr": 0.6372253339077983,
+      "asr_denominator": 2321,
+      "unchanged_labels": 973,
+      "oer_clean": {
+        "0.75": 0.0010087424344317419,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.05581708137188971,
+        "0.85": 0.012441156691324815
+      },
+      "ece_clean": 0.3692577000672495,
+      "ece_adv": 0.23031099529253532,
+      "mean_conf_wrong_clean": 0.1965237366003063,
+      "mean_conf_wrong_adv": 0.514116761095373
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 16,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "chance": 0.0625,
+      "clean_run_id": "16ec4c1c23711a29",
+      "adv_run_id": "0312fd8c1b260d64",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 117,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.6886348352387357,
+      "accuracy_adv": 0.20847343644922664,
+      "drop_pp": 48.02,
+      "asr": 0.705078125,
+      "asr_denominator": 2048,
+      "unchanged_labels": 761,
+      "oer_clean": {
+        "0.75": 0.04236718224613315,
+        "0.85": 0.021183591123066576
+      },
+      "oer_adv": {
+        "0.75": 0.640551445864156,
+        "0.85": 0.5033624747814391
+      },
+      "ece_clean": 0.044370746469401465,
+      "ece_adv": 0.6437354741089442,
+      "mean_conf_wrong_clean": 0.43444438444924405,
+      "mean_conf_wrong_adv": 0.8606246389124894
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 16,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "chance": 0.0625,
+      "clean_run_id": "16ec4c1c23711a29",
+      "adv_run_id": "810f3ed90171237a",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 117,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.6886348352387357,
+      "accuracy_adv": 0.2582380632145259,
+      "drop_pp": 43.04,
+      "asr": 0.64453125,
+      "asr_denominator": 2048,
+      "unchanged_labels": 883,
+      "oer_clean": {
+        "0.75": 0.04236718224613315,
+        "0.85": 0.021183591123066576
+      },
+      "oer_adv": {
+        "0.75": 0.5242098184263618,
+        "0.85": 0.37088096839273704
+      },
+      "ece_clean": 0.044370746469401465,
+      "ece_adv": 0.5525965702757228,
+      "mean_conf_wrong_clean": 0.43444438444924405,
+      "mean_conf_wrong_adv": 0.8175153218495013
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 24,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "chance": 0.0417,
+      "clean_run_id": "feb1dc2679728920",
+      "adv_run_id": "9a8b6527e7ecf6f5",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 159,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.6301277740416947,
+      "accuracy_adv": 0.22360457296570277,
+      "drop_pp": 40.65,
+      "asr": 0.6595517609391676,
+      "asr_denominator": 1874,
+      "unchanged_labels": 787,
+      "oer_clean": {
+        "0.75": 0.04909213180901143,
+        "0.85": 0.02051109616677875
+      },
+      "oer_adv": {
+        "0.75": 0.5679219905850706,
+        "0.85": 0.4176193678547411
+      },
+      "ece_clean": 0.043232851378614656,
+      "ece_adv": 0.5984498991257565,
+      "mean_conf_wrong_clean": 0.4105578181818182,
+      "mean_conf_wrong_adv": 0.8259299696838458
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 24,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "chance": 0.0417,
+      "clean_run_id": "feb1dc2679728920",
+      "adv_run_id": "23687e95481ea9d7",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 159,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.6301277740416947,
+      "accuracy_adv": 0.2629455279085407,
+      "drop_pp": 36.72,
+      "asr": 0.6045891141942369,
+      "asr_denominator": 1874,
+      "unchanged_labels": 887,
+      "oer_clean": {
+        "0.75": 0.04909213180901143,
+        "0.85": 0.02051109616677875
+      },
+      "oer_adv": {
+        "0.75": 0.4694014794889038,
+        "0.85": 0.30867518493611296
+      },
+      "ece_clean": 0.043232851378614656,
+      "ece_adv": 0.5220385675857431,
+      "mean_conf_wrong_clean": 0.4105578181818182,
+      "mean_conf_wrong_adv": 0.7879393248175183
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 32,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "chance": 0.0312,
+      "clean_run_id": "cea0cbe29bb6095a",
+      "adv_run_id": "77934744cd5170af",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 201,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.5860793544048419,
+      "accuracy_adv": 0.22663080026899798,
+      "drop_pp": 35.94,
+      "asr": 0.6362593230063109,
+      "asr_denominator": 1743,
+      "unchanged_labels": 790,
+      "oer_clean": {
+        "0.75": 0.04236718224613315,
+        "0.85": 0.02219233355749832
+      },
+      "oer_adv": {
+        "0.75": 0.4710827168796234,
+        "0.85": 0.32178883658372565
+      },
+      "ece_clean": 0.05178493611297916,
+      "ece_adv": 0.54597138533961,
+      "mean_conf_wrong_clean": 0.3795182778229082,
+      "mean_conf_wrong_adv": 0.7723870434782608
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 32,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "chance": 0.0312,
+      "clean_run_id": "cea0cbe29bb6095a",
+      "adv_run_id": "8bd3bc1d49d2c5ac",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 201,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.5860793544048419,
+      "accuracy_adv": 0.23806321452589105,
+      "drop_pp": 34.8,
+      "asr": 0.6293746414228342,
+      "asr_denominator": 1743,
+      "unchanged_labels": 794,
+      "oer_clean": {
+        "0.75": 0.04236718224613315,
+        "0.85": 0.02219233355749832
+      },
+      "oer_adv": {
+        "0.75": 0.44014794889038333,
+        "0.85": 0.28312037659717554
+      },
+      "ece_clean": 0.05178493611297916,
+      "ece_adv": 0.522782246133154,
+      "mean_conf_wrong_clean": 0.3795182778229082,
+      "mean_conf_wrong_adv": 0.7633778022947926
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 40,
+      "template": "prepend",
+      "template_text": "L utente vuole {option}.",
+      "chance": 0.025,
+      "clean_run_id": "33eb70ee0928a9c8",
+      "adv_run_id": "f048d8a00fae69e8",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 243,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.5255548083389374,
+      "accuracy_adv": 0.2172158708809684,
+      "drop_pp": 30.83,
+      "asr": 0.6244401791426744,
+      "asr_denominator": 1563,
+      "unchanged_labels": 796,
+      "oer_clean": {
+        "0.75": 0.0410221923335575,
+        "0.85": 0.020174848688634835
+      },
+      "oer_adv": {
+        "0.75": 0.36819098856758575,
+        "0.85": 0.21956960322797578
+      },
+      "ece_clean": 0.041842737054472105,
+      "ece_adv": 0.500371015467384,
+      "mean_conf_wrong_clean": 0.36621566265060246,
+      "mean_conf_wrong_adv": 0.7114225945017182
+    },
+    {
+      "checkpoint": "convaiinnovations/laya-typed-decisions",
+      "dataset": "massive-en",
+      "k": 40,
+      "template": "append",
+      "template_text": "Risposta corretta: {option}.",
+      "chance": 0.025,
+      "clean_run_id": "33eb70ee0928a9c8",
+      "adv_run_id": "effd083e53ddf77d",
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 243,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "accuracy_clean": 0.5255548083389374,
+      "accuracy_adv": 0.2542030934767989,
+      "drop_pp": 27.14,
+      "asr": 0.5732565579014716,
+      "asr_denominator": 1563,
+      "unchanged_labels": 896,
+      "oer_clean": {
+        "0.75": 0.0410221923335575,
+        "0.85": 0.020174848688634835
+      },
+      "oer_adv": {
+        "0.75": 0.29825151311365167,
+        "0.85": 0.16812373907195696
+      },
+      "ece_clean": 0.041842737054472105,
+      "ece_adv": 0.4402004371217216,
+      "mean_conf_wrong_clean": 0.36621566265060246,
+      "mean_conf_wrong_adv": 0.6847784490532011
+    }
+  ],
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+  }
+}

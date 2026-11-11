@@ -1,0 +1,23 @@
+{
+  "experiment": "E24_verbalizer_injection",
+  "checkpoint": "/home/kalizi/.cache/d1-3b",
+  "dataset": "massive-it",
+  "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+  "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+  "k": 4,
+  "n_cases": 2974,
+  "seed": 0,
+  "batch_size": 16,
+  "chunk": 256,
+  "backend": "d1-liquid",
+  "compiled": false,
+  "fast": false,
+  "confidence_definition": "max(p) for every k (d1 reads the answer off one softmax over the option-code tokens)",
+  "temperature_applied": null,
+  "quantization": "torch.bfloat16",
+  "readout": "verbalizer: single-token option codes, softmax over those logits only",
+  "device": "cuda",
+  "state_truncated": false,
+  "weight_sha256": "50e03317847caf6df9a9aee27ed40f20554a86a21e60d1d47ba41a422b546c0c",
+  "kind": "clean"
+}

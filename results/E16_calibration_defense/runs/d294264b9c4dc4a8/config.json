@@ -1,0 +1,28 @@
+{
+  "experiment": "E16_calibration_defense",
+  "checkpoint": "convaiinnovations/laya-multilingual",
+  "dataset": "massive-it",
+  "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+  "question_id": "intent",
+  "k": 16,
+  "n_cases": 2974,
+  "seed": 0,
+  "batch_size": 16,
+  "chunk": 32,
+  "template": "append",
+  "position": "tail",
+  "backend": "laya",
+  "compiled": false,
+  "fast": false,
+  "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+  "temperature_shipped": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "quantization": "none",
+  "device": "cuda",
+  "deployed": true,
+  "temperature_applied": 3.0,
+  "kind": "adversarial"
+}

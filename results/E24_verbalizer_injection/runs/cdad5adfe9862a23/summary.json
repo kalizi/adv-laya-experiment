@@ -1,0 +1,123 @@
+{
+  "experiment": "E24_verbalizer_injection",
+  "run_id": "cdad5adfe9862a23",
+  "config": {
+    "experiment": "E24_verbalizer_injection",
+    "checkpoint": "/home/kalizi/.cache/d1-3b",
+    "dataset": "massive-it",
+    "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+    "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+    "k": 40,
+    "n_cases": 2974,
+    "seed": 0,
+    "batch_size": 16,
+    "chunk": 256,
+    "backend": "d1-liquid",
+    "compiled": false,
+    "fast": false,
+    "confidence_definition": "max(p) for every k (d1 reads the answer off one softmax over the option-code tokens)",
+    "temperature_applied": null,
+    "quantization": "torch.bfloat16",
+    "readout": "verbalizer: single-token option codes, softmax over those logits only",
+    "device": "cuda",
+    "state_truncated": false,
+    "weight_sha256": "50e03317847caf6df9a9aee27ed40f20554a86a21e60d1d47ba41a422b546c0c",
+    "kind": "adversarial",
+    "arm": "bare-code"
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "50e03317847caf6df9a9aee27ed40f20554a86a21e60d1d47ba41a422b546c0c"
+  },
+  "finished_at": "2026-10-11T19:23:30.837718+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 2974,
+      "n_cases": 2974,
+      "accuracy": 0.847679892400807,
+      "accuracy_by_primitive": {
+        "choice": 0.847679892400807,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.021746618657137264,
+      "brier": 0.22619897467588743,
+      "brier_by_primitive": {
+        "choice": 0.22619897467588743,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.04169468728984533,
+        "0.85": 0.02488231338264963
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.04169468728984533,
+          "0.85": 0.02488231338264963
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.028917283120376596,
+        "0.85": 0.01983860121049092
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.028917283120376596,
+          "0.85": 0.01983860121049092
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.5781836926304068,
+      "batching": {
+        "question_groups": 2974,
+        "max_states_per_group": 1,
+        "batching_is_inert": false,
+        "token_budget": 65536,
+        "note": "d1 impacchetta le richieste su alberi di token: il batch e' reale, a differenza di massive-it su laya dove ogni caso e' un gruppo singleton",
+        "batch_size_requested": 16
+      },
+      "latency": {
+        "n": 12,
+        "p50_ms": 7038.46,
+        "p95_ms": 7108.43,
+        "mean_ms": 6821.27,
+        "std_ms": 774.93,
+        "total_ms": 81855.25,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 27.5236,
+        "decisions_per_s": 36.33
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 82.26,
+        "batches_this_process": 12
+      }
+    }
+  }
+}

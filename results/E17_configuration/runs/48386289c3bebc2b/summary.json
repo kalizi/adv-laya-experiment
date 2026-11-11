@@ -1,0 +1,94 @@
+{
+  "experiment": "E17_configuration",
+  "run_id": "48386289c3bebc2b",
+  "config": {
+    "experiment": "E17_configuration",
+    "kind": "adversarial",
+    "backend": "laya",
+    "compiled": false,
+    "fast": true,
+    "temperature_applied": null,
+    "temperature_shipped": [
+      1.0148024559020996,
+      1.0374259948730469,
+      1.0575125217437744
+    ],
+    "quantization": "none",
+    "encoder_linear_converted": null,
+    "device": "cuda",
+    "requested_fast": true,
+    "requested_compile": false,
+    "checkpoint_name": "convaiinnovations/laya-typed-decisions",
+    "dataset": "massive-it",
+    "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+    "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+    "k": 4,
+    "n_cases": 2974,
+    "seed": 0,
+    "batch_size": 1,
+    "template": "append"
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": null
+  },
+  "finished_at": "2026-10-02T10:02:43.246536+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 2974,
+      "n_cases": 2974,
+      "accuracy": 0.012777404169468728,
+      "accuracy_by_primitive": {
+        "choice": 0.012777404169468728,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.344848554135844,
+      "brier": 1.26117860430733,
+      "brier_by_primitive": {
+        "choice": 1.26117860430733,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "mean_conf_wrong": 0.35540231607629424,
+      "batching": {
+        "states": 2974,
+        "question_groups": 2964,
+        "max_states_per_group": 2,
+        "batch_size_effective": 2,
+        "batch_size_requested": 1,
+        "batching_is_inert": false
+      },
+      "latency": {
+        "n": 1,
+        "p50_ms": 24212.49,
+        "p95_ms": 24212.49,
+        "mean_ms": 24212.49,
+        "std_ms": 0.0,
+        "total_ms": 24212.49,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 8.1414,
+        "decisions_per_s": 122.83
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 24.35,
+        "batches_this_process": 1
+      }
+    }
+  }
+}

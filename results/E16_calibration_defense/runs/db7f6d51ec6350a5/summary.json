@@ -1,0 +1,127 @@
+{
+  "experiment": "E16_calibration_defense",
+  "run_id": "db7f6d51ec6350a5",
+  "config": {
+    "experiment": "E16_calibration_defense",
+    "checkpoint": "convaiinnovations/laya-typed-decisions",
+    "dataset": "massive-it",
+    "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+    "question_id": "intent",
+    "k": 16,
+    "n_cases": 2974,
+    "seed": 0,
+    "batch_size": 16,
+    "chunk": 32,
+    "template": "append",
+    "position": "tail",
+    "backend": "laya",
+    "compiled": false,
+    "fast": false,
+    "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+    "temperature_shipped": [
+      1.0148024559020996,
+      1.0374259948730469,
+      1.0575125217437744
+    ],
+    "quantization": "none",
+    "device": "cuda",
+    "deployed": true,
+    "temperature_applied": 1.25,
+    "kind": "adversarial"
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": null
+  },
+  "finished_at": "2026-10-06T21:02:50.734061+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 2974,
+      "n_cases": 2974,
+      "accuracy": 0.014122394082044385,
+      "accuracy_by_primitive": {
+        "choice": 0.014122394082044385,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.39569334229993275,
+      "brier": 1.2728957246772024,
+      "brier_by_primitive": {
+        "choice": 1.2728957246772024,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.0033624747814391394,
+        "0.85": 0.0
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.0033624747814391394,
+          "0.85": 0.0
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.08137188971082716,
+        "0.85": 0.005043712172158709
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.08137188971082716,
+          "0.85": 0.005043712172158709
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.41188345839017737,
+      "batching": {
+        "states": 2974,
+        "question_groups": 2974,
+        "max_states_per_group": 1,
+        "batch_size_effective": 1,
+        "batch_size_requested": 16,
+        "batching_is_inert": true
+      },
+      "latency": {
+        "n": 93,
+        "p50_ms": 539.79,
+        "p95_ms": 568.44,
+        "mean_ms": 543.77,
+        "std_ms": 11.2,
+        "total_ms": 50570.49,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 17.0042,
+        "decisions_per_s": 58.81
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 0.13,
+        "batches_this_process": 0
+      }
+    }
+  }
+}

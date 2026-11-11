@@ -1,0 +1,51 @@
+{
+  "convaiinnovations/laya-typed-decisions": {
+    "accuracy": 0.767,
+    "ece": 0.4170273,
+    "conf_right": 0.38652125162972617,
+    "conf_wrong": 0.22966051502145923,
+    "temperatures": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "load_warnings": [
+      "laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated."
+    ],
+    "max_len": 1024,
+    "head_max_len": 256,
+    "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+  },
+  "convaiinnovations/laya": {
+    "accuracy": 0.3595,
+    "ece": 0.15441300000000005,
+    "conf_right": 0.36383741307371353,
+    "conf_wrong": 0.2724161592505855,
+    "temperatures": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "load_warnings": [
+      "laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated."
+    ],
+    "max_len": 512,
+    "head_max_len": 192,
+    "weight_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+  },
+  "convaiinnovations/laya-multilingual": {
+    "accuracy": 0.3505,
+    "ece": 0.23831635,
+    "conf_right": 0.5602338088445079,
+    "conf_wrong": 0.4204523479599692,
+    "temperatures": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "load_warnings": [],
+    "max_len": 1024,
+    "head_max_len": 256,
+    "weight_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204"
+  }
+}

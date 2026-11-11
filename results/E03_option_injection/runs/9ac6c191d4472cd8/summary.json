@@ -1,0 +1,65 @@
+{
+  "experiment": "E03_option_injection",
+  "run_id": "9ac6c191d4472cd8",
+  "config": {
+    "experiment": "E03_option_injection",
+    "kind": "adversarial",
+    "template": "append",
+    "checkpoint": "convaiinnovations/laya-typed-decisions",
+    "dataset": "massive-en",
+    "dataset_sha256": "c70f75c6a543a26e249ec383df67733ad9b1066f6c0406c2e04a3f03356e407e",
+    "subset_hash": "eb8cbb23bb6afea42d9375ec9f3aeb2526c85d8adcf11bc28e7a7723fff6a7da",
+    "k": 4,
+    "n_cases": 100,
+    "seed": 0,
+    "batch_size": 16,
+    "chunk": 32,
+    "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e"
+  },
+  "finished_at": "2026-09-30T07:00:42.856426+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 100,
+      "n_cases": 100,
+      "accuracy": 0.31,
+      "accuracy_by_primitive": {
+        "choice": 0.31,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.09254699999999999,
+      "brier": 0.7495797979,
+      "brier_by_primitive": {
+        "choice": 0.7495797979,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "mean_conf_wrong": 0.25178695652173916,
+      "latency": {
+        "n": 4,
+        "p50_ms": 978.92,
+        "p95_ms": 1010.59,
+        "mean_ms": 771.63,
+        "std_ms": 436.02
+      },
+      "runtime_s": {
+        "this_process": 3.09,
+        "batches_this_process": 4
+      }
+    }
+  }
+}

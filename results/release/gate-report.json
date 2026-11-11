@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-07",
+  "status": "candidate_pass_uncommitted",
+  "git_commit": null,
+  "published": false,
+  "checks": {
+    "pytest": {"passed": 260, "failed": 0},
+    "ruff": "pass",
+    "paper_pdf": {"pages": 18, "latex_errors": 0, "undefined_references": 0, "overfull_boxes": 0},
+    "make_verify": {"verified_result_rows": 215, "problems": 0, "exploratory_e12_rows_without_raw_records": 41, "matched_paper_numbers": 265, "inventory_discrepancies": 0},
+    "e16_native_forward": {"current_scopes_verified": 2},
+    "run_identity_audit": {"stores": 696, "checkpoint_disagreements": 0, "historical_stores_without_identity_keys": 246},
+    "release_records": {"files": 351, "archives": 6, "hashes_verified": true},
+    "core_dataset_files": {"files": 7, "hashes_verified": true},
+    "e03_note_exceptions": {"classified_values": 32, "new_exceptions": 0},
+    "figures": {"count": 3, "source_scope": "paper_scopes.py", "byte_stable_with_source_date_epoch_zero": true}
+  },
+  "remaining_before_publication": [
+    "Create a commit when authorized; this candidate has no Git HEAD.",
+    "Run the same gate on a clean checkout of that commit."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "design": "same utterance set, K=16, append/tail; option sets vary with seed",
+  "rows": [
+    {
+      "seed": 0,
+      "scope": "E03_option_injection__laya-typed-decisions__massive-it__pad0__append-prepend__9a640a91b57048c9.json",
+      "scope_sha256": "088f16bfc64fd35b507b12a9244b9410ad8985cdf61a63afeea0e64acc3082e4",
+      "clean_run_id": "17ae23bd053b5524",
+      "adv_run_id": "b1c2b84f8fd3b6de",
+      "n_cases": 2974,
+      "correct_clean": 1211,
+      "flipped": 1173,
+      "asr": 0.9686209744013212,
+      "wilson_95": [
+        0.9572239608502312,
+        0.9770542199430509
+      ]
+    },
+    {
+      "seed": 1,
+      "scope": "E03_option_injection__laya-typed-decisions__massive-it__pad0__append__0f13212ce6c6dcb9.json",
+      "scope_sha256": "54d159b68bcbb1f950ae9b189a0a0815f958a4385bcdc820470ed1b6100f4586",
+      "clean_run_id": "22916e067283f7a8",
+      "adv_run_id": "da4990f86d11f946",
+      "n_cases": 2974,
+      "correct_clean": 1247,
+      "flipped": 1209,
+      "asr": 0.9695268644747393,
+      "wilson_95": [
+        0.9584506943398323,
+        0.9777190013274688
+      ]
+    },
+    {
+      "seed": 2,
+      "scope": "E03_option_injection__laya-typed-decisions__massive-it__pad0__append__3cf90c851f4967c9.json",
+      "scope_sha256": "440aab7ec44ab0d4d69545915bcaa959b7d52df75ad3c2df32717a8b10384903",
+      "clean_run_id": "2e0bd4bba0a6026a",
+      "adv_run_id": "b8850dcca53715f9",
+      "n_cases": 2974,
+      "correct_clean": 1180,
+      "flipped": 1145,
+      "asr": 0.9703389830508474,
+      "wilson_95": [
+        0.9590287819774547,
+        0.9785966571015571
+      ]
+    },
+    {
+      "seed": 3,
+      "scope": "E03_option_injection__laya-typed-decisions__massive-it__pad0__append__0e0ee20d769e518e.json",
+      "scope_sha256": "f772e01be55be6a6f0905e6ad802309094fbe86ce2e2d3336327e2a76e9778d8",
+      "clean_run_id": "e918ecc3d9abefb9",
+      "adv_run_id": "81c1651507646f34",
+      "n_cases": 2974,
+      "correct_clean": 1206,
+      "flipped": 1174,
+      "asr": 0.9734660033167496,
+      "wilson_95": [
+        0.9627823167702877,
+        0.9811429045148788
+      ]
+    }
+  ],
+  "asr_mean": 0.9704882063109144,
+  "asr_sample_sd": 0.002105570051038394,
+  "asr_range": [
+    0.9686209744013212,
+    0.9734660033167496
+  ],
+  "interpretation": "Wilson intervals are conditional per seed; seed spread is descriptive, not independent replication."
+}

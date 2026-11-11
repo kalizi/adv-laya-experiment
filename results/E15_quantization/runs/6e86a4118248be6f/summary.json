@@ -1,0 +1,80 @@
+{
+  "experiment": "E15_quantization",
+  "run_id": "6e86a4118248be6f",
+  "config": {
+    "experiment": "E15_quantization",
+    "config_name": "deberta-onnx/q4f16",
+    "checkpoint": "/home/kalizi/Scrivania/Projects/adversarial-laya/data/onnx/open-jev-deberta-v3-large",
+    "dataset": "banking77",
+    "dataset_sha256": "1a3b1ee8651f89076cdb64782eacae7732e8551faa3f68c6fecf2fcb73ea8793",
+    "subset_hash": "cb88c247513aefa5aa24be76cb5df285105ff4041dc4eda601082af9cf3f075f",
+    "k": 32,
+    "n_cases": 1000,
+    "seed": 0,
+    "batch_size": 16,
+    "chunk": 32,
+    "template": "prepend",
+    "weight_sha256": "f9f014e96682fa0a9ac3c7b3b41786f58a2996dbff890b8ed18eed3869cc495d",
+    "backend": "deberta-onnx",
+    "compiled": false,
+    "fast": false,
+    "variant": "q4f16",
+    "device": "onnx:CUDAExecutionProvider",
+    "kind": "clean"
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "f9f014e96682fa0a9ac3c7b3b41786f58a2996dbff890b8ed18eed3869cc495d"
+  },
+  "finished_at": "2026-10-01T14:06:14.168922+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.931,
+      "accuracy_by_primitive": {
+        "choice": 0.931,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.2968401,
+      "brier": 0.18147473253000002,
+      "brier_by_primitive": {
+        "choice": 0.18147473253000002,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.001,
+        "0.85": 0.0
+      },
+      "mean_conf_wrong": 0.35454202898550724,
+      "latency": {
+        "n": 32,
+        "p50_ms": 423.08,
+        "p95_ms": 442.61,
+        "mean_ms": 413.61,
+        "std_ms": 57.23,
+        "total_ms": 13235.41,
+        "devices": [
+          "CUDAExecutionProvider"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 13.2354,
+        "decisions_per_s": 75.55
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 13.29,
+        "batches_this_process": 32
+      }
+    }
+  }
+}

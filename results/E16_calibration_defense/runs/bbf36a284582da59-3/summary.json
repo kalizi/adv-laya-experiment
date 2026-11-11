@@ -1,0 +1,93 @@
+{
+  "experiment": "E16_calibration_defense",
+  "run_id": "bbf36a284582da59-3",
+  "config": {
+    "experiment": "E16_calibration_defense",
+    "checkpoint": "convaiinnovations/laya-multilingual",
+    "dataset": "massive-it",
+    "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+    "question_id": "intent",
+    "k": 16,
+    "n_cases": 1000,
+    "seed": 0,
+    "batch_size": 16,
+    "chunk": 32,
+    "template": "prepend",
+    "backend": "laya",
+    "compiled": false,
+    "fast": false,
+    "temperature_shipped": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "quantization": "none",
+    "device": "cuda",
+    "kind": "adversarial",
+    "deployed": true,
+    "temperature_applied": 2.0
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": null
+  },
+  "finished_at": "2026-10-02T11:36:43.098342+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 1000,
+      "n_cases": 1000,
+      "accuracy": 0.15,
+      "accuracy_by_primitive": {
+        "choice": 0.15,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.46196629999999994,
+      "brier": 1.30742117862,
+      "brier_by_primitive": {
+        "choice": 1.30742117862,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.323,
+        "0.85": 0.248
+      },
+      "mean_conf_wrong": 0.628322,
+      "batching": {
+        "states": 1000,
+        "question_groups": 1000,
+        "max_states_per_group": 1,
+        "batch_size_effective": 1,
+        "batch_size_requested": 16,
+        "batching_is_inert": true
+      },
+      "latency": {
+        "n": 32,
+        "p50_ms": 462.35,
+        "p95_ms": 476.34,
+        "mean_ms": 451.13,
+        "std_ms": 62.73,
+        "total_ms": 14436.25,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 14.4362,
+        "decisions_per_s": 69.27
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 14.49,
+        "batches_this_process": 32
+      }
+    }
+  }
+}

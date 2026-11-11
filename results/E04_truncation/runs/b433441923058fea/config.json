@@ -1,0 +1,8 @@
+{
+  "experiment": "E04_truncation",
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "filler_mult": 0.5,
+  "filler_tokens": 481,
+  "n_cases": 400,
+  "dataset": "typed-decisions/test"
+}

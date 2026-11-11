@@ -1,0 +1,9 @@
+{"ms": 6292.003, "decisions": 32, "device": "CPUExecutionProvider", "dtype": "fp32"}
+{"ms": 5495.711, "decisions": 32, "device": "CPUExecutionProvider", "dtype": "fp32"}
+{"ms": 5251.785, "decisions": 32, "device": "CPUExecutionProvider", "dtype": "fp32"}
+{"ms": 5918.455, "decisions": 32, "device": "CPUExecutionProvider", "dtype": "fp32"}
+{"ms": 6756.799, "decisions": 32, "device": "CPUExecutionProvider", "dtype": "fp32"}
+{"ms": 6595.927, "decisions": 32, "device": "CPUExecutionProvider", "dtype": "fp32"}
+{"ms": 5601.377, "decisions": 32, "device": "CPUExecutionProvider", "dtype": "fp32"}
+{"ms": 5915.155, "decisions": 32, "device": "CPUExecutionProvider", "dtype": "fp32"}
+{"ms": 5909.951, "decisions": 32, "device": "CPUExecutionProvider", "dtype": "fp32"}

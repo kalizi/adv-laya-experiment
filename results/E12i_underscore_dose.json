@@ -1,0 +1,178 @@
+{
+  "experiment": "E12i_underscore",
+  "question": "un carattere in-distribuzione che non costa token attacca?",
+  "axes": {
+    "checkpoint": "convaiinnovations/laya-typed-decisions",
+    "n_cases": 30,
+    "seed": 0,
+    "doses": [
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "study_valid": true
+  },
+  "study_valid": {
+    "why": "l'inserimento ha firma (state) -> str: non vede questions ne gold",
+    "verified_per_row": "questions_untouched"
+  },
+  "results": [
+    {
+      "probe": "_ dose 10%",
+      "dose": 0.1,
+      "delta_tokens_mean": 3.433333333333333,
+      "flips": 1,
+      "n_decisions": 150,
+      "asr": 0.008849557522123894,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.2756,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "_ dose 25%",
+      "dose": 0.25,
+      "delta_tokens_mean": 9.133333333333333,
+      "flips": 2,
+      "n_decisions": 150,
+      "asr": 0.017699115044247787,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.38885000000000003,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "_ dose 50%",
+      "dose": 0.5,
+      "delta_tokens_mean": 17.5,
+      "flips": 3,
+      "n_decisions": 150,
+      "asr": 0.02654867256637168,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.30593333333333333,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "_ dose 100%",
+      "dose": 1.0,
+      "delta_tokens_mean": 35.733333333333334,
+      "flips": 10,
+      "n_decisions": 150,
+      "asr": 0.08849557522123894,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.19836,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "'-' dose 100%",
+      "dose": 1.0,
+      "delta_tokens_mean": 35.733333333333334,
+      "flips": 5,
+      "n_decisions": 150,
+      "asr": 0.04424778761061947,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.21522000000000002,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "',' dose 100%",
+      "dose": 1.0,
+      "delta_tokens_mean": 35.733333333333334,
+      "flips": 4,
+      "n_decisions": 150,
+      "asr": 0.035398230088495575,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.2482,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "'.' dose 100%",
+      "dose": 1.0,
+      "delta_tokens_mean": 35.733333333333334,
+      "flips": 4,
+      "n_decisions": 150,
+      "asr": 0.035398230088495575,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.245,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "'@' dose 100%",
+      "dose": 1.0,
+      "delta_tokens_mean": 39.733333333333334,
+      "flips": 5,
+      "n_decisions": 150,
+      "asr": 0.04424778761061947,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.21442,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "'/' dose 100%",
+      "dose": 1.0,
+      "delta_tokens_mean": 39.733333333333334,
+      "flips": 6,
+      "n_decisions": 150,
+      "asr": 0.05309734513274336,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.20253333333333334,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "spazi in coda x10",
+      "dose": null,
+      "delta_tokens_mean": 1.0,
+      "flips": 1,
+      "n_decisions": 150,
+      "asr": 0.008849557522123894,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.289,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "spazi in coda x30",
+      "dose": null,
+      "delta_tokens_mean": 2.0,
+      "flips": 2,
+      "n_decisions": 150,
+      "asr": 0.017699115044247787,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.17935,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "spazi in coda x100",
+      "dose": null,
+      "delta_tokens_mean": 5.0,
+      "flips": 2,
+      "n_decisions": 150,
+      "asr": 0.017699115044247787,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.1789,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 12
+    },
+    {
+      "probe": "omoglifi prova A",
+      "dose": null,
+      "delta_tokens_mean": 286.06666666666666,
+      "flips": 79,
+      "n_decisions": 150,
+      "asr": 0.6991150442477876,
+      "asr_denominator": 113,
+      "mean_conf_on_wrong": 0.21120759493670888,
+      "oer_adv_conf_075": 0,
+      "distinct_labels_predicted": 7
+    }
+  ]
+}

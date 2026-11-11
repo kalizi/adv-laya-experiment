@@ -1,0 +1,26 @@
+{
+  "experiment": "E17_configuration",
+  "kind": "clean",
+  "backend": "laya",
+  "compiled": true,
+  "fast": false,
+  "temperature_applied": null,
+  "temperature_shipped": [
+    1.0148024559020996,
+    1.0374259948730469,
+    1.0575125217437744
+  ],
+  "quantization": "none",
+  "encoder_linear_converted": null,
+  "device": "cuda",
+  "requested_fast": false,
+  "requested_compile": true,
+  "checkpoint_name": "convaiinnovations/laya-typed-decisions",
+  "dataset": "massive-it",
+  "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+  "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+  "k": 4,
+  "n_cases": 2974,
+  "seed": 0,
+  "batch_size": 16
+}

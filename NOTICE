@@ -1,0 +1,12 @@
+Unicode data
+
+This repository includes Unicode data files derived from the Unicode Character
+Database and UTS #39 (confusables.txt), distributed under the Unicode License
+(https://www.unicode.org/copyright.html). The files are used as-is for the
+homoglyph and confusable-character probes.
+
+Origin:
+- tools/data/confusables.txt
+- data/uts39/
+
+No modification is claimed to the Unicode data itself.

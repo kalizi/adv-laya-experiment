@@ -1,0 +1,30 @@
+{
+  "experiment": "E03_option_injection",
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "dataset": "massive-it",
+  "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+  "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+  "k": 16,
+  "n_cases": 2974,
+  "seed": 1,
+  "batch_size": 16,
+  "chunk": 32,
+  "backend": "laya",
+  "compiled": false,
+  "fast": false,
+  "confidence_definition": "max(p,1-p) if k==2 else 1-H(p)/log(k)",
+  "temperature_applied": null,
+  "temperature_shipped": [
+    1.0148024559020996,
+    1.0374259948730469,
+    1.0575125217437744
+  ],
+  "quantization": "none",
+  "encoder_linear_converted": null,
+  "device": "cuda",
+  "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+  "kind": "adversarial",
+  "template": "append",
+  "position": "tail",
+  "pad_tokens": 0
+}

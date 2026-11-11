@@ -1,0 +1,15 @@
+{
+  "experiment": "E01_baseline",
+  "checkpoint": "convaiinnovations/laya",
+  "dataset": "typed-decisions/test",
+  "dataset_sha256": "337086d01dfa687105078288f0862d3c40d7e914483febc8323be948dc9590bb",
+  "subset_hash": "f45512a0342cd6de5c3b03f84de01bf71baf12e1061e04d3ac29916fc0e8473a",
+  "n_cases": 400,
+  "min_agreement": null,
+  "weight_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+  "batch_size": 16,
+  "chunk": 32,
+  "backend": "laya",
+  "compiled": false,
+  "fast": false
+}

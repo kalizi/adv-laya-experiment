@@ -1,0 +1,21 @@
+{
+  "experiment": "E17_configuration",
+  "kind": "adversarial",
+  "backend": "laya",
+  "compiled": false,
+  "fast": true,
+  "quantization": "none",
+  "encoder_linear_converted": null,
+  "device": "cuda",
+  "requested_fast": true,
+  "requested_compile": false,
+  "checkpoint_name": "convaiinnovations/laya-typed-decisions",
+  "dataset": "massive-it",
+  "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+  "subset_hash": "c165c0e62b730b023a41dacd678e335cdc9778b9591e2f0cd7f9f83c467ff46d",
+  "k": 16,
+  "n_cases": 300,
+  "seed": 0,
+  "batch_size": 1,
+  "template": "prepend"
+}

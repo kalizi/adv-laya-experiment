@@ -1,0 +1,72 @@
+{
+  "experiment": "E01_baseline",
+  "run_id": "5dd94b3a25640b85",
+  "config": {
+    "experiment": "E01_baseline",
+    "checkpoint": "convaiinnovations/laya-multilingual",
+    "dataset": "typed-decisions/test",
+    "dataset_sha256": "337086d01dfa687105078288f0862d3c40d7e914483febc8323be948dc9590bb",
+    "subset_hash": "f45512a0342cd6de5c3b03f84de01bf71baf12e1061e04d3ac29916fc0e8473a",
+    "n_cases": 400,
+    "min_agreement": null,
+    "weight_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204",
+    "batch_size": 16,
+    "chunk": 32
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204"
+  },
+  "finished_at": "2026-10-01T07:27:11.648288+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 2000,
+      "n_cases": 400,
+      "accuracy": 0.3505,
+      "accuracy_by_primitive": {
+        "choice": 0.29333333333333333,
+        "noul": 0.49833333333333335,
+        "score": 0.2825
+      },
+      "ece": 0.23831635,
+      "brier": 0.8908055838850001,
+      "brier_by_primitive": {
+        "choice": 0.9896785541666666,
+        "noul": 0.8232467414000001,
+        "score": 0.8673199880375
+      },
+      "oer": {
+        "0.75": 0.143,
+        "0.85": 0.1215
+      },
+      "mean_conf_wrong": 0.4204523479599692,
+      "latency": {
+        "n": 13,
+        "p50_ms": 770.0,
+        "p95_ms": 1080.93,
+        "mean_ms": 723.9,
+        "std_ms": 257.6,
+        "total_ms": 9410.7,
+        "devices": [
+          "cuda"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 4.7054,
+        "decisions_per_s": 212.52
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 9.45,
+        "batches_this_process": 13
+      }
+    },
+    "skipped": 0
+  }
+}

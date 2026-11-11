@@ -1,0 +1,719 @@
+{
+  "experiment": "E15_quantization",
+  "question": "la riduzione di precisione chiude l'attacco, lo lascia passare, o lo facilita?",
+  "axes": {
+    "backend": "deberta-onnx",
+    "precisioni": [
+      "fp32",
+      "fp16",
+      "q4",
+      "q4f16"
+    ],
+    "k": [
+      16
+    ],
+    "n_cases": 1000,
+    "template": "prepend",
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "thresholds": {
+    "degenerate_threshold": "accuracy pulita < 2.0/k",
+    "soglia_asr": "0.50 (criteri-vittoria)",
+    "oer_soglia": 0.75
+  },
+  "results": [
+    {
+      "config": "deberta-onnx/fp32",
+      "k": 16,
+      "seed": 0,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "fp32",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.952,
+      "accuracy_adv": 0.499,
+      "drop_pp": 45.3,
+      "asr": 0.47689075630252103,
+      "asr_denominator": 952,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.07,
+        "0.85": 0.01
+      },
+      "mean_conf_wrong_clean": 0.31154375,
+      "mean_conf_wrong_adv": 0.5873453093812375,
+      "ece_clean": 0.30017960000000005,
+      "ece_adv": 0.1325419,
+      "ms_per_decision": 10.7926,
+      "decisions_per_s": 92.66,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "fp32",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "0a837969383f12fe",
+      "adv_run_id": "c18c930552a0bf9d"
+    },
+    {
+      "config": "deberta-onnx/fp16",
+      "k": 16,
+      "seed": 0,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "fp16",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.952,
+      "accuracy_adv": 0.5,
+      "drop_pp": 45.2,
+      "asr": 0.47584033613445376,
+      "asr_denominator": 952,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.071,
+        "0.85": 0.01
+      },
+      "mean_conf_wrong_clean": 0.3121083333333333,
+      "mean_conf_wrong_adv": 0.5882655999999999,
+      "ece_clean": 0.2995375,
+      "ece_adv": 0.1339551,
+      "ms_per_decision": 8.3327,
+      "decisions_per_s": 120.01,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "fp16",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "5652e386b7af7565",
+      "adv_run_id": "ba03b94dce7419f3"
+    },
+    {
+      "config": "deberta-onnx/q4",
+      "k": 16,
+      "seed": 0,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "q4",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.957,
+      "accuracy_adv": 0.469,
+      "drop_pp": 48.8,
+      "asr": 0.509926854754441,
+      "asr_denominator": 957,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.074,
+        "0.85": 0.007
+      },
+      "mean_conf_wrong_clean": 0.3096069767441861,
+      "mean_conf_wrong_adv": 0.5920391713747646,
+      "ece_clean": 0.31556249999999997,
+      "ece_adv": 0.15933029999999998,
+      "ms_per_decision": 15.878,
+      "decisions_per_s": 62.98,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "q4",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "d4d8070544a8fb61",
+      "adv_run_id": "d81ee6d21a9d4581"
+    },
+    {
+      "config": "deberta-onnx/q4f16",
+      "k": 16,
+      "seed": 0,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "q4f16",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.957,
+      "accuracy_adv": 0.469,
+      "drop_pp": 48.8,
+      "asr": 0.509926854754441,
+      "asr_denominator": 957,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.074,
+        "0.85": 0.007
+      },
+      "mean_conf_wrong_clean": 0.31011627906976746,
+      "mean_conf_wrong_adv": 0.5925344632768362,
+      "ece_clean": 0.3149071,
+      "ece_adv": 0.15974799999999997,
+      "ms_per_decision": 9.6842,
+      "decisions_per_s": 103.26,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "q4f16",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "94b1ca3623cc6cfc",
+      "adv_run_id": "b9f1b6b547cd9ad6"
+    },
+    {
+      "config": "deberta-onnx/fp32",
+      "k": 16,
+      "seed": 1,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "fp32",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.96,
+      "accuracy_adv": 0.498,
+      "drop_pp": 46.2,
+      "asr": 0.48125,
+      "asr_denominator": 960,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.062,
+        "0.85": 0.01
+      },
+      "mean_conf_wrong_clean": 0.3214375,
+      "mean_conf_wrong_adv": 0.5748358565737052,
+      "ece_clean": 0.3125829,
+      "ece_adv": 0.1139111,
+      "ms_per_decision": 11.1431,
+      "decisions_per_s": 89.74,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "fp32",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "af681ac3d0c38c62",
+      "adv_run_id": "a50851eafae44126"
+    },
+    {
+      "config": "deberta-onnx/fp16",
+      "k": 16,
+      "seed": 1,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "fp16",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.96,
+      "accuracy_adv": 0.497,
+      "drop_pp": 46.3,
+      "asr": 0.4822916666666667,
+      "asr_denominator": 960,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.062,
+        "0.85": 0.011
+      },
+      "mean_conf_wrong_clean": 0.3221,
+      "mean_conf_wrong_adv": 0.575327634194831,
+      "ece_clean": 0.3119465,
+      "ece_adv": 0.1152932,
+      "ms_per_decision": 8.4983,
+      "decisions_per_s": 117.67,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "fp16",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "17b9598f1274a1b6",
+      "adv_run_id": "9a815f99b1b53a72"
+    },
+    {
+      "config": "deberta-onnx/q4",
+      "k": 16,
+      "seed": 1,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "q4",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.958,
+      "accuracy_adv": 0.463,
+      "drop_pp": 49.5,
+      "asr": 0.5177453027139874,
+      "asr_denominator": 958,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.059,
+        "0.85": 0.008
+      },
+      "mean_conf_wrong_clean": 0.32384999999999997,
+      "mean_conf_wrong_adv": 0.5826575418994413,
+      "ece_clean": 0.3203228,
+      "ece_adv": 0.15514899999999998,
+      "ms_per_decision": 16.4007,
+      "decisions_per_s": 60.97,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "q4",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "800aa3746900ca11",
+      "adv_run_id": "f34ccd606d97f1c4"
+    },
+    {
+      "config": "deberta-onnx/q4f16",
+      "k": 16,
+      "seed": 1,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "q4f16",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.958,
+      "accuracy_adv": 0.464,
+      "drop_pp": 49.4,
+      "asr": 0.5167014613778705,
+      "asr_denominator": 958,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.06,
+        "0.85": 0.008
+      },
+      "mean_conf_wrong_clean": 0.3245,
+      "mean_conf_wrong_adv": 0.5832559701492538,
+      "ece_clean": 0.3196582,
+      "ece_adv": 0.15455229999999998,
+      "ms_per_decision": 9.9557,
+      "decisions_per_s": 100.45,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "q4f16",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "ea782fbb9cef2f35",
+      "adv_run_id": "dd958f98de8e7ea7"
+    },
+    {
+      "config": "deberta-onnx/fp32",
+      "k": 16,
+      "seed": 2,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "fp32",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.966,
+      "accuracy_adv": 0.507,
+      "drop_pp": 45.9,
+      "asr": 0.4751552795031056,
+      "asr_denominator": 966,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.054,
+        "0.85": 0.012
+      },
+      "mean_conf_wrong_clean": 0.3115264705882353,
+      "mean_conf_wrong_adv": 0.5811858012170386,
+      "ece_clean": 0.3143842,
+      "ece_adv": 0.11743250000000001,
+      "ms_per_decision": 11.2288,
+      "decisions_per_s": 89.06,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "fp32",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "cbca672d7e5e7ebf",
+      "adv_run_id": "c92f1960025a21b7"
+    },
+    {
+      "config": "deberta-onnx/fp16",
+      "k": 16,
+      "seed": 2,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "fp16",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.966,
+      "accuracy_adv": 0.508,
+      "drop_pp": 45.8,
+      "asr": 0.474120082815735,
+      "asr_denominator": 966,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.054,
+        "0.85": 0.012
+      },
+      "mean_conf_wrong_clean": 0.3119088235294118,
+      "mean_conf_wrong_adv": 0.5816166666666667,
+      "ece_clean": 0.31376519999999997,
+      "ece_adv": 0.11682160000000004,
+      "ms_per_decision": 8.4767,
+      "decisions_per_s": 117.97,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "fp16",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "98b805fc04c63a99",
+      "adv_run_id": "ad1e63c81064dacd"
+    },
+    {
+      "config": "deberta-onnx/q4",
+      "k": 16,
+      "seed": 2,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "q4",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.958,
+      "accuracy_adv": 0.468,
+      "drop_pp": 49.0,
+      "asr": 0.511482254697286,
+      "asr_denominator": 958,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.062,
+        "0.85": 0.007
+      },
+      "mean_conf_wrong_clean": 0.3080904761904762,
+      "mean_conf_wrong_adv": 0.5895312030075188,
+      "ece_clean": 0.3151917,
+      "ece_adv": 0.14476760000000002,
+      "ms_per_decision": 16.4696,
+      "decisions_per_s": 60.72,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "q4",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "6c90b63705c9ab76",
+      "adv_run_id": "e75068d8f0225e5a"
+    },
+    {
+      "config": "deberta-onnx/q4f16",
+      "k": 16,
+      "seed": 2,
+      "dataset": "banking77",
+      "baseline_degenerate": false,
+      "baseline_note": null,
+      "backend": "deberta-onnx",
+      "compiled": false,
+      "fast": false,
+      "variant": "q4f16",
+      "device": "onnx:CUDAExecutionProvider",
+      "n_decisions": 1000,
+      "accuracy_clean": 0.958,
+      "accuracy_adv": 0.467,
+      "drop_pp": 49.1,
+      "asr": 0.5125260960334029,
+      "asr_denominator": 958,
+      "oer_clean": {
+        "0.75": 0.0,
+        "0.85": 0.0
+      },
+      "oer_adv": {
+        "0.75": 0.062,
+        "0.85": 0.007
+      },
+      "mean_conf_wrong_clean": 0.3085428571428571,
+      "mean_conf_wrong_adv": 0.5899572232645404,
+      "ece_clean": 0.31452410000000003,
+      "ece_adv": 0.14623579999999997,
+      "ms_per_decision": 9.9037,
+      "decisions_per_s": 100.97,
+      "devices": [
+        "CUDAExecutionProvider"
+      ],
+      "quantization_report": {
+        "quantization": "q4f16",
+        "note": "precisione nativa del grafo"
+      },
+      "head_audit": {
+        "checked_cases": 200,
+        "head_max_len": 256,
+        "max_head_tokens": 256,
+        "missing_options": 0,
+        "missing_gold": 0,
+        "over_budget": false
+      },
+      "clean_run_id": "7c5e6303649324bb",
+      "adv_run_id": "d278a7900e39c636"
+    }
+  ],
+  "replicate_spread": [
+    {
+      "config": "deberta-onnx/fp32",
+      "k": 16,
+      "n_replicates": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "asr_min": 0.4752,
+      "asr_max": 0.4813,
+      "asr_mean": 0.4778,
+      "asr_spread_pp": 0.61,
+      "asr_straddles_threshold": false,
+      "accuracy_clean_min": 0.952,
+      "accuracy_clean_max": 0.966,
+      "oer_adv_max": 0.07,
+      "note": null
+    },
+    {
+      "config": "deberta-onnx/fp16",
+      "k": 16,
+      "n_replicates": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "asr_min": 0.4741,
+      "asr_max": 0.4823,
+      "asr_mean": 0.4774,
+      "asr_spread_pp": 0.82,
+      "asr_straddles_threshold": false,
+      "accuracy_clean_min": 0.952,
+      "accuracy_clean_max": 0.966,
+      "oer_adv_max": 0.071,
+      "note": null
+    },
+    {
+      "config": "deberta-onnx/q4",
+      "k": 16,
+      "n_replicates": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "asr_min": 0.5099,
+      "asr_max": 0.5177,
+      "asr_mean": 0.5131,
+      "asr_spread_pp": 0.78,
+      "asr_straddles_threshold": false,
+      "accuracy_clean_min": 0.957,
+      "accuracy_clean_max": 0.958,
+      "oer_adv_max": 0.074,
+      "note": null
+    },
+    {
+      "config": "deberta-onnx/q4f16",
+      "k": 16,
+      "n_replicates": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "asr_min": 0.5099,
+      "asr_max": 0.5167,
+      "asr_mean": 0.5131,
+      "asr_spread_pp": 0.68,
+      "asr_straddles_threshold": false,
+      "accuracy_clean_min": 0.957,
+      "accuracy_clean_max": 0.958,
+      "oer_adv_max": 0.074,
+      "note": null
+    }
+  ],
+  "head_budget_walls": [],
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": null
+  }
+}

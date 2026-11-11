@@ -1,0 +1,119 @@
+{
+  "experiment": "E03_option_injection",
+  "run_id": "f7bd7be0a4837afe",
+  "config": {
+    "experiment": "E03_option_injection",
+    "kind": "adversarial",
+    "template": "append",
+    "position": "tail",
+    "pad_tokens": 0,
+    "checkpoint": "clm-v0.1-8B-Q5_K_M",
+    "dataset": "massive-en",
+    "dataset_sha256": "c70f75c6a543a26e249ec383df67733ad9b1066f6c0406c2e04a3f03356e407e",
+    "subset_hash": "33aa94f6b04c58b015554af6faa1fd8b40614dc0442ac2ab8e3704ff41fa3bd8",
+    "k": 4,
+    "n_cases": 2974,
+    "seed": 0,
+    "batch_size": 16,
+    "chunk": 32,
+    "weight_sha256": "5c59fb5530fa9081fc6f1028e8776c5b45a328d88facdbbf33b9d910bc8a5d52"
+  },
+  "env": {
+    "python": "3.14.7",
+    "platform": "Linux-6.19.10-300.fc44.x86_64-x86_64-with-glibc2.43",
+    "laya": "0.3.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "5.17.0",
+    "device": "NVIDIA GeForce RTX 3080",
+    "cuda_available": true,
+    "weight_sha256": "5c59fb5530fa9081fc6f1028e8776c5b45a328d88facdbbf33b9d910bc8a5d52"
+  },
+  "finished_at": "2026-10-05T06:56:21.812181+00:00",
+  "summary": {
+    "metrics": {
+      "n_decisions": 2974,
+      "n_cases": 2974,
+      "accuracy": 0.265635507733692,
+      "accuracy_by_primitive": {
+        "choice": 0.265635507733692,
+        "noul": null,
+        "score": null
+      },
+      "ece": 0.3857481480584016,
+      "brier": 1.0844382181091847,
+      "brier_by_primitive": {
+        "choice": 1.0844382181091847,
+        "noul": null,
+        "score": null
+      },
+      "oer": {
+        "0.75": 0.2844653665097512,
+        "0.85": 0.19166106254203094
+      },
+      "oer_by_primitive": {
+        "choice": {
+          "0.75": 0.2844653665097512,
+          "0.85": 0.19166106254203094
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "oer_margin": {
+        "0.75": 0.23873570948217887,
+        "0.85": 0.1566913248150639
+      },
+      "oer_margin_by_primitive": {
+        "choice": {
+          "0.75": 0.23873570948217887,
+          "0.85": 0.1566913248150639
+        },
+        "noul": {
+          "0.75": null,
+          "0.85": null
+        },
+        "score": {
+          "0.75": null,
+          "0.85": null
+        }
+      },
+      "mean_conf_wrong": 0.6371646154905342,
+      "batching": {
+        "states": 2974,
+        "question_groups": 2966,
+        "max_states_per_group": 2,
+        "batch_size_effective": 8,
+        "batch_size_requested": 16,
+        "batching_is_inert": false,
+        "concurrency": 8,
+        "encoder_slots": 8,
+        "note": "CLM non fa un forward con padding: ogni caso e' una richiesta HTTP e il lever e' la concorrenza sui slot di llama-server."
+      },
+      "latency": {
+        "n": 93,
+        "p50_ms": 76.05,
+        "p95_ms": 86.65,
+        "mean_ms": 76.2,
+        "std_ms": 5.09,
+        "total_ms": 7086.35,
+        "devices": [
+          "llama.cpp:gpu(Q5_K - Medium) vram=7974MiB weights=5946MiB"
+        ]
+      },
+      "throughput": {
+        "ms_per_decision": 2.3828,
+        "decisions_per_s": 419.68
+      },
+      "throughput_basis": "decisioni dentro i batch cronometrati",
+      "runtime_s": {
+        "this_process": 7.29,
+        "batches_this_process": 93
+      }
+    }
+  }
+}

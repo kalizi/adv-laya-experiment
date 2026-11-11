@@ -1,0 +1,17 @@
+{
+  "experiment": "E03_option_injection",
+  "kind": "adversarial",
+  "template": "prepend",
+  "position": "head",
+  "pad_tokens": 0,
+  "checkpoint": "clm-v0.1-8B",
+  "dataset": "massive-it",
+  "dataset_sha256": "d5125df760586376fdcbbda4dd5b0b8fa408dfb6d6219faa8a6dea4d3f74c194",
+  "subset_hash": "eb8cbb23bb6afea42d9375ec9f3aeb2526c85d8adcf11bc28e7a7723fff6a7da",
+  "k": 4,
+  "n_cases": 100,
+  "seed": 0,
+  "batch_size": 16,
+  "chunk": 32,
+  "weight_sha256": "9801569e1482da021a30f5fe41da60f006c5a70ee98c561af4aeddac44a49181"
+}

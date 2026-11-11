@@ -1,0 +1,18 @@
+{
+  "experiment": "E12_surface",
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "dataset": "typed-decisions/test",
+  "k": null,
+  "n_cases": 30,
+  "seed": 0,
+  "batch_size": 16,
+  "chunk": 32,
+  "backend": "laya",
+  "compiled": false,
+  "fast": false,
+  "quantization": "none",
+  "device": "cuda",
+  "kind": "adversarial",
+  "operator": "zero_width_space",
+  "dose": 1.0
+}

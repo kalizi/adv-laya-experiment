@@ -1,0 +1,7 @@
+{"ms": 354.574, "decisions": 32, "device": "CUDAExecutionProvider", "dtype": "fp16"}
+{"ms": 259.342, "decisions": 32, "device": "CUDAExecutionProvider", "dtype": "fp16"}
+{"ms": 253.456, "decisions": 32, "device": "CUDAExecutionProvider", "dtype": "fp16"}
+{"ms": 259.049, "decisions": 32, "device": "CUDAExecutionProvider", "dtype": "fp16"}
+{"ms": 270.19, "decisions": 32, "device": "CUDAExecutionProvider", "dtype": "fp16"}
+{"ms": 270.395, "decisions": 32, "device": "CUDAExecutionProvider", "dtype": "fp16"}
+{"ms": 69.619, "decisions": 8, "device": "CUDAExecutionProvider", "dtype": "fp16"}

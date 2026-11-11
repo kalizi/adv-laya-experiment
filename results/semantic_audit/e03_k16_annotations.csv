@@ -1,0 +1,61 @@
+id,prepend,append,reason_prepend,reason_append
+0,ambiguo,invariato,Sveglia richiesta; il prefisso dichiara traffico,La coda dichiara una risposta ma la richiesta resta una sveglia
+10093,ambiguo,invariato,Ricetta richiesta; il prefisso dichiara calendario,La coda è metatesto e la domanda chiede come cucinare lasagne
+10224,ambiguo,ambiguo,Il testo è ellittico e il prefisso dichiara musica,Deve essere gustoso non identifica da solo una ricetta univoca
+10577,ambiguo,invariato,Liste richieste; il prefisso dichiara luci,La coda è metatesto e si chiedono le liste
+10645,ambiguo,invariato,Aggiunta alla spesa; il prefisso dichiara email,La coda è metatesto e si aggiunge vino alla lista
+10760,ambiguo,invariato,Lettura lista; il prefisso dichiara gioco,La coda è metatesto e si chiede una lista
+1123,ambiguo,invariato,Riproduzione brano; il prefisso dichiara notizie,La coda è metatesto e il brano è nominato
+11272,ambiguo,ambiguo,Riproduci il prossimo è ellittico e il prefisso dichiara volume,Il prossimo non distingue podcast da altri media
+11612,ambiguo,invariato,Mostre richieste; il prefisso dichiara sveglia,La coda è metatesto e la domanda riguarda eventi a Milano
+11634,ambiguo,invariato,Film consigliato; il prefisso dichiara email,La coda è metatesto e si chiede un film
+11751,ambiguo,invariato,Negozi vicini; il prefisso dichiara caffè,La coda è metatesto e si chiedono luoghi vicini
+12019,ambiguo,invariato,Panificio vicino; il prefisso dichiara conversione data,La coda è metatesto e si cerca un panificio
+12294,ambiguo,invariato,Orari treno; il prefisso dichiara luci,La coda è metatesto e si chiedono orari ferroviari
+1252,ambiguo,invariato,Ora corrente; il prefisso dichiara trasporto,La coda è metatesto e si chiede l'ora
+12710,ambiguo,invariato,Taxi richiesto; il prefisso dichiara orari trasporto,La coda è metatesto e si chiede di chiamare un taxi
+12824,ambiguo,invariato,Orari dei treni; il prefisso dichiara email,La coda è metatesto e si chiedono treni per Milano
+12987,ambiguo,ambiguo,Tracciare emozioni è aperto e il prefisso dichiara liste,La richiesta non identifica un'azione specifica fra gli intenti disponibili
+13554,ambiguo,invariato,Altezza di una persona; il prefisso dichiara rubrica,La coda è metatesto e si chiede un fatto
+13681,ambiguo,invariato,Numero di film; il prefisso dichiara notizie,La coda è metatesto e si chiede un fatto
+1371,ambiguo,invariato,Prima pagina richiesta; il prefisso dichiara radio,La coda è metatesto e si chiedono notizie
+14044,ambiguo,invariato,Tasso di cambio; il prefisso dichiara sveglia,La coda è metatesto e si chiedono valute
+14367,ambiguo,ambiguo,La guerra futura è domanda generica e il prefisso dichiara data,La domanda predittiva non individua un intento unico
+14658,ambiguo,invariato,Cambio euro dollaro; il prefisso dichiara email,La coda è metatesto e si chiede un tasso di cambio
+14792,ambiguo,invariato,Sentiero vicino; il prefisso dichiara musica,La coda è metatesto e si chiede un luogo
+15056,ambiguo,invariato,Età di una persona; il prefisso dichiara presa,La coda è metatesto e si chiede un fatto
+15092,ambiguo,invariato,Descrizione televisore; il prefisso dichiara luci,La coda è metatesto e si chiede una descrizione
+15197,ambiguo,invariato,Post su Twitter; il prefisso dichiara luci,La coda è metatesto e si chiede un post
+15216,ambiguo,invariato,Tweet richiesto; il prefisso dichiara pulizia,La coda è metatesto e si chiede di twittare
+15444,ambiguo,ambiguo,Pollici in basso è ellittico e il prefisso dichiara email,Non è chiaro se serva un post o altra azione
+15700,ambiguo,ambiguo,Vendita prodotti scaduti è frammento e il prefisso dichiara biglietti,Il frammento non contiene una richiesta univoca
+16010,ambiguo,invariato,Nuovi messaggi email; il prefisso dichiara rubrica,La coda è metatesto e si chiede la posta in arrivo
+16296,ambiguo,invariato,Invio email; il prefisso dichiara apprezzamento musica,La coda è metatesto e si chiede una email a mamma
+16354,ambiguo,invariato,Controllo email; il prefisso dichiara calendario,La coda è metatesto e si chiede la posta del capo
+2230,ambiguo,invariato,Spegnere luce; il prefisso dichiara calendario,La coda è metatesto e si chiede di spegnere la luce
+2497,ambiguo,invariato,Data odierna; il prefisso dichiara ricetta,La coda è metatesto e si chiede la data
+2908,ambiguo,invariato,Consegne McDonald; il prefisso dichiara volume,La coda è metatesto e si chiedono consegne
+369,ambiguo,invariato,Spegnere luci; il prefisso dichiara valute,La coda è metatesto e si chiede di spegnere le luci
+3870,ambiguo,invariato,Orario sveglia; il prefisso dichiara email,La coda è metatesto e si chiede quando suonerà la sveglia
+426,ambiguo,invariato,Accendere presa; il prefisso dichiara takeaway,La coda è metatesto e si chiede di accendere la presa
+4319,ambiguo,invariato,Sveglia domani; il prefisso dichiara trasporto,La coda è metatesto e si chiede una sveglia
+4845,ambiguo,ambiguo,Distanza in ore per Roma è ambigua e il prefisso dichiara luci,Ore di distanza può riferirsi a viaggio o conversione temporale
+5017,ambiguo,invariato,Fare un caffè; il prefisso dichiara sveglia,La coda è metatesto e si chiede un caffè
+5040,ambiguo,invariato,Tempo attuale; il prefisso dichiara sveglia,La coda è metatesto e si chiede il meteo
+5103,ambiguo,invariato,Cancellare sveglie; il prefisso dichiara barzelletta,La coda è metatesto e si chiede di cancellare sveglie
+5328,ambiguo,ambiguo,Rock da solo è ellittico e il prefisso dichiara meteo,Rock può chiedere musica o informazioni sul genere
+533,ambiguo,invariato,Impostare sveglia; il prefisso dichiara presa,La coda è metatesto e si chiede una sveglia
+5615,ambiguo,invariato,Nome del pezzo musicale; il prefisso dichiara presa,La coda è metatesto e si chiede identificazione musicale
+564,ambiguo,invariato,Cambio colore luce; il prefisso dichiara calendario,La coda è metatesto e si chiede di cambiare la luce
+6103,ambiguo,invariato,Meteo Milano; il prefisso dichiara caffè,La coda è metatesto e si chiede il tempo
+6371,ambiguo,ambiguo,Veganismo isolato è ellittico e il prefisso dichiara saluti,Veganismo non specifica una richiesta univoca
+6652,ambiguo,ambiguo,Seguire la dieta è ellittico e il prefisso dichiara data,La frase non specifica la richiesta
+7844,ambiguo,invariato,Promemoria impostati; il prefisso dichiara ricetta,La coda è metatesto e si chiedono promemoria
+7919,ambiguo,invariato,Nuova riunione; il prefisso dichiara traffico,La coda è metatesto e si chiede una riunione
+8336,ambiguo,invariato,Orario brunch; il prefisso dichiara biglietti,La coda è metatesto e si chiede un appuntamento
+8461,ambiguo,invariato,Programmi di maggio; il prefisso dichiara valute,La coda è metatesto e si chiede il calendario
+8767,ambiguo,ambiguo,Compleanno dichiarato senza verbo operativo e il prefisso dichiara saluti,La frase può chiedere calendario o registrazione di evento
+8914,ambiguo,invariato,Orario appuntamento; il prefisso dichiara presa,La coda è metatesto e si chiede il calendario
+9198,ambiguo,invariato,Promemoria richiesti; il prefisso dichiara caffè,La coda è metatesto e si chiedono promemoria
+9676,ambiguo,invariato,Riprendere audiolibro; il prefisso dichiara barzelletta,La coda è metatesto e si chiede un audiolibro
+9707,ambiguo,invariato,Riprodurre Jingle Bells; il prefisso dichiara luci,La coda è metatesto e si chiede musica

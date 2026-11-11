@@ -1,0 +1,20 @@
+{
+  "experiment": "E15_quantization",
+  "config_name": "laya/none",
+  "checkpoint": "convaiinnovations/laya-typed-decisions",
+  "dataset": "banking77",
+  "dataset_sha256": "cdafc7b2cb6075781092e819482c35670421d2735b07e68d6a9b7f294c5e2286",
+  "subset_hash": "50a10bf67c6d5c3cb2e65a7dbeafbfbe9f081f19a3e7094d1db9d16105fc60d3",
+  "k": 16,
+  "n_cases": 200,
+  "seed": 0,
+  "batch_size": 16,
+  "chunk": 32,
+  "template": "prepend",
+  "weight_sha256": "4fa56de72383a9d3efa9cfa78955733c81b9fc8067a587ca4beb82c78107a24e",
+  "backend": "laya",
+  "compiled": false,
+  "fast": false,
+  "quantization": "none",
+  "kind": "adversarial"
+}

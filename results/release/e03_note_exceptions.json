@@ -1,0 +1,197 @@
+{
+  "note": "40-esperimenti/E03-option-injection.md",
+  "exceptions": [
+    {
+      "value": "0.037",
+      "occurrences": 2,
+      "reason": "differenza fra tassi IT/EN derivata",
+      "source": "due scope E03 appaiati, formula nella nota"
+    },
+    {
+      "value": "0.181",
+      "occurrences": 1,
+      "reason": "differenza fra tassi IT/EN derivata",
+      "source": "due scope E03 appaiati, formula nella nota"
+    },
+    {
+      "value": "0.188",
+      "occurrences": 1,
+      "reason": "differenza fra tassi IT/EN derivata",
+      "source": "due scope E03 appaiati, formula nella nota"
+    },
+    {
+      "value": "0.225",
+      "occurrences": 1,
+      "reason": "differenza fra tassi IT/EN derivata",
+      "source": "due scope E03 appaiati, formula nella nota"
+    },
+    {
+      "value": "0.272",
+      "occurrences": 1,
+      "reason": "baseline di altro esperimento",
+      "source": "results/e01_third_checkpoint.json"
+    },
+    {
+      "value": "0.3595",
+      "occurrences": 1,
+      "reason": "baseline di altro esperimento",
+      "source": "results/e01_third_checkpoint.json"
+    },
+    {
+      "value": "0.387",
+      "occurrences": 1,
+      "reason": "baseline di altro esperimento",
+      "source": "results/e01_third_checkpoint.json"
+    },
+    {
+      "value": "0.4419",
+      "occurrences": 1,
+      "reason": "statistica dai record puliti, non nel riepilogo",
+      "source": "preds.jsonl dei run puliti citati nella nota"
+    },
+    {
+      "value": "0.5006",
+      "occurrences": 1,
+      "reason": "statistica dai record puliti, non nel riepilogo",
+      "source": "preds.jsonl dei run puliti citati nella nota"
+    },
+    {
+      "value": "0.560",
+      "occurrences": 1,
+      "reason": "baseline di altro esperimento",
+      "source": "results/e01_third_checkpoint.json"
+    },
+    {
+      "value": "0.5610",
+      "occurrences": 2,
+      "reason": "run storico N=1000 esplicitamente separato",
+      "source": "results/e03_third_checkpoint.json"
+    },
+    {
+      "value": "0.712",
+      "occurrences": 3,
+      "reason": "numero pre-fix citato come errore storico",
+      "source": "nota E03 sezione correzione del template; non prova corrente"
+    },
+    {
+      "value": "0.7670",
+      "occurrences": 1,
+      "reason": "baseline di altro esperimento",
+      "source": "results/e01_third_checkpoint.json"
+    },
+    {
+      "value": "0.8278",
+      "occurrences": 1,
+      "reason": "intervallo Wilson derivato",
+      "source": "results/provenance/historical_ci_audit.json o e03_seed_k16_summary.json"
+    },
+    {
+      "value": "0.828",
+      "occurrences": 2,
+      "reason": "intervallo Wilson derivato",
+      "source": "results/provenance/historical_ci_audit.json o e03_seed_k16_summary.json"
+    },
+    {
+      "value": "0.848",
+      "occurrences": 1,
+      "reason": "intervallo Wilson derivato",
+      "source": "results/provenance/historical_ci_audit.json o e03_seed_k16_summary.json"
+    },
+    {
+      "value": "0.851",
+      "occurrences": 1,
+      "reason": "intervallo Wilson derivato",
+      "source": "results/provenance/historical_ci_audit.json o e03_seed_k16_summary.json"
+    },
+    {
+      "value": "0.867",
+      "occurrences": 2,
+      "reason": "numero pre-fix citato come errore storico",
+      "source": "nota E03 sezione correzione del template; non prova corrente"
+    },
+    {
+      "value": "0.871",
+      "occurrences": 1,
+      "reason": "intervallo Wilson derivato",
+      "source": "results/provenance/historical_ci_audit.json o e03_seed_k16_summary.json"
+    },
+    {
+      "value": "0.884",
+      "occurrences": 2,
+      "reason": "intervallo Wilson derivato",
+      "source": "results/provenance/historical_ci_audit.json o e03_seed_k16_summary.json"
+    },
+    {
+      "value": "0.903",
+      "occurrences": 1,
+      "reason": "intervallo Wilson derivato",
+      "source": "results/provenance/historical_ci_audit.json o e03_seed_k16_summary.json"
+    },
+    {
+      "value": "0.9585",
+      "occurrences": 1,
+      "reason": "intervallo Wilson derivato",
+      "source": "results/provenance/historical_ci_audit.json o e03_seed_k16_summary.json"
+    },
+    {
+      "value": "0.9590",
+      "occurrences": 1,
+      "reason": "intervallo Wilson derivato",
+      "source": "results/provenance/historical_ci_audit.json o e03_seed_k16_summary.json"
+    },
+    {
+      "value": "1.145",
+      "occurrences": 1,
+      "reason": "conteggio con punto come separatore delle migliaia",
+      "source": "record E03 e riepilogo seed; il checker legge il token come decimale"
+    },
+    {
+      "value": "1.173",
+      "occurrences": 1,
+      "reason": "conteggio con punto come separatore delle migliaia",
+      "source": "record E03 e riepilogo seed; il checker legge il token come decimale"
+    },
+    {
+      "value": "1.174",
+      "occurrences": 1,
+      "reason": "conteggio con punto come separatore delle migliaia",
+      "source": "record E03 e riepilogo seed; il checker legge il token come decimale"
+    },
+    {
+      "value": "1.180",
+      "occurrences": 1,
+      "reason": "conteggio con punto come separatore delle migliaia",
+      "source": "record E03 e riepilogo seed; il checker legge il token come decimale"
+    },
+    {
+      "value": "1.206",
+      "occurrences": 1,
+      "reason": "conteggio con punto come separatore delle migliaia",
+      "source": "record E03 e riepilogo seed; il checker legge il token come decimale"
+    },
+    {
+      "value": "1.209",
+      "occurrences": 1,
+      "reason": "conteggio con punto come separatore delle migliaia",
+      "source": "record E03 e riepilogo seed; il checker legge il token come decimale"
+    },
+    {
+      "value": "1.211",
+      "occurrences": 2,
+      "reason": "conteggio con punto come separatore delle migliaia",
+      "source": "record E03 e riepilogo seed; il checker legge il token come decimale"
+    },
+    {
+      "value": "1.247",
+      "occurrences": 1,
+      "reason": "conteggio con punto come separatore delle migliaia",
+      "source": "record E03 e riepilogo seed; il checker legge il token come decimale"
+    },
+    {
+      "value": "2.974",
+      "occurrences": 4,
+      "reason": "conteggio con punto come separatore delle migliaia",
+      "source": "record E03 e riepilogo seed; il checker legge il token come decimale"
+    }
+  ]
+}
